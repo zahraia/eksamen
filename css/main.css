@@ -1,0 +1,24 @@
+body {
+    background-color: white; 
+    font-family:verdana;
+    font-size:30px;
+    text-align:justify;
+    padding:60px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: block;
+    padding: 20px;
+    background-color: #ffd500;
+}
