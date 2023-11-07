@@ -1,112 +1,234 @@
 body {
-    background-color: white; 
-    font-family:verdana;
-    font-size:30px;
-    text-align:justify;
-    padding:60px;
+  background-color: white; 
+  font-family:verdana;
+  font-size:30px;
+  text-align:justify;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+  
 }
 
-.nav_links {
-    border: none;
+h2{
+  text-transform:uppercase;
+}
+
+.video{
+  padding-top: 140px;
+}
+
+.headerimg{
+  width: 30%;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  filter: invert(1);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: #ffd500;
+  z-index: 100;
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100px; 
+
+}
+
+nav a{
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
 
-li a {
-    display: block;
-    padding: 20px;
-    background-color: #ffd500;
 }
 
+.omoslomet{
+  padding: 5%;
+}
+
+nav li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 20px;
+  display: inline;
+  margin: 0 20px;
+}
+
+
+.omoslomet{
+padding: 10%;
+}
+
+.infoboks{
+display: grid;
+grid-template-areas: 
+"oslomet kalender"
+"p35 accessibility"
+;
+}
+.oslomet {
+grid-area: oslomet;
+padding: 5%;
+}
+.kalender {
+grid-area: kalender;
+align-items: center;
+padding: 5%;
+}  
+.p35 {
+grid-area: p35;
+}
+.accessibility{
+grid-area: accessibility;
+}
 
 /*
 CSS TIL KALENDER:
 */
 .month {
-    padding: 70px 25px;
-    width: 100%;
-    background: #1abc9c;
-    text-align: center;
-  }
-  
-  .month ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
-  
-  .month .prev {
-    float: left;
-    padding-top: 10px;
-  }
-  
-  .month .next {
-    float: right;
-    padding-top: 10px;
-  }
-  
-  .weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #ddd;
-  }
-  
-  .weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    color: #666;
-    text-align: center;
-  }
-  
-  .days {
-    padding: 10px 0;
-    background: #eee;
-    margin: 0;
-  }
-  
-  .days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size:12px;
-    color: #777;
-  }
-  
-  .days li .active {
-    padding: 5px;
-    background: #1abc9c;
-    color: white !important
-  }
-  
-  /* Add media queries for smaller screens */
-  @media screen and (max-width:720px) {
-    .weekdays li, .days li {width: 13.1%;}
-  }
-  
-  @media screen and (max-width: 420px) {
-    .weekdays li, .days li {width: 12.5%;}
-    .days li .active {padding: 2px;}
-  }
-  
-  @media screen and (max-width: 290px) {
-    .weekdays li, .days li {width: 12.2%;}
-  }
+padding: 70px 25px;
+width: 100%;
+background: #000000;
+text-align: center;
+color: #ffff00;
+}
+
+.month ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.month ul li {
+color: #ffff00;
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+.month .prev {
+float: left;
+padding-top: 10px;
+}
+
+.month .next {
+float: right;
+padding-top: 10px;
+}
+
+.weekdays {
+margin: 0;
+padding: 10px 0;
+background-color: #ddd;
+}
+
+.weekdays li {
+display: inline-block;
+width: 13.6%;
+color: #666;
+text-align: center;
+}
+
+.days {
+padding: 10px 0;
+background: #eee;
+margin: 0;
+}
+
+.days li {
+list-style-type: none;
+display: inline-block;
+width: 13.6%;
+text-align: center;
+margin-bottom: 5px;
+font-size:12px;
+color: #777;
+}
+
+.days li .active {
+padding: 5px;
+background: #000000;
+color: #ffff00 !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+.weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+.weekdays li, .days li {width: 12.5%;}
+.days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+.weekdays li, .days li {width: 12.2%;}
+}
 
 /*
 CSS TIL KALENDER SLUTT
 */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#ffd500;
+  color:black;
+  text-align: center;
+}
+
+.footer-logo {
+  border: none;
+  
+}
+
+.footer-socials {
+  grid-column: 10/span 2;
+  width: 100%; 
+}
+
+.footer-socials .icon {
+  background-position: center;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-socials .icon-facebook {
+  background-image: url(https://www.oslomet.no/bundles/oslomet/images/icon-facebook.svg);
+}
+
+.footer-socials .icon-instagram {
+  background-image: url(https://www.oslomet.no/bundles/oslomet/images/icon-instagram.svg);
+}
+
+.footer-socials .icon-twitter {
+  background-image: url(https://www.oslomet.no/bundles/oslomet/images/icon-twitter.svg);
+}
+
+.footer-socials .icon-linkedin {
+  background-image: url(https://www.oslomet.no/bundles/oslomet/images/icon-linkedin.svg);
+}
