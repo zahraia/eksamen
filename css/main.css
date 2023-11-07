@@ -2,6 +2,10 @@ body {
   background-color: white; 
   font-family:verdana;
   text-align:justify;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -188,20 +192,6 @@ color: #ffff00 !important
 /*
 CSS TIL KALENDER SLUTT
 */
-
-body {
-  font-family:verdana;
-  line-height: 1.5;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .footer-content {
   display: flex;
