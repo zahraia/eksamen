@@ -38,6 +38,7 @@ h2 {
   font-weight: lighter;
 }
 
+/*CSS TO INDEX, HOMEPAGE*/
 .video {
   padding-top: 140px;
 }
@@ -145,19 +146,24 @@ a {
 }
 
 
-/*CSS TO PAGE 4 P35*/
-
-
+/*CSS TO PAGE 4, P35*/
 .containerp35 {
+  display: flex;
+  justify-content: space-between;
   position: aboslute;
   top: 50%;
   left: 50%;
+  background-color:gainsboro;
+  padding: 40px;
+  width: 40%;
+  margin: 10rem auto 0 auto;
 
 }
 
 .imgp35 {
+height: 30%;
 
-  
+
 }
 
 .cantine {
