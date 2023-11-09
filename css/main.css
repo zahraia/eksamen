@@ -81,10 +81,6 @@ color: white;
 
 }
 
-.omoslomet {
-  padding: 5%;
-}
-
 nav li {
   float: left;
   color: white;
@@ -98,118 +94,42 @@ a {
 }
 
 .omoslomet {
-padding: 10%;
+  padding: 10% 5%;
+  align-items: center;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: 2rem;
+
 }
 
-.infoboks {
-display: grid;
-grid-template-areas: 
-"oslomet kalender"
-"p35 accessibility"
-;
-}
-.oslomet {
-grid-area: oslomet;
-padding: 5%;
-}
-.kalender {
-grid-area: kalender;
-align-items: center;
-padding: 5%;
-}  
-.p35 {
-grid-area: p35;
-}
-.accessibility{
-grid-area: accessibility;
+.omoslomet p{
+  font-weight: lighter;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*
-CSS TIL KALENDER:
-*/
-.month {
-padding: 70px 25px;
-width: 100%;
-background: #000000;
-text-align: center;
-color: #ffff00;
+.news_grid{
+  padding: 5%;
+  display: grid;
+  grid-template-areas: 
+  "topical accessibility";
 }
 
-.month ul {
-margin: 0;
-padding: 0;
-list-style-type: none;
+.news_grid img{
+  width: 70%;
+  height: 70%;
 }
 
-.month ul li {
-color: #ffff00;
-font-size: 20px;
-text-transform: uppercase;
-letter-spacing: 3px;
+.topicalFrontSide{
+  grid-area: topical;
 }
 
-.month .prev {
-float: left;
-padding-top: 10px;
+.accessibilityFrontSide{
+  grid-area: accessibility;
 }
 
-.month .next {
-float: right;
-padding-top: 10px;
+.upcomingEvents{
+  padding: 5%;
 }
-
-.weekdays {
-margin: 0;
-padding: 10px 0;
-background-color: #ddd;
-}
-
-.weekdays li {
-display: inline-block;
-width: 13.6%;
-color: #666;
-text-align: center;
-}
-
-.days {
-padding: 10px 0;
-background: #eee;
-margin: 0;
-}
-
-.days li {
-list-style-type: none;
-display: inline-block;
-width: 13.6%;
-text-align: center;
-margin-bottom: 5px;
-font-size:12px;
-color: #777;
-}
-
-.days li .active {
-padding: 5px;
-background: #000000;
-color: #ffff00 !important
-}
-
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-.weekdays li, .days li {width: 13.1%;}
-}
-
-@media screen and (max-width: 420px) {
-.weekdays li, .days li {width: 12.5%;}
-.days li .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-.weekdays li, .days li {width: 12.2%;}
-}
-
-/*
-CSS TIL KALENDER SLUTT
-*/
 
 .footer-content {
   max-width: 1170;
