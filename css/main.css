@@ -1,7 +1,7 @@
-body {
+body{
   background-color: white; 
   font-family:verdana;
-  text-align:justify;
+  /* text-align:justify; */
   line-height: 1.5;
   min-height: 100vh;
   display: flex;
@@ -21,11 +21,6 @@ h1{
   font-size: 3rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 
-}
-
-h2 {
-  text-transform:uppercase;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 .ingress {
@@ -246,4 +241,174 @@ height: 30%;
 .footer-col .socials a:hover {
   color: white;
   background-color: #ffd500;
+}
+
+.topical-headings{
+
+}
+
+.topical-content{
+
+    width: 50%;
+    margin: auto;
+    align-items: center;
+
+
+}
+
+body.header-content{
+  width: 100%;
+  background-color: white; 
+  font-family:verdana;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.topical-paragraphs{
+  padding-bottom: 2em;
+}
+
+
+.center-topical-img{
+  width: 75%;
+  margin: auto;
+  
+}
+
+.topical-stats{
+
+  width: 20em;
+  height: 10em;
+  padding: 2%;
+  margin-left: 5%;
+  margin: auto;
+  align-items: center;
+  background-color: white;
+
+}
+
+.topical-stats:nth-child(1){
+  background-color: #ef3d59;
+
+}
+
+.topical-stats:nth-child(2){
+  background-color: #4ab19d;
+}
+
+.topical-stats:nth-child(3){
+  background-color: #e17a47;
+}
+
+
+.topical-stats-container{
+
+  width: 100%;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  background-color: #efc958;
+
+}
+
+.stats-writing{
+
+  font-weight: 600;
+
+}
+
+
+.topical-line{
+  color: #344e5c;
+  border: none;
+  border-top: 1px;
+  border-top: solid;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.right-side-topical-img, .left-side-topical-img{
+
+  width: 15%;
+  height: 50%;
+  position: absolute;
+  top: 175%;
+}
+
+.left-side-topical-img{
+  left: 2%;
+}
+
+.right-side-topical-img{
+  right: 2%;
+}
+
+
+
+/* Style for the slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style for each slide */
+.slide {
+  display: none;
+}
+
+/* Style for the images within the slides */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style for the navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+}
+
+/* Position the previous button to the left and the next button to the right */
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Style for radio buttons (used to control the slides) */
+.slide-radio {
+  display: none;
+}
+
+/* Apply styles to the selected slide */
+.slide-radio:checked + .slide {
+  display: block;
+}
+
+/* Style for the navigation dots, if needed */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+/* Active dot */
+.slide-radio:checked + .slide + .dot {
+  background-color: #717171;
 }
