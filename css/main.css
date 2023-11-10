@@ -392,6 +392,34 @@ body.header-content {
   list-style: none;
 }
 
+body {
+  font-family:verdana;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* organize elements in rows that can wrap based on the screen size */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer {
   background-color: #344E5C;
   color: white;
