@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: white; 
   font-family:verdana;
@@ -35,7 +38,9 @@ h1 {
 
 /* CSS TO INDEX PAGE */
 .video {
-  padding-top: 140px;
+  margin:  0;
+  padding: -40%;
+  height: 90vh;
 }
 
 .headerimg {
@@ -47,7 +52,7 @@ h1 {
 }
 
 header {
-  position: relative;
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
@@ -149,12 +154,26 @@ a {
   font-size: larger;
   text-decoration: none;
 }
+.explore-oslomet a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffd500;
+  transition: width 0.25s ease-out;
+}
 
+.explore-oslomet a:hover::before{
+  width: 100%;
+}
+/*
 .explore-oslomet a:hover{
   text-decoration: underline;
   transition: 0.5s;
 }
-
+*/
 .omoslomet {
   position:sticky;
   margin-top: 5rem;
