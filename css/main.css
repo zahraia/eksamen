@@ -23,6 +23,7 @@ h1 {
   text-align: center;
   font-size: 3rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 2em;
 }
 
 .ingress {
@@ -68,10 +69,11 @@ header {
 
 .meny-img {
   position: absolute;
-  margin-left: 0.625em;
+  margin-left: 3em;
   width: 8em;
   color: #fff;
   filter: invert(1);
+  margin-top: 0.625em;
 }
 
 header nav ul li a {
@@ -124,6 +126,8 @@ nav ul {
   padding: 0;
   overflow: hidden;
   color: white;
+  margin-bottom: 2em;
+  margin-right: 3em;
 }
 
 nav li {
@@ -300,7 +304,7 @@ a {
   width: 50%;
   margin: auto;
   align-items: center;
-  margin-top: 7em;
+  padding: 1.5%;
 }
 
 body.header-content {
@@ -367,7 +371,7 @@ body.header-content {
 
 .right-side-topical-img,
 .left-side-topical-img {
-  width: 15%;
+  width: 20%;
   height: 50%;
   position: absolute;
   top: 175%;
@@ -375,10 +379,12 @@ body.header-content {
 
 .left-side-topical-img {
   left: 2%;
+  margin-top: 44em;
 }
 
 .right-side-topical-img {
   right: 2%;
+  margin-top: 44em;
 }
 
 /* Style for the slideshow container */
