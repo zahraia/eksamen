@@ -1,9 +1,9 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: white; 
-  font-family:verdana;
+  background-color: white;
+  font-family: verdana;
   /* text-align:justify; */
   line-height: 1.5;
   min-height: 100vh;
@@ -22,9 +22,8 @@ h1 {
   padding-bottom: 0;
   text-align: center;
   font-size: 3rem;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 
 .ingress {
   padding-top: 1%;
@@ -38,7 +37,7 @@ h1 {
 
 /* CSS TO INDEX PAGE */
 .video {
-  margin:  0;
+  margin: 0;
   padding: -40%;
   height: 90vh;
 }
@@ -52,7 +51,7 @@ h1 {
 }
 
 header {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -67,7 +66,7 @@ header {
   z-index: 100;
 }
 
-.menyimg {
+.meny-img {
   position: absolute;
   margin-left: 0.625em;
   width: 8em;
@@ -140,21 +139,21 @@ a {
   text-decoration: none;
 }
 
-.explore-oslomet{
+.explore-oslomet {
   background-color: black;
   margin: 0;
   padding: 1.5rem;
   text-align: center;
 }
 
-.explore-oslomet a{
+.explore-oslomet a {
   color: #ffd500;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
   text-decoration: none;
 }
-.explore-oslomet a::before{
+.explore-oslomet a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -165,7 +164,7 @@ a {
   transition: width 0.25s ease-out;
 }
 
-.explore-oslomet a:hover::before{
+.explore-oslomet a:hover::before {
   width: 100%;
 }
 /*
@@ -175,34 +174,34 @@ a {
 }
 */
 .omoslomet {
-  position:sticky;
+  position: sticky;
   margin-top: 5rem;
   text-align: center;
   font-size: 3rem;
 }
 
-.button-frontside{
-  font-size:medium;
+.button-frontside {
+  font-size: medium;
   background-color: black;
   width: 20rem;
   height: 3rem;
   justify-content: center;
   align-items: center;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   padding-top: 2em;
   padding-bottom: 3em;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight:900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
   color: #ffd500;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
-.button-frontside:hover{
+.button-frontside:hover {
   background-color: rgb(54, 54, 54);
 }
 
-.button-frontside a:hover{
+.button-frontside a:hover {
   background-color: rgb(53, 53, 53);
 }
 
@@ -217,9 +216,9 @@ a {
   height: 20rem;
 }
 
-.news_grid p{
+.news_grid p {
   color: black;
-  text-decoration:none;
+  text-decoration: none;
   margin-top: -5%;
   margin-left: 10%;
   transition: 0.5s;
@@ -231,7 +230,7 @@ a {
   transition: 0.5s;
 }
 
-.topical-frontside p:hover{
+.topical-frontside p:hover {
   font-size: 1.2rem;
 }
 
@@ -239,14 +238,13 @@ a {
   grid-area: accessibility;
 }
 
-.accessibility-frontside p:hover{
+.accessibility-frontside p:hover {
   font-size: 1.2rem;
 }
 
 .upcomingEvents {
   padding: 5%;
   background-color: lightgrey;
-
 }
 
 /* CSS TO P35 PAGE */
@@ -260,7 +258,7 @@ a {
   background-color: papayawhip;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   padding-left: 20px;
   margin-right: 20px;
   height: 300px;
@@ -271,8 +269,8 @@ a {
 }
 
 .imgp35 {
-  height:300px;
-  width:500px;
+  height: 300px;
+  width: 500px;
   padding: 1rem;
   margin-right: 10px;
   margin-left: -15px;
@@ -294,17 +292,15 @@ a {
 
 /* END CSS TO PAGE 4 P35 END */
 
-
-
 /* CSS TO TOPIC PAGE */
-.topical-headings{
-
+.topical-headings {
 }
 
 .topical-content {
   width: 50%;
   margin: auto;
   align-items: center;
+  margin-top: 7em;
 }
 
 body.header-content {
@@ -385,7 +381,6 @@ body.header-content {
   right: 2%;
 }
 
-
 /* Style for the slideshow container */
 .slideshow-container {
   position: relative;
@@ -452,12 +447,11 @@ body.header-content {
   background-color: #717171;
 }
 
-
 /* FOOTER CSS */
 .footer-content {
   max-width: 73rem;
   margin-left: 13rem;
-  padding:0.5rem;
+  padding: 0.5rem;
 }
 
 /* organize elements in rows that can wrap based on the screen size */
@@ -471,7 +465,7 @@ body.header-content {
 }
 
 .footer {
-  background-color: #344E5C;
+  background-color: #344e5c;
   color: white;
 }
 
@@ -488,7 +482,7 @@ body.header-content {
   font-size: 1rem;
   margin-top: 0.4rem;
   margin-bottom: 1rem;
-  position: relative; 
+  position: relative;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -533,8 +527,8 @@ body.header-content {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .footer-col {
-  width: 100%;
-  padding: 0.25rem;
-  text-align: center;
+    width: 100%;
+    padding: 0.25rem;
+    text-align: center;
   }
 }
