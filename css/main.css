@@ -15,7 +15,6 @@ body {
 }
 
 h1 {
-h1 {
   padding-top: 3%;
   padding-bottom: 0;
   text-align: center;
@@ -27,7 +26,7 @@ h2 {
   padding-top: 3%;
   padding-bottom: 0;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
@@ -156,22 +155,18 @@ a {
 }
 
 .news_grid img {
-.news_grid img {
   width: 70%;
   height: 70%;
 }
 
 .topicalFrontSide {
-.topicalFrontSide {
   grid-area: topical;
 }
 
 .accessibilityFrontSide {
-.accessibilityFrontSide {
   grid-area: accessibility;
 }
 
-.upcomingEvents {
 .upcomingEvents {
   padding: 5%;
 }
@@ -384,8 +379,7 @@ body.header-content {
 /* FOOTER CSS */
 .footer-content {
   max-width: 1170;
-  margin: auto;
-  margin-left: 8rem;
+  margin-left: 11rem;
 }
 
 /* organize elements in rows that can wrap based on the screen size */
@@ -402,26 +396,23 @@ body.header-content {
   background-color: #344E5C;
   color: white;
   padding: 1rem;
-  position: relative;
-  bottom: 0;
 }
 
 .footer-col {
   width: 30%;
-  padding: 8px 25px 20px 25px;
+  padding: 4px 50px 20px;
   font-size: 0.9rem;
 }
 
 .footer-col h4 {
   font-size: 16px;
-  margin-top: 0.6rem;
-  margin-bottom: 0.6rem;
-  position: relative;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  position: relative; 
 }
 
-/* add spacing to all list items except the last one within unordered lists */
 .footer-col ul li:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .footer-col ul li a {
@@ -444,7 +435,7 @@ body.header-content {
   font-size: 24px;
   width: 33px;
   text-align: center;
-  margin: 10px 11px 0px 0;
+  margin: 0 9px 0 0;
   border-radius: 50%;
   text-decoration: none;
   background-color: white;
