@@ -372,28 +372,14 @@ body.header-content {
   margin-top: 3%;
 }
 
-.right-side-topical-img,
-.left-side-topical-img {
-  width: 20%;
-  height: 50%;
-  position: absolute;
-  top: 175%;
-}
-
-.left-side-topical-img {
-  left: 2%;
-  margin-top: 42em;
-}
-
-.right-side-topical-img {
-  right: 2%;
-  margin-top: 42em;
-}
-
 .last-heading {
   text-align: center;
   margin-right: 3em;
   margin-bottom: 2em;
+}
+
+.card-section {
+  align-items: center;
 }
 
 .row-info {
@@ -403,7 +389,6 @@ body.header-content {
 
 .column {
   float: left;
-  width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -412,7 +397,7 @@ body.header-content {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
   height: 20rem;
-  width: 20rem;
+  width: 15rem;
 }
 
 .img-card {
