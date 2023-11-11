@@ -18,22 +18,30 @@ body {
 }
 
 h1 {
-  padding-top: 3%;
-  padding-bottom: 0;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h2 {
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   font-size: 3rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-top: 2em;
 }
-h3{
-  position:sticky;
-  margin: 5rem;
+
+h3 {
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .ingress {
-  padding-top: 1%;
+  margin-bottom: 3rem;
   text-align: center;
   font-size: 1.7rem;
   margin-left: 5rem;
@@ -41,7 +49,8 @@ h3{
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: lighter;
 }
-p{
+
+p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -152,20 +161,22 @@ a {
   text-decoration: none;
 }
 
-.explore-oslomet{
-  background-color: black;
+.explore-oslomet {
+  background-color: #194759;
   margin: 0;
   padding: 1rem;
   text-align: center;
 }
-.explore-oslomet a{
-  color: #ffd500;
+
+.explore-oslomet a {
+  color: white;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
   text-decoration: none;
 }
-.explore-oslomet a::before{
+
+.explore-oslomet a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -175,9 +186,11 @@ a {
   background-color: #ffd500;
   transition: width 0.25s ease-out;
 }
-.explore-oslomet a:hover::before{
+
+.explore-oslomet a:hover::before {
   width: 100%;
 }
+
 /*
 .explore-oslomet a:hover{
   text-decoration: underline;
@@ -190,9 +203,10 @@ a {
   text-align: center;
   font-size: 3rem;
 }
-.button-frontside{
+
+.button-frontside {
   font-size:large;
-  background-color: black;
+  background-color: #194759;
   width: 20rem;
   height: 3rem;
   justify-content: center;
@@ -203,26 +217,29 @@ a {
   margin-right: auto;
   padding-top: 1rem;
   padding-bottom: 2.5rem;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight:900;
-  transition:0.5s;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  transition: 0.5s;
 }
-.button-frontside a{
-  color: #ffd500;
+
+.button-frontside a {
+  color: white;
 }
-.button-frontside:hover{
+
+.button-frontside:hover {
   background-color: rgb(54, 54, 54);
 }
 
 .upcoming-events {
   padding: 5rem;
-  background-color: rgb(235, 235, 235);
+  background-color: #ebf2f1;
 }
-.upcoming-events ul{
+
+.upcoming-events ul {
   list-style: none;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-column-gap: 1rem;
   grid-template-areas: 
@@ -230,7 +247,8 @@ a {
   "second"
   "last";
 }
-.calendar-event{
+
+.calendar-event {
   border: solid;
   border-color: rgb(189, 188, 188);
   border-left: none;
@@ -241,7 +259,8 @@ a {
   grid-template-areas: 
   "date event";
 }
-.calendar-date{
+
+.calendar-date {
   border: solid;
   border-color: rgb(189, 188, 188);
   border-left: none;
@@ -252,7 +271,8 @@ a {
   grid-template-areas: 
   "date event";
 }
-.calendar-last{
+
+.calendar-last {
   border: solid;
   border-color: rgb(189, 188, 188);
   border-left: none;
@@ -262,19 +282,21 @@ a {
   grid-template-areas:
   "date event";
 }
-.date{
+
+.date {
   grid-area: date;
   margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: #ffd500;
+  background-color: #7ebfb3;
+  color: white;
   height: 5rem;
   width: 5rem;
   font-size: larger;
 }
-.event{
+
+.event {
   grid-area: event;
   display: flex;
   align-items: center;
@@ -285,12 +307,13 @@ a {
   font-weight: bolder;
 
 }
-.upcoming-events p{
+.upcoming-events p {
   margin: 3rem;
   font-size: large;
   font-weight: bold;
 }
-.upcoming-events p a{
+
+.upcoming-events p a {
   color: black;
   display: flex;
   justify-content: center;
@@ -301,25 +324,29 @@ a {
   margin: 0;
   padding: 0;
 }
-.upcoming-events p a:hover{
+
+.upcoming-events p a:hover {
   text-decoration-color: black;
 }
+
 .news_grid {
   padding: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.news_grid p{
+
+.news_grid p {
   color: black;
   text-decoration:none;
   margin-left: 3rem;
   width: 15rem;
   position: absolute;
 }
+
 .box-frontside {
   border: solid;
-  border-color: red;
+  border-color: #a7f2e4;
   overflow: hidden;
   box-shadow: 0 1rem 2rem -1rem;
   margin-right: 2rem;
@@ -327,21 +354,25 @@ a {
   width: 30rem;
   height: 30rem;
 }
+
 .news_grid img {
   margin: 0;
   padding: 0;
   width: fit-content;
   height: 12rem;
 }
-.img-inbox-frontside:hover{
-  transition: 0.5s;
+
+.img-inbox-frontside:hover {
+  transition: 0.7s;
   transform: scale(1.2);
   cursor: pointer;
 }
-.text-frontside-box h4{
+
+.text-frontside-box h4 {
   margin: 2rem;
   text-align: center;
 }
+
 /*
 .image-frontside-box{
   padding: 0;
@@ -356,9 +387,9 @@ a {
 }
 */
 
-.button-frontside-campuslife{
+.button-frontside-campuslife {
   font-size:large;
-  background-color: black;
+  background-color: #194759;
   width: 23rem;
   height: 3rem;
   justify-content: center;
@@ -372,13 +403,14 @@ a {
   font-weight:900;
   transition:0.5s;
 }
-.button-frontside-campuslife a{
-  color: #ffd500;
-}
-.button-frontside-campuslife:hover{
-  background-color: rgb(54, 54, 54);
+
+.button-frontside-campuslife a {
+  color: white;
 }
 
+.button-frontside-campuslife:hover {
+  background-color: rgb(54, 54, 54);
+}
 
 
 /* CSS TO P35 PAGE */
@@ -388,7 +420,7 @@ a {
 }
 
 .imgtxtp35 {
-  background-color: rgb(228, 227, 227);
+  background-color: #ebf2f1;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -434,9 +466,6 @@ a {
 /* END CSS TO PAGE 4 P35 END */
 
 /* CSS TO TOPIC PAGE */
-.topical-headings {
-}
-
 .topical-content {
   width: 50%;
   margin: auto;
