@@ -383,19 +383,19 @@ a {
 
 /* CSS TO P35 PAGE */
 .containerp35 {
-  margin: 20px auto;
-  width: 80%;
-  padding: 26px;
+  width: 100%;
+  margin: 0;
 }
 
 .imgtxtp35 {
-  background-color: papayawhip;
+  background-color: rgb(228, 227, 227);
   display: flex;
+  align-items: center;
   flex-direction: row;
-  margin-bottom: 30px;
-  padding-left: 20px;
-  margin-right: 20px;
-  height: 300px;
+  margin-bottom: 85px;
+  padding-left: 10px;
+  padding-right: 30px;
+  height: 440px;
 }
 
 .imgtxtp35:nth-child(even) {
@@ -403,25 +403,32 @@ a {
 }
 
 .imgp35 {
-  height: 300px;
-  width: 500px;
-  padding: 1rem;
-  margin-right: 10px;
+  height: 440px;
+  width: 560px;
+  padding-right: 0;
+  margin-right: -30px;
+  margin-top: -30px;
+  margin-bottom: -30px;
   margin-left: -15px;
-  margin-right: 8px;
 }
 
 .textp35 {
   flex: 1;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .textp35 h3 {
-  font-size: 25px;
-  margin-top: 15px;
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 .textp35 p {
-  font-size: 18px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  margin-top:10px;
 }
 
 /* END CSS TO PAGE 4 P35 END */
