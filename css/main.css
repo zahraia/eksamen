@@ -52,7 +52,7 @@ h1 {
 }
 
 header {
-  position: absolute;
+  position: fixed; /* To have navbar fixed */
   top: 0;
   left: 0;
   width: 100%;
@@ -69,7 +69,7 @@ header {
 
 .meny-img {
   position: absolute;
-  margin-left: 3em;
+  margin-left: 2em;
   width: 8em;
   color: #fff;
   filter: invert(1);
@@ -339,18 +339,17 @@ body.header-content {
 
 .topical-stats:nth-child(1) {
   background-color: rgba(223, 141, 153, 0.336);
-  box-shadow: 0.5em 0.5em 0.7em 1em rgba(223, 141, 153, 0.445)
+  box-shadow: 0.5em 0.5em 0.7em 1em rgba(223, 141, 153, 0.445);
 }
 
 .topical-stats:nth-child(2) {
-  background-color: rgba(105, 169,  157 , 0.336);
-  box-shadow: rgba(105, 169,  157 , 0.445);;
+  background-color: rgba(105, 169, 157, 0.336);
+  box-shadow: rgba(105, 169, 157, 0.445);
 }
 
 .topical-stats:nth-child(3) {
   background-color: rgba(53, 110, 79, 0.336);
-  background-color: rgba(53, 110, 79, 0.445)
-
+  background-color: rgba(53, 110, 79, 0.445);
 }
 
 .topical-stats-container {
@@ -358,7 +357,6 @@ body.header-content {
   padding: 3%;
   display: flex;
   flex-direction: row;
-
 }
 
 .stats-writing {
@@ -543,11 +541,9 @@ body.header-content {
   }
 }
 
-
-.stat-number{
+.stat-number {
   font-size: 2em;
   text-align: center;
   font-weight: 600;
   margin-bottom: 3%;
-
 }
