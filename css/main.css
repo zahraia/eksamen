@@ -387,70 +387,69 @@ body.header-content {
   margin-top: 42em;
 }
 
-/* Style for the slideshow container */
-.slideshow-container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+.last-heading {
+  text-align: center;
+  margin-right: 3em;
+  margin-bottom: 2em;
 }
 
-/* Style for each slide */
-.slide {
-  display: none;
+.row-info {
+  display: flex;
+  margin-bottom: 2em;
 }
 
-/* Style for the images within the slides */
-.slide img {
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  height: 20rem;
+  width: 20rem;
+}
+
+.img-card {
   width: 100%;
-  height: auto;
 }
 
-/* Style for the navigation buttons */
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
-  background-color: transparent;
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
   border: none;
-  z-index: 1;
-}
-
-/* Position the previous button to the left and the next button to the right */
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-/* Style for radio buttons (used to control the slides) */
-.slide-radio {
-  display: none;
-}
-
-/* Apply styles to the selected slide */
-.slide-radio:checked + .slide {
-  display: block;
-}
-
-/* Style for the navigation dots, if needed */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  outline: 0;
   display: inline-block;
-  transition: background-color 0.3s;
+  padding: 8px;
+  color: black;
+  background-color: #4ab19d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-/* Active dot */
-.slide-radio:checked + .slide + .dot {
-  background-color: #717171;
+.button:hover {
+  background-color: #efc958;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
 
 /* FOOTER CSS */
