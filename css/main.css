@@ -51,7 +51,7 @@ h3 {
 }
 
 p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* CSS TO INDEX PAGE */
@@ -180,7 +180,7 @@ a {
   content: "";
   position: absolute;
   left: 0;
-  bottom:0;
+  bottom: 0;
   width: 0;
   height: 2px;
   background-color: #ffd500;
@@ -198,14 +198,14 @@ a {
 }
 */
 .omoslomet {
-  position:sticky;
+  position: sticky;
   margin-top: 5rem;
   text-align: center;
   font-size: 3rem;
 }
 
 .button-frontside {
-  font-size:large;
+  font-size: large;
   background-color: #194759;
   width: 20rem;
   height: 3rem;
@@ -213,11 +213,11 @@ a {
   align-items: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   padding-top: 1rem;
   padding-bottom: 2.5rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 900;
   transition: 0.5s;
 }
@@ -242,10 +242,10 @@ a {
 .grid-container {
   display: grid;
   grid-column-gap: 1rem;
-  grid-template-areas: 
-  "first"
-  "second"
-  "last";
+  grid-template-areas:
+    "first"
+    "second"
+    "last";
 }
 
 .calendar-event {
@@ -256,8 +256,7 @@ a {
   border-bottom: none;
   grid-area: first;
   display: grid;
-  grid-template-areas: 
-  "date event";
+  grid-template-areas: "date event";
 }
 
 .calendar-date {
@@ -268,8 +267,7 @@ a {
   border-bottom: none;
   grid-area: second;
   display: grid;
-  grid-template-areas: 
-  "date event";
+  grid-template-areas: "date event";
 }
 
 .calendar-last {
@@ -279,8 +277,7 @@ a {
   border-right: none;
   grid-area: last;
   display: grid;
-  grid-template-areas:
-  "date event";
+  grid-template-areas: "date event";
 }
 
 .date {
@@ -305,7 +302,6 @@ a {
   padding: 0;
   font-size: large;
   font-weight: bolder;
-
 }
 .upcoming-events p {
   margin: 3rem;
@@ -320,7 +316,7 @@ a {
   align-items: center;
   text-decoration: underline;
   text-decoration-color: #ffd500;
-  text-decoration-thickness:0.15rem;
+  text-decoration-thickness: 0.15rem;
   margin: 0;
   padding: 0;
 }
@@ -338,7 +334,7 @@ a {
 
 .news_grid p {
   color: black;
-  text-decoration:none;
+  text-decoration: none;
   margin-left: 3rem;
   width: 15rem;
   position: absolute;
@@ -388,20 +384,20 @@ a {
 */
 
 .button-frontside-campuslife {
-  font-size:large;
+  font-size: large;
   background-color: #194759;
   width: 23rem;
   height: 3rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   padding-top: 1rem;
   padding-bottom: 2.5rem;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight:900;
-  transition:0.5s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  transition: 0.5s;
 }
 
 .button-frontside-campuslife a {
@@ -411,7 +407,6 @@ a {
 .button-frontside-campuslife:hover {
   background-color: rgb(54, 54, 54);
 }
-
 
 /* CSS TO P35 PAGE */
 .containerp35 {
@@ -456,11 +451,11 @@ a {
 }
 
 .textp35 p {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 /* END CSS TO PAGE 4 P35 END */
@@ -538,10 +533,11 @@ body.header-content {
   margin-top: 3%;
 }
 
-.last-heading {
+.last-topical-heading {
   text-align: center;
   margin-right: 3em;
   margin-bottom: 2em;
+  margin-left: 3em;
 }
 
 .card-section {
@@ -550,18 +546,21 @@ body.header-content {
 
 .row-info {
   display: flex;
-  margin-bottom: 2em;
-  width: 70%;;
+  margin-bottom: 5em;
+  width: 70%;
   margin-right: auto;
   margin-left: auto;
 }
 
-
-.column {
+.topical-column {
   float: left;
   margin-bottom: 16px;
   padding: 0 8px;
   margin: auto;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .card {
@@ -577,6 +576,7 @@ body.header-content {
 
 .container {
   padding: 0 16px;
+  margin-top: 2em;
 }
 
 .container::after,
@@ -586,7 +586,7 @@ body.header-content {
   display: table;
 }
 
-.button {
+.topical-button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -596,23 +596,22 @@ body.header-content {
   text-align: center;
   cursor: pointer;
   width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 3em;
 }
 
-.column:hover{
-  height:150%;
+.topical-column:hover {
+  height: 150%;
   width: 150%;
-  background-color: blue;
+  background-color: hotpink;
   cursor: pointer;
 }
 
-.button:hover {
+.topical-button:hover {
   background-color: #efc958;
 }
 
 @media screen and (max-width: 650px) {
-  .column {
+  .topical-column {
     width: 100%;
     display: block;
   }
