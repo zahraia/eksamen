@@ -541,12 +541,12 @@ a {
 }
 
 .topical-content p {
-  width: 75%;
+  width: 65%;
   margin: auto;
   margin-bottom: 3em;
 }
 
-body.header-content {
+.header-content body {
   width: 100%;
   background-color: white;
   font-family: verdana;
@@ -597,8 +597,8 @@ body.header-content {
 
 .third-topical-list li {
   align-items: center;
-  padding-left: 12.5%;
-  padding-right: 12.5%;
+  padding-left: 18%;
+  padding-right: 18%;
   list-style: square inside;
   padding-bottom: 1em;
 }
