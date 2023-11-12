@@ -576,7 +576,7 @@ body.header-content {
 
 .container {
   padding: 0 16px;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .container::after,
@@ -596,7 +596,7 @@ body.header-content {
   text-align: center;
   cursor: pointer;
   width: 100%;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 
 .topical-column:hover {
