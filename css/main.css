@@ -233,7 +233,7 @@ a {
 
 .upcoming-events {
   padding: 5rem;
-  background-color: #ebf2f1;
+  background-color: #d5d6d4;
 }
 
 .upcoming-events ul {
@@ -287,7 +287,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7ebfb3;
+  background-color: black;
   color: white;
   height: 5rem;
   width: 6rem;
