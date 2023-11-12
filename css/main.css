@@ -55,12 +55,6 @@ p {
 }
 
 /* CSS TO INDEX PAGE */
-.video {
-  margin: 0;
-  padding: -40%;
-  height: 90vh;
-}
-
 .headerimg {
   width: 30%;
   position: absolute;
@@ -74,12 +68,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(52, 78, 92);
+  background: rgb(45, 45, 28);
   background: linear-gradient(
     180deg,
-    rgba(52, 78, 92, 1) 10%,
-    rgba(52, 78, 92, 0.75) 40%,
-    rgba(52, 78, 92, 0.5) 64%,
+    rgba(45, 45, 28, 1) 10%,
+    rgba(45, 45, 28, 0.75) 40%,
+    rgba(45, 45, 28, 0.5) 64%,
     rgba(255, 255, 255, 0) 100%
   );
   z-index: 100;
@@ -161,8 +155,15 @@ a {
   text-decoration: none;
 }
 
+/* .video {
+  margin: 0;
+  padding: -40%;
+  height: 90vh;
+}
+*/
+
 .explore-oslomet {
-  background-color: #194759;
+  background-color: #7e9695;
   margin: 0;
   padding: 1rem;
   text-align: center;
@@ -209,7 +210,7 @@ a {
   justify-content: center;
   align-items: center;
   font-size: large;
-  background-color: #194759;
+  background-color: #7e9695;
   width: 20rem;
   height: 3rem;
   margin-top: 5rem;
@@ -228,12 +229,12 @@ a {
 }
 
 .button-frontside:hover {
-  background-color: rgb(54, 54, 54);
+  background-color: #708584;
 }
 
 .upcoming-events {
   padding: 5rem;
-  background-color: #d5d6d4;
+  background-color: #f6f6f3;
 }
 
 .upcoming-events ul {
@@ -287,7 +288,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #d9af4e;
   color: white;
   height: 5rem;
   width: 6rem;
@@ -344,7 +345,7 @@ a {
 
 .box-frontside {
   border: solid;
-  border-color: #a7f2e4;
+  border-color: #668298;
   overflow: hidden;
   box-shadow: 0 1rem 2rem -1rem;
   margin-right: 2rem;
@@ -391,7 +392,7 @@ a {
   align-items: center;
   text-align: center;
   font-size: large;
-  background-color: #194759;
+  background-color: #7e9695;
   width: 23rem;
   height: 3rem;
   margin-bottom: 5rem;
@@ -409,7 +410,7 @@ a {
 }
 
 .button-frontside-campuslife:hover {
-  background-color: rgb(54, 54, 54);
+  background-color: #708584;
 }
 
 /* CSS TO P35 PAGE */
@@ -419,7 +420,7 @@ a {
 }
 
 .imgtxtp35 {
-  background-color: #ebf2f1;
+  background-color: #f6f6f3;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -639,7 +640,7 @@ body.header-content {
 }
 
 .footer {
-  background-color: #344e5c;
+  background-color: #2D2D1C;
   color: white;
 }
 
@@ -673,7 +674,7 @@ body.header-content {
 }
 
 .footer-col ul li a:hover {
-  color: #ffd500;
+  color: #8da7a6;
   padding-left: 0.2rem;
 }
 
@@ -695,7 +696,7 @@ body.header-content {
 
 .footer-col .socials a:hover {
   color: white;
-  background-color: #ffd500;
+  background-color: #8da7a6;
 }
 
 /* Media query for smaller screens */
