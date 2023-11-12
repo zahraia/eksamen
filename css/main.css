@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  margin-top: 6rem;
+  margin-top: 9rem;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 3.5rem;
@@ -26,10 +26,10 @@ h1 {
 }
 
 h2 {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -468,10 +468,15 @@ a {
 
 /* CSS TO TOPIC PAGE */
 .topical-content {
-  width: 50%;
+  width: 100%;
   margin: auto;
   align-items: center;
-  padding: 1.5%;
+}
+
+.topical-content p {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 3em;
 }
 
 body.header-content {
@@ -500,44 +505,45 @@ body.header-content {
   margin-left: 5%;
   margin: auto;
   align-items: center;
-  background-color: white;
-  box-shadow: 0.5em 0.5em 0.7em 1em rgb(187, 209, 216);
-}
-
-.topical-stats:nth-child(1) {
-  background-color: rgba(223, 141, 153, 0.336);
-  box-shadow: 0.5em 0.5em 0.7em 1em rgba(223, 141, 153, 0.445);
-}
-
-.topical-stats:nth-child(2) {
-  background-color: rgba(105, 169, 157, 0.336);
-  box-shadow: rgba(105, 169, 157, 0.445);
-}
-
-.topical-stats:nth-child(3) {
-  background-color: rgba(53, 110, 79, 0.336);
-  background-color: rgba(53, 110, 79, 0.445);
+  background-color: #7e9695;
+  color: white;
+  text-align: center;
 }
 
 .topical-stats-container {
   width: 100%;
-  padding: 3%;
   display: flex;
   flex-direction: row;
+  background-color: #f6f6f3;
+  padding: 5em;
 }
 
 .stats-writing {
   font-weight: 600;
 }
 
-.topical-line {
+.third-topical-paragraph {
+  background-color: #f6f6f3;
+  padding-bottom: 5em;
+  padding-top: 0.5em;
+}
+
+.third-topical-list li {
+  align-items: center;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  list-style: square inside;
+  padding-bottom: 1em;
+}
+
+/*.topical-line {
   color: #344e5c;
   border: none;
   border-top-width: 1px;
   border-top-style: solid;
   margin-bottom: 3%;
   margin-top: 3%;
-}
+}*/
 
 .last-topical-heading {
   text-align: center;
@@ -553,15 +559,10 @@ body.header-content {
 .row-info {
   display: flex;
   margin-bottom: 5em;
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .topical-column {
   float: left;
-  margin-bottom: 16px;
-  padding: 0 8px;
   margin: auto;
 
   display: flex;
@@ -571,6 +572,8 @@ body.header-content {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: solid;
+  border-color: #d9af4e;
   margin: 8px;
   height: 20rem;
   width: 15rem;
@@ -597,23 +600,16 @@ body.header-content {
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: black;
-  background-color: #4ab19d;
+  color: white;
+  background-color: #7e9695;
   text-align: center;
   cursor: pointer;
   width: 100%;
   margin-top: 1em;
 }
 
-.topical-column:hover {
-  height: 150%;
-  width: 150%;
-  background-color: hotpink;
-  cursor: pointer;
-}
-
 .topical-button:hover {
-  background-color: #efc958;
+  background-color: #708584;
 }
 
 @media screen and (max-width: 650px) {
