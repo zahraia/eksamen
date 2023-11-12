@@ -631,13 +631,12 @@ body.header-content {
 .topical-column {
   float: left;
   margin: auto;
-
   display: flex;
   align-items: stretch;
   justify-content: center;
 }
 
-.card {
+.topical-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: solid;
   border-color: #d9af4e;
