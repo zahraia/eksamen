@@ -333,6 +333,10 @@ a {
   font-size: small;
 }
 
+.upcoming-events ul div li p:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
 .link-to-page-explore {
   margin: 3rem;
   font-size: large;
@@ -359,33 +363,33 @@ a {
   align-items: center;
   min-height: 100vh;
 }
-.card {
+.card-frontside {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
   max-width: 50%;
-  min-width: 50%;
+  min-width: 20%;
   margin: 10px;
   overflow: hidden;
 }
-.card img {
+.card-frontside img {
   position: relative;
   vertical-align: top;
   max-width: 100%;
   transition: 0.25s ease;
 }
-.card:hover img {
+.card-frontside:hover img {
   transform: scale(1.1);
 }
-.card figcaption {
+.card-frontside figcaption {
   position: absolute;
   padding: 15px 20px 40px;
   bottom: 0;
   z-index: 1;
 }
-.card figcaption::before {
+.card-frontside figcaption::before {
   content: "";
   position: absolute;
   top: 0;
@@ -395,14 +399,16 @@ a {
   background-color: #f6f6f3;
   z-index: -1;
 }
-.card h4 {
+.card-frontside h4 {
   display: inline-block;
   margin-bottom: 5px;
 }
-.card p {
+.card-frontside p {
   font: 0.8em;
   line-height: 1.6em;
 }
+
+
 
 /*
 .news_grid {
