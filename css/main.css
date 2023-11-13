@@ -815,3 +815,15 @@ a {
 #homepage {
   width: 100%;
 }
+
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  
+  background-image: url("https://www.oslomet.no/var/oslomet/storage/images/9/7/4/2/252479-7-nor-NO/P32-fasade-OsloMet-foto-Benjamin-Ward-OsloMet-45223413981_3b266ee676_o-2400x1200px.jpg")
+
+
+}
