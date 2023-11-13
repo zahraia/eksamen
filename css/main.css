@@ -241,15 +241,14 @@ nav a {
   padding: 0;
   background-color: #f6f6f3;
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-top: 0.5rem;
 }
 .upcoming-events ul {
   list-style: none;
 }
 .upcoming-events .headingevents {
   padding: 0;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .upcoming-events h4 {
   text-align: left;
@@ -356,14 +355,14 @@ nav a {
   justify-content: center;
   align-items: center;
   text-decoration: underline;
-  text-decoration-color: #ffd500;
-  text-decoration-thickness: 0.15rem;
+  text-decoration-color: black;
+  text-decoration-thickness: 0.12rem;
   margin: 0;
   padding: 2rem;
   font-weight: bolder;
 }
 .upcoming-events p a:hover {
-  text-decoration-color: black;
+  text-decoration-color: #ffd500;
 }
 
 .body-card {
