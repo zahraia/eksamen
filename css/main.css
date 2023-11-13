@@ -362,7 +362,7 @@ nav a {
   font-weight: bolder;
 }
 .upcoming-events p a:hover {
-  text-decoration-color: #ffd500;
+  text-decoration-color: #d9af4e;
 }
 
 .body-card {
@@ -567,7 +567,6 @@ margin-top: 7%;
 }
 
 .imgtxtp35 {
-  background-color: #f6f6f3;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -575,6 +574,14 @@ margin-top: 7%;
   padding-left: 10px;
   padding-right: 30px;
   height: 440px;
+}
+
+.imgtxtp35:nth-child(odd) {
+  background-color: #7e9695;
+}
+
+.imgtxtp35:nth-child(even) {
+  background-color: #f6f6f3;
 }
 
 .imgtxtp35:nth-child(even) {
@@ -601,7 +608,7 @@ margin-top: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 21px;
   margin-top: 10px;
 }
 
@@ -651,9 +658,6 @@ margin-top: 7%;
   text-align: center;
 
 }
-
-
-
 
 .topical-stats-container {
   width: 100%;
@@ -833,8 +837,6 @@ margin-top: 7%;
   text-decoration: none;
   display: block;
   transition: all 0.4s ease;
-  padding: 0;
-  margin: 0.1rem;
 }
 
 .footer-col ul li a:hover {
