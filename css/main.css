@@ -137,6 +137,7 @@ nav ul {
   padding: 0;
   overflow: hidden;
   color: white;
+  font-weight: 300;
   margin-bottom: 2em;
   margin-right: 3em;
 }
@@ -364,8 +365,8 @@ a {
   justify-content: center;
   align-items: center;
   color: black;
-  max-width: 310px;
-  min-width: 250px;
+  max-width: 50%;
+  min-width: 50%;
   margin: 10px;
   overflow: hidden;
 }
@@ -487,6 +488,102 @@ a {
 .button-frontside-campuslife:hover {
   background-color: #708584;
 }
+
+
+.research-container {
+  display: grid;
+  grid-template-columns: repeat(7, 4fr);
+  grid-template-rows: 4fr;
+  grid-gap: 7%;
+  flex-direction: row;
+  margin-bottom: 5em;
+  width: 65%;
+  height: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+
+/* 
+  for andre browsere, kan skrive om dette i accessibility*/
+
+  /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
+  scrollbar-color: darkgrey white; /* thumb and track color */
+  scrollbar-width: thin; /* thin, auto, or none */
+
+  scroll-behavior: smooth;
+  
+}
+
+
+/* .research-container > .research-column:first-child {
+  margin-left: 2em;
+} */
+
+
+.research-column{
+
+  width:20rem;
+  height: 25rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+cursor: pointer;
+transition-timing-function: ease;
+transition-duration: 0.5s;
+margin-bottom: 3%;
+margin-top: 7%;
+}
+
+.research-column:hover{
+  transform: scale(1.1);
+}
+
+.research-container > .research-column:nth-child(1){
+  padding-left: 2%;
+}
+
+.research-img{
+  width: 100%;
+
+}
+
+
+
+/* only styles the thumb (the part you drag around) */
+::-webkit-scrollbar-thumb {
+  background-color: #2d2d1c; 
+  border-radius: 10px; 
+}
+
+/* styles the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px;
+}
+
+/* only styles the scrollbar's track */
+::-webkit-scrollbar-track {
+  background: white; 
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+
+.research-title{
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.2em;
+
+}
+
+.research-faculty{
+  font-weight: 600;
+  color: orange;
+  margin-bottom: 1.3em;
+
+}
+.research-column p {
+  margin-left: 0.4em;
+}
+
 
 /* CSS TO P35 PAGE */
 .containerp35 {
@@ -821,7 +918,8 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 95vh;
+
   
   background-image: url("https://www.oslomet.no/var/oslomet/storage/images/9/7/4/2/252479-7-nor-NO/P32-fasade-OsloMet-foto-Benjamin-Ward-OsloMet-45223413981_3b266ee676_o-2400x1200px.jpg")
 
