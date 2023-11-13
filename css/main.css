@@ -237,7 +237,9 @@ a {
 .upcoming-events {
   padding: 0;
   background-color: #f6f6f3;
-  margin: 5rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
 }
 .upcoming-events ul {
   list-style: none;
@@ -258,6 +260,11 @@ a {
     "second"
     "last";
   margin: 0 1rem;
+
+/* for å få den sentrert: */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .calendar-event {
@@ -575,7 +582,11 @@ a {
   background-color: #7e9695;
   color: white;
   text-align: center;
+
 }
+
+
+
 
 .topical-stats-container {
   width: 100%;
@@ -621,11 +632,16 @@ a {
 
 .card-section {
   align-items: center;
+  background-color: #7e9695;
 }
 
 .row-info {
   display: flex;
   margin-bottom: 5em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .topical-column {
@@ -634,20 +650,36 @@ a {
   display: flex;
   align-items: stretch;
   justify-content: center;
+  transition-property: transform;
+  padding: 0;
+
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  
 }
 
+.topical-column:hover{
+  transform: scale(1.1);
+}
+
+
 .topical-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: solid;
-  border-color: #d9af4e;
+  border-color: #d9af4e; */
   margin: 8px;
   height: 20rem;
   width: 15rem;
+  background-color: #fff;
 }
 
 .img-card {
   width: 100%;
+  padding: 0;
 }
+
+
+
 
 .container {
   padding: 0 16px;
@@ -670,8 +702,10 @@ a {
   background-color: #7e9695;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .topical-button:hover {
