@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: white;
   font-family: verdana;
@@ -26,8 +27,8 @@ h1 {
 }
 
 h2 {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   font-size: 2.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -40,7 +41,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-.ingress {
+.introduction {
   margin-bottom: 3rem;
   text-align: center;
   font-size: 1.7rem;
@@ -64,18 +65,17 @@ p {
 }
 
 header {
-  position: fixed; /* To have navbar fixed */
+  position: fixed;
+  /* To have navbar fixed */
   top: 0;
   left: 0;
   width: 100%;
   background: rgb(45, 45, 28);
-  background: linear-gradient(
-    180deg,
-    rgba(45, 45, 28, 1) 10%,
-    rgba(45, 45, 28, 0.75) 40%,
-    rgba(45, 45, 28, 0.5) 64%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(45, 45, 28, 1) 10%,
+      rgba(45, 45, 28, 0.75) 40%,
+      rgba(45, 45, 28, 0.5) 64%,
+      rgba(255, 255, 255, 0) 100%);
   z-index: 100;
 }
 
@@ -163,7 +163,7 @@ nav a {
 }
 */
 
-.explore-oslomet {
+.explore-oslomet-btn {
   background-color: #7e9695;
   margin: 0;
   padding: 1rem;
@@ -172,7 +172,7 @@ nav a {
   box-shadow: 0 -6px 20px 0;
 }
 
-.explore-oslomet a {
+.explore-oslomet-btn a {
   color: white;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
@@ -180,7 +180,7 @@ nav a {
   text-decoration: none;
 }
 
-.explore-oslomet a::before {
+.explore-oslomet-btn a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -191,7 +191,7 @@ nav a {
   transition: width 0.25s ease-out;
 }
 
-.explore-oslomet a:hover::before {
+.explore-oslomet-btn a:hover::before {
   width: 100%;
 }
 
@@ -215,7 +215,7 @@ nav a {
   transition: 0.5s;
 }
 */
-.omoslomet {
+.about-oslomet {
   position: sticky;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -223,7 +223,7 @@ nav a {
   font-size: 3rem;
 }
 
-.button-frontside {
+.button-homepage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,12 +242,12 @@ nav a {
   transition: 0.5s;
 }
 
-.button-frontside a {
+.button-homepage a {
   color: white;
   text-decoration: none;
 }
 
-.button-frontside:hover {
+.button-homepage:hover {
   background-color: #708584;
 }
 
@@ -257,13 +257,16 @@ nav a {
   width: 100%;
   padding-top: 0.5rem;
 }
+
 .upcoming-events ul {
   list-style: none;
 }
-.upcoming-events .headingevents {
+
+.upcoming-events .heading-events {
   padding: 0;
   margin-top: 1rem;
 }
+
 .upcoming-events h4 {
   text-align: left;
 }
@@ -293,6 +296,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+
 .calendar-date {
   border: solid;
   border-color: rgb(189, 188, 188);
@@ -303,6 +307,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+
 .calendar-last {
   border: solid;
   border-color: rgb(189, 188, 188);
@@ -312,6 +317,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+
 .date {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -326,6 +332,7 @@ nav a {
   width: 5rem;
   font-size: 1.1rem;
 }
+
 .event {
   grid-column-start: 3;
   grid-column-end: 13;
@@ -339,6 +346,7 @@ nav a {
   font-family: sans-serif;
   font-weight: bolder;
 }
+
 .more-info-event {
   grid-column-start: 3;
   grid-column-end: 13;
@@ -462,7 +470,7 @@ nav a {
   line-height: 1.4em;
 }
 
-.button-frontside-campuslife {
+.button-homepage-campuslife {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -481,12 +489,12 @@ nav a {
   transition: 0.5s;
 }
 
-.button-frontside-campuslife a {
+.button-homepage-campuslife a {
   color: white;
   text-decoration: none;
 }
 
-.button-frontside-campuslife:hover {
+.button-homepage-campuslife:hover {
   background-color: #708584;
 }
 
@@ -507,8 +515,10 @@ nav a {
   for andre browsere, kan skrive om dette i accessibility*/
 
   /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
-  scrollbar-color: darkgrey white; /* thumb and track color */
-  scrollbar-width: thin; /* thin, auto, or none */
+  scrollbar-color: darkgrey white;
+  /* thumb and track color */
+  scrollbar-width: thin;
+  /* thin, auto, or none */
 
   scroll-behavior: smooth;
 }
@@ -532,7 +542,7 @@ nav a {
   transform: scale(1.1);
 }
 
-.research-container > .research-column:nth-child(1) {
+.research-container>.research-column:nth-child(1) {
   padding-left: 2%;
 }
 
@@ -570,6 +580,7 @@ nav a {
   color: orange;
   margin-bottom: 1.3em;
 }
+
 .research-column p {
   margin-left: 0.4em;
 }
@@ -714,11 +725,9 @@ nav a {
   margin-top: 3%;
 }*/
 
-.last-topical-heading {
+.learn-more-topical-heading {
   text-align: center;
-  margin-right: 3em;
-  margin-bottom: 2em;
-  margin-left: 3em;
+  background-color: #7e9695;
 }
 
 .card-section {
@@ -726,21 +735,29 @@ nav a {
   background-color: #7e9695;
 }
 
-.row-info {
+.topical-row-info {
   display: flex;
-  margin: 5em;
+  padding: 5em;
+  align-items: center;
+  background-color: #7e9695;
 }
 
 .topical-column {
+
   float: left;
   margin: auto;
-  display: flex;
+
   align-items: stretch;
   justify-content: center;
   transition-property: transform;
-
   transition-timing-function: ease;
   transition-duration: 0.5s;
+  margin: 8px;
+  height: 20rem;
+  width: 15rem;
+  margin-left: auto;
+  background: #fff;
+  margin-right: auto;
 }
 
 .topical-column:hover {
@@ -794,9 +811,11 @@ nav a {
   text-decoration: none;
   text-shadow: 0px 0px 0px #528ecc;
 }
+
 .topical-button:hover {
   background: linear-gradient(to bottom, #f6f6f3 5%, #708584 100%);
 }
+
 .topical-button:active {
   position: relative;
   top: 1px;
@@ -808,17 +827,23 @@ nav a {
 
 @media screen and (max-width: 1200px) {
   .topical-column {
-   
+
     display: block;
+    flex: 0 1 calc(50% - 10px);
+    margin: 5px;
+    margin-left: 5px auto;
+    margin-right: 5px auto;
     flex: 0 1 calc(50% - 0.6rem); /* Sets the basis for each item */
     margin: 0.3rem; /* Provides a little space between items */
   }
 
-  .row-info {
+
+  .topical-row-info {
     width: 100%;
     flex-direction: row;
     display: block;
     flex-wrap: wrap;
+    margin: auto;
   }
 }
 
@@ -903,12 +928,13 @@ nav a {
     width: 100%;
     padding: 0.25rem;
     text-align: center;
-    
+
   }
 
 
-  .footer-content{
-    margin: auto;;
+  .footer-content {
+    margin: auto;
+    ;
   }
 }
 
