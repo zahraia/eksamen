@@ -1,10 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: white;
   font-family: verdana;
-  /* text-align:justify; */
   line-height: 1.5;
   min-height: 100vh;
   display: flex;
@@ -139,8 +139,6 @@ nav ul {
   overflow: hidden;
   color: white;
   font-weight: 300;
-  /* margin-bottom: 2em;
-  margin-right: 3em; */
 }
 
 nav li {
@@ -155,13 +153,6 @@ nav a {
   margin: 0 1.3rem;
   text-decoration: none;
 }
-
-/* .video {
-  margin: 0;
-  padding: -40%;
-  height: 90vh;
-}
-*/
 
 .explore-oslomet {
   background-color: #7e9695;
@@ -209,12 +200,6 @@ nav a {
   -webkit-transform: rotate(45deg);
 }
 
-/*
-.explore-oslomet a:hover{
-  text-decoration: underline;
-  transition: 0.5s;
-}
-*/
 .omoslomet {
   position: sticky;
   padding-left: 2rem;
@@ -411,8 +396,9 @@ nav a {
   align-items: center;
   height: 20rem;
   color: black;
-  max-width: 100%;
+  max-width: 20%;
   min-width: 20%;
+  min-height: 23rem;
   margin: 0.6rem;
   overflow: hidden;
   box-shadow: 0 20px 20px -20px;
@@ -512,10 +498,6 @@ nav a {
 
   scroll-behavior: smooth;
 }
-
-/* .research-container > .research-column:first-child {
-  margin-left: 2em;
-} */
 
 .research-column {
   width: 20rem;
@@ -705,15 +687,6 @@ nav a {
   padding-bottom: 1em;
 }
 
-/*.topical-line {
-  color: #344e5c;
-  border: none;
-  border-top-width: 1px;
-  border-top-style: solid;
-  margin-bottom: 3%;
-  margin-top: 3%;
-}*/
-
 .last-topical-heading {
   text-align: center;
   margin-right: 3em;
@@ -748,9 +721,6 @@ nav a {
 }
 
 .topical-card {
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border: solid;
-  border-color: #d9af4e; */
   margin: 0.5rem;
   height: 20rem;
   width: 15rem;
