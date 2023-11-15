@@ -35,7 +35,7 @@ h2 {
 
 h3 {
   margin-bottom: 1rem;
-  margin-top: 20px;
+  margin-top: 1.3rem;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -89,7 +89,7 @@ header {
 }
 
 header nav ul li a {
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
   text-decoration: none;
   display: block;
@@ -121,10 +121,10 @@ nav a {
 nav a::after {
   content: "";
   width: 0%;
-  height: 3px;
+  height: 0.1rem;
   display: block;
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 0.6rem; /*mindre? 0.1*/
 }
 
 nav a:hover::after {
@@ -152,7 +152,7 @@ nav a {
   display: block;
   padding: 1.25em;
   display: inline;
-  margin: 0 20px;
+  margin: 0 1.3rem;
   text-decoration: none;
 }
 
@@ -186,7 +186,7 @@ nav a {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px;
+  height: 0.2rem; /*maybe px here? 3px*/
   background-color: #ffd500;
   transition: width 0.25s ease-out;
 }
@@ -383,7 +383,7 @@ nav a {
   color: black;
   max-width: 100%;
   min-width: 20%;
-  margin: 10px;
+  margin: 0.6rem;
   overflow: hidden;
   box-shadow: 0 20px 20px -20px;
   padding: 0;
@@ -402,7 +402,10 @@ nav a {
 
 .card-frontside figcaption {
   position: absolute;
-  padding: 15px 20px 40px;
+  padding-top: 1rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   bottom: 0;
   z-index: 1;
   color: black;
@@ -421,7 +424,7 @@ nav a {
 
 .card-frontside h4 {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 
 .card-frontside p {
@@ -510,13 +513,13 @@ nav a {
 /* only styles the thumb (the part you drag around) */
 ::-webkit-scrollbar-thumb {
   background-color: #2d2d1c;
-  border-radius: 10px;
+  border-radius: 0.6rem;
 }
 
 /* styles the entire scrollbar */
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+  width: 0.8rem;
+  height: 0.8rem;
 }
 
 /* only styles the scrollbar's track */
@@ -558,10 +561,10 @@ nav a {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 50px;
-  padding-left: 10px;
-  padding-right: 30px;
-  height: 440px;
+  margin-bottom: 3rem;
+  padding-left: 0.6rem;
+  padding-right: 1.8rem;
+  height: 27.5rem;
 }
 
 .imgtxtp35:nth-child(odd) {
@@ -577,13 +580,13 @@ nav a {
 }
 
 .imgp35 {
-  height: 440px;
+  height: 27.5rem;
   width: 560px;
   padding-right: 0;
-  margin-right: -30px;
-  margin-top: -30px;
-  margin-bottom: -30px;
-  margin-left: -15px;
+  margin-right: -1.8rem;
+  margin-top: -1.8rem;
+  margin-bottom: -1.8rem;
+  margin-left: -1rem;
 }
 
 .textp35 {
@@ -596,8 +599,8 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 21px;
-  margin-top: 10px;
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
 }
 
 /* END CSS TO PAGE 4 P35 END */
@@ -718,7 +721,7 @@ nav a {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: solid;
   border-color: #d9af4e; */
-  margin: 8px;
+  margin: 0.5rem;
   height: 20rem;
   width: 15rem;
   background-color: #fff;
@@ -730,7 +733,7 @@ nav a {
 }
 
 .container {
-  padding: 0 16px;
+  padding: 0 1rem;
   margin-top: 1em;
   text-align: center;
 }
@@ -752,9 +755,12 @@ nav a {
   cursor: pointer;
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: bold;
-  padding: 6px 36px;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
   text-decoration: none;
   text-shadow: 0px 0px 0px #528ecc;
 }
@@ -767,15 +773,15 @@ nav a {
 }
 
 .container p {
-  padding: 9px;
+  padding: 0.6rem;
 }
 
 @media screen and (max-width: 1200px) {
   .topical-column {
    
     display: block;
-    flex: 0 1 calc(50% - 10px); /* Sets the basis for each item */
-    margin: 5px; /* Provides a little space between items */
+    flex: 0 1 calc(50% - 0.6rem); /* Sets the basis for each item */
+    margin: 0.3rem; /* Provides a little space between items */
   }
 
   .row-info {
