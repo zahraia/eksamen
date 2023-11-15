@@ -195,6 +195,20 @@ nav a {
   width: 100%;
 }
 
+/* https://www.w3schools.com/howto/howto_css_arrows.asp */
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  margin: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 /*
 .explore-oslomet a:hover{
   text-decoration: underline;
@@ -349,6 +363,7 @@ nav a {
   font-size: large;
   font-weight: bold;
 }
+
 .upcoming-events a {
   color: black;
   display: flex;
@@ -361,9 +376,24 @@ nav a {
   padding: 2rem;
   font-weight: bolder;
 }
+
 .upcoming-events p a:hover {
   text-decoration-color: #d9af4e;
 }
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow-events {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  margin: 4px;
+}
+
 
 .body-card {
   display: flex;
