@@ -139,8 +139,8 @@ nav ul {
   overflow: hidden;
   color: white;
   font-weight: 300;
-  margin-bottom: 2em;
-  margin-right: 3em;
+  /* margin-bottom: 2em;
+  margin-right: 3em; */
 }
 
 nav li {
@@ -770,10 +770,19 @@ nav a {
   padding: 9px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1200px) {
   .topical-column {
-    width: 100%;
+   
     display: block;
+    flex: 0 1 calc(50% - 10px); /* Sets the basis for each item */
+    margin: 5px; /* Provides a little space between items */
+  }
+
+  .row-info {
+    width: 100%;
+    flex-direction: row;
+    display: block;
+    flex-wrap: wrap;
   }
 }
 
@@ -858,6 +867,12 @@ nav a {
     width: 100%;
     padding: 0.25rem;
     text-align: center;
+    
+  }
+
+
+  .footer-content{
+    margin: auto;;
   }
 }
 
