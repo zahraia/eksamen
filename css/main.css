@@ -498,7 +498,7 @@ nav a {
 
 /* only styles the thumb (the part you drag around) */
 ::-webkit-scrollbar-thumb {
-  background-color: #2d2d1c;
+  background-color: #3f3f29;
   border-radius: 0.6rem;
 }
 
@@ -557,11 +557,11 @@ nav a {
 }
 
 .imgtxtp35:nth-child(odd) {
-  background-color: #7e9695;
+  background-color: #f6f6f3;
 }
 
 .imgtxtp35:nth-child(even) {
-  background-color: #f6f6f3;
+  background-color: #cbd5d4;
 }
 
 .imgtxtp35:nth-child(even) {
@@ -570,9 +570,8 @@ nav a {
 
 .imgp35 {
   height: 27.5rem;
-  width: 35rem;
+  width: 31.9rem;
   padding-right: 0;
-  margin-right: -1.8rem;
   margin-top: -1.8rem;
   margin-bottom: -1.8rem;
   margin-left: -1rem;
@@ -628,9 +627,10 @@ nav a {
 
 .topical-stats {
   width: 22em;
-  height: 14em;
+
+  height: 12em;
   padding: 2%;
-  margin-left: 5%;
+  /*margin-left: 5%; hva gjør denne?*/
   margin: auto;
   align-items: center;
   background-color: #7e9695;
