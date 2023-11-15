@@ -163,6 +163,7 @@ nav a {
   min-height: 89.7vh;
   background-image: url("https://www.oslomet.no/var/oslomet/storage/images/9/7/4/2/252479-7-nor-NO/P32-fasade-OsloMet-foto-Benjamin-Ward-OsloMet-45223413981_3b266ee676_o-2400x1200px.jpg");
 }
+
 .explore-oslomet-btn {
   background-color: #7e9695;
   margin: 0;
@@ -438,6 +439,7 @@ nav a {
   padding-bottom: 2.4rem;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
+  height: 50%;
   bottom: 0;
   z-index: 1;
   color: black;
