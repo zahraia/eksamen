@@ -2,10 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   background-color: white;
   font-family: verdana;
-  /* text-align:justify; */
   line-height: 1.5;
   min-height: 100vh;
   display: flex;
@@ -35,8 +35,8 @@ h2 {
 }
 
 h3 {
-  margin-bottom: 1rem;
-  margin-top: 1.3rem;
+  padding-bottom: 1rem;
+  padding-top: 1.3rem;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -45,8 +45,8 @@ h3 {
   margin-bottom: 3rem;
   text-align: center;
   font-size: 1.7rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: lighter;
 }
@@ -124,7 +124,7 @@ nav a::after {
   height: 0.1rem;
   display: block;
   background-color: #fff;
-  margin-top: 0.6rem; /*mindre? 0.1*/
+  margin-top: 0.3rem; 
 }
 
 nav a:hover::after {
@@ -139,8 +139,7 @@ nav ul {
   overflow: hidden;
   color: white;
   font-weight: 300;
-  /* margin-bottom: 2em;
-  margin-right: 3em; */
+
 }
 
 nav li {
@@ -156,19 +155,19 @@ nav a {
   text-decoration: none;
 }
 
-/* .video {
-  margin: 0;
-  padding: -40%;
-  height: 90vh;
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 89.7vh;
+  background-image: url("https://www.oslomet.no/var/oslomet/storage/images/9/7/4/2/252479-7-nor-NO/P32-fasade-OsloMet-foto-Benjamin-Ward-OsloMet-45223413981_3b266ee676_o-2400x1200px.jpg");
 }
-*/
 
 .explore-oslomet-btn {
   background-color: #7e9695;
-  margin: 0;
   padding: 1rem;
   text-align: center;
-  position: relative;
   box-shadow: 0 -6px 20px 0;
 }
 
@@ -186,7 +185,7 @@ nav a {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 0.2rem; /*maybe px here? 3px*/
+  height: 2px;
   background-color: #ffd500;
   transition: width 0.25s ease-out;
 }
@@ -200,27 +199,13 @@ nav a {
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 4px;
-  margin: 4px;
+  padding: 0.25rem;
+  margin: 0.25rem;
 }
 
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-}
-
-/*
-.explore-oslomet a:hover{
-  text-decoration: underline;
-  transition: 0.5s;
-}
-*/
-.about-oslomet {
-  position: sticky;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center;
-  font-size: 3rem;
 }
 
 .button-homepage {
@@ -231,7 +216,7 @@ nav a {
   background-color: #7e9695;
   width: 20rem;
   height: 3rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
@@ -240,9 +225,6 @@ nav a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 900;
   transition: 0.5s;
-}
-
-.button-homepage a {
   color: white;
   text-decoration: none;
 }
@@ -252,40 +234,27 @@ nav a {
 }
 
 .upcoming-events {
-  padding: 0;
   background-color: #f6f6f3;
   width: 100%;
-  padding-top: 0.5rem;
 }
 
 .upcoming-events ul {
   list-style: none;
 }
 
-.upcoming-events .heading-events {
-  padding: 0;
-  margin-top: 1rem;
-}
-
-.upcoming-events h4 {
-  text-align: left;
-}
-
 .grid-container {
   display: grid;
-  grid-column-gap: 1rem;
   grid-template-areas:
     "first"
     "second"
     "last";
-  margin: 0 1rem;
-
   /* for å få den sentrert: */
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/*endre klassenavn */
 .calendar-event {
   border: solid;
   border-color: rgb(189, 188, 188);
@@ -322,7 +291,6 @@ nav a {
   grid-column-start: 1;
   grid-column-end: 3;
   margin: 1rem;
-  margin-right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,9 +307,7 @@ nav a {
   display: flex;
   flex-direction: column;
   margin: 2rem;
-  margin-bottom: 0;
   margin-left: 0;
-  padding: 0;
   font-size: 1.1rem;
   font-family: sans-serif;
   font-weight: bolder;
@@ -352,24 +318,9 @@ nav a {
   grid-column-end: 13;
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
   font-weight: normal;
   font-size: small;
-}
-
-.upcoming-events ul div li p:not(:last-child) {
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.link-to-page-explore {
-  margin: 3rem;
-  font-size: large;
-  font-weight: bold;
 }
 
 .upcoming-events a {
@@ -380,7 +331,6 @@ nav a {
   text-decoration: underline;
   text-decoration-color: black;
   text-decoration-thickness: 0.12rem;
-  margin: 0;
   padding: 2rem;
   font-weight: bolder;
 }
@@ -389,19 +339,18 @@ nav a {
   text-decoration-color: #d9af4e;
 }
 
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
 .arrow-events {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 4px;
-  margin: 4px;
+  padding: 0.25rem;
+  margin: 0.25rem;
 }
 
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 
 .body-card {
   display: flex;
@@ -409,6 +358,7 @@ nav a {
   align-items: center;
   min-height: 30vh;
   margin-top: 0.5rem;
+
   margin-bottom: 0;
   width: 70%;
   margin: auto;
@@ -419,10 +369,10 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20rem;
-  color: black;
-  max-width: 100%;
+  height: 25rem;
+  max-width: 17rem;
   min-width: 20%;
+  min-height: 23rem;
   margin: 0.6rem;
   overflow: hidden;
   box-shadow: 0 20px 20px -20px;
@@ -446,6 +396,7 @@ nav a {
   padding-bottom: 2.4rem;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
+  height: 50%;
   bottom: 0;
   z-index: 1;
   color: black;
@@ -469,7 +420,7 @@ nav a {
 
 .card-frontside p {
   font: 0.8em;
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 
 .button-homepage-campuslife {
@@ -524,6 +475,7 @@ nav a {
 
   scroll-behavior: smooth;
 }
+
 
 /* MOVE TO FRONTPAGECSS */
 .news-container{
@@ -580,6 +532,7 @@ nav a {
   margin-left: 2em;
 } */
 
+
 .research-column {
   width: 20rem;
   height: 25rem;
@@ -605,7 +558,7 @@ nav a {
 
 /* only styles the thumb (the part you drag around) */
 ::-webkit-scrollbar-thumb {
-  background-color: #2d2d1c;
+  background-color: #3f3f29;
   border-radius: 0.6rem;
 }
 
@@ -619,7 +572,7 @@ nav a {
 ::-webkit-scrollbar-track {
   background: white;
   box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .research-title {
@@ -647,8 +600,10 @@ nav a {
 }
 
 .containerp35 {
-  width: 100%;
-  margin: 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .imgtxtp35 {
@@ -662,11 +617,11 @@ nav a {
 }
 
 .imgtxtp35:nth-child(odd) {
-  background-color: #7e9695;
+  background-color: #f6f6f3;
 }
 
 .imgtxtp35:nth-child(even) {
-  background-color: #f6f6f3;
+  background-color: #cbd5d4;
 }
 
 .imgtxtp35:nth-child(even) {
@@ -675,9 +630,8 @@ nav a {
 
 .imgp35 {
   height: 27.5rem;
-  width: 560px;
+  width: 31.9rem;
   padding-right: 0;
-  margin-right: -1.8rem;
   margin-top: -1.8rem;
   margin-bottom: -1.8rem;
   margin-left: -1rem;
@@ -697,6 +651,9 @@ nav a {
   margin-top: 0.6rem;
 }
 
+.p35-card{
+  background-color: #f6f6f3;
+}
 /* END CSS TO PAGE 4 P35 END */
 
 /* CSS TO TOPIC PAGE */
@@ -733,9 +690,10 @@ nav a {
 
 .topical-stats {
   width: 22em;
-  height: 14em;
+
+  height: 12em;
   padding: 2%;
-  margin-left: 5%;
+  /*margin-left: 5%; hva gjør denne?*/
   margin: auto;
   align-items: center;
   background-color: #7e9695;
@@ -769,15 +727,6 @@ nav a {
   padding-bottom: 1em;
 }
 
-/*.topical-line {
-  color: #344e5c;
-  border: none;
-  border-top-width: 1px;
-  border-top-style: solid;
-  margin-bottom: 3%;
-  margin-top: 3%;
-}*/
-
 .learn-more-topical-heading {
   text-align: center;
   background-color: #7e9695;
@@ -796,7 +745,6 @@ nav a {
 }
 
 .topical-column {
-
   float: left;
   margin: auto;
 
@@ -805,7 +753,7 @@ nav a {
   transition-property: transform;
   transition-timing-function: ease;
   transition-duration: 0.5s;
-  margin: 8px;
+  margin: 0.5px;
   height: 20rem;
   width: 15rem;
   margin-left: auto;
@@ -818,9 +766,6 @@ nav a {
 }
 
 .topical-card {
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border: solid;
-  border-color: #d9af4e; */
   margin: 0.5rem;
   height: 20rem;
   width: 15rem;
@@ -849,7 +794,7 @@ nav a {
   box-shadow: inset 0px 0px 10px 3px #7e9695;
   background: linear-gradient(to bottom, #f6f6f3 5%, #f6f6f3 100%);
   background-color: #f6f6f3;
-  border-radius: 16px;
+  border-radius: 1rem;
   border: 2px solid #f6f6f3;
   display: inline-block;
   cursor: pointer;
@@ -880,12 +825,12 @@ nav a {
 
 @media screen and (max-width: 1200px) {
   .topical-column {
-
+   
     display: block;
     flex: 0 1 calc(50% - 10px);
-    margin: 5px;
-    margin-left: 5px auto;
-    margin-right: 5px auto;
+    margin: 0.3rem;
+    margin-left: 0.3rem auto;
+    margin-right: 0.3rem auto;
     flex: 0 1 calc(50% - 0.6rem); /* Sets the basis for each item */
     margin: 0.3rem; /* Provides a little space between items */
   }
@@ -985,9 +930,8 @@ nav a {
   }
 
 
-  .footer-content {
-    margin: auto;
-    ;
+  .footer-content{
+    margin: auto;;
   }
 }
 
@@ -1000,14 +944,4 @@ nav a {
 
 #homepage {
   width: 100%;
-}
-
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 89.7vh;
-
-  background-image: url("https://www.oslomet.no/var/oslomet/storage/images/9/7/4/2/252479-7-nor-NO/P32-fasade-OsloMet-foto-Benjamin-Ward-OsloMet-45223413981_3b266ee676_o-2400x1200px.jpg");
 }
