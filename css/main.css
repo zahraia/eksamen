@@ -89,7 +89,7 @@ header {
 }
 
 header nav ul li a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
   text-decoration: none;
   display: block;
@@ -333,6 +333,8 @@ nav a {
   text-decoration-thickness: 0.12rem;
   padding: 2rem;
   font-weight: bolder;
+  width: 20%;
+  margin: auto;
 }
 
 .upcoming-events p a:hover {
@@ -370,9 +372,7 @@ nav a {
   justify-content: center;
   align-items: center;
   height: 25rem;
-  max-width: 17rem;
-  min-width: 20%;
-  min-height: 23rem;
+  width: 100%;
   margin: 0.6rem;
   overflow: hidden;
   box-shadow: 0 20px 20px -20px;
@@ -451,14 +451,14 @@ nav a {
   background-color: #708584;
 }
 
-.research-container {
+.life-container {
   display: grid;
-  grid-template-columns: repeat(7, 4fr);
-  grid-template-rows: 4fr;
-  grid-gap: 7%;
+  grid-template-columns: repeat(7, 23%);
+  grid-template-rows: 100%;
+  grid-gap: 2%;
   flex-direction: row;
-  width: 65%;
-  height: 30em;
+  width: 70%;
+  height: 45vh;
   margin-bottom: 5em;
   margin-left: auto;
   margin-right: auto;
@@ -478,7 +478,7 @@ nav a {
 
 
 /* MOVE TO FRONTPAGECSS */
-.news-container{
+.research-container{
   display: grid;
   grid-template-columns: repeat(2, 5fr);
   grid-template-rows: repeat(2, 2fr);
@@ -489,7 +489,7 @@ nav a {
   margin-bottom: 5rem;
 }
 
-.news-article{
+.research-article{
   width: 100%;
   height: 100%;
   padding: 2%;
@@ -498,44 +498,44 @@ nav a {
 
 }
 
-.news-article:hover{
+.research-article:hover{
 
  background-color: #70858462;
 }
 
-.news-container .news-article:nth-child(even){
+.research-container .research-article:nth-child(even){
   justify-self: end;
 }
-.news-article a{
+.research-article a{
   color: black;
   text-decoration: none;
 }
 
-.news-title{
+.research-title{
   font-size: 1.5rem;
   font-weight: 500;
 
 }
 
-.news-arrow{
+.research-arrow{
   float: right;
   position: relative;
   left: 15%;
   bottom: 100%;
 }
 
-.new-arrow{
+/* .research-arrow{
   float: right;
 
-}
+} */
 /* .research-container > .research-column:first-child {
   margin-left: 2em;
 } */
 
 
-.research-column {
-  width: 20rem;
-  height: 25rem;
+.life-column {
+  width: 100%;
+  height: 90%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition-timing-function: ease;
@@ -544,15 +544,15 @@ nav a {
   margin-top: 7%;
 }
 
-.research-column:hover {
+.life-column:hover {
   transform: scale(1.1);
 }
 
-.research-container>.research-column:nth-child(1) {
+.life-container>.life-column:nth-child(1) {
   padding-left: 2%;
 }
 
-.research-img {
+.life-img {
   width: 100%;
 }
 
@@ -575,13 +575,13 @@ nav a {
   border-radius: 0.625rem;
 }
 
-.research-title {
+.life-title {
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 0.2em;
 }
 
-.research-faculty {
+.life-faculty {
   font-weight: 600;
   color: orange;
   margin-bottom: 1.3em;
