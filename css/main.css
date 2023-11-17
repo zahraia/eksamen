@@ -254,7 +254,7 @@ nav a {
   list-style: none;
 }
 
-.grid-container {
+.events-grid-container {
   display: grid;
   grid-template-areas:
     "first"
@@ -267,7 +267,7 @@ nav a {
 }
 
 /*endre klassenavn */
-.calendar-event {
+.events-calendar-first {
   border: solid;
   border-color: rgb(189, 188, 188);
   border-left: none;
@@ -278,7 +278,7 @@ nav a {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.calendar-date {
+.events-calendar-second {
   border: solid;
   border-color: rgb(189, 188, 188);
   border-left: none;
@@ -289,7 +289,7 @@ nav a {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.calendar-last {
+.events-calendar-third {
   border: solid;
   border-color: rgb(189, 188, 188);
   border-left: none;
@@ -299,7 +299,7 @@ nav a {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.date {
+.events-date {
   grid-column-start: 1;
   grid-column-end: 3;
   margin: 1rem;
@@ -313,7 +313,7 @@ nav a {
   font-size: 1.1rem;
 }
 
-.event {
+.events-info {
   grid-column-start: 3;
   grid-column-end: 13;
   display: flex;
@@ -325,7 +325,7 @@ nav a {
   font-weight: bolder;
 }
 
-.more-info-event {
+.events-details {
   grid-column-start: 3;
   grid-column-end: 13;
   display: flex;
@@ -376,14 +376,14 @@ nav a {
     list-style: none;
   }
   
-  .grid-container {
+  .events-grid-container {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
   
   /*endre klassenavn */
-  .calendar-event, .calendar-date, .calendar-last {
+  .events-calendar-first, .events-calendar-second, .events-calendar-third {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -391,7 +391,7 @@ nav a {
     border: none;
   }
   
-  .date {
+  .events-date {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,11 +399,11 @@ nav a {
     font-weight: bolder;
   }
   
-  .event {
+  .events-info {
     text-align: center;
   }
   
-  .more-info-event {
+  .events-details {
     text-align: center;
   }
   
@@ -412,7 +412,7 @@ nav a {
   }
 }
 
-.body-card {
+.body-info-cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,7 +424,7 @@ nav a {
   margin: auto;
 }
 
-.card-frontside {
+.info-cards {
   position: relative;
   display: flex;
   justify-content: center;
@@ -437,24 +437,25 @@ nav a {
   padding: 0;
 }
 
-.title-cards{
+.info-cards-title{
+  display: inline-block;
+  margin-bottom: 0.3rem;
   font-weight: bold;
   font-size: 1rem;
-  margin-bottom: 1rem;
 }
 
-.card-frontside img {
+.info-cards img {
   position: relative;
   vertical-align: top;
   max-width: 100%;
   transition: 0.25s ease;
 }
 
-.card-frontside:hover img {
+.info-cards:hover img {
   transform: scale(1.1);
 }
 
-.card-frontside figcaption {
+.info-cards figcaption {
   position: absolute;
   padding-top: 1rem;
   padding-bottom: 2.4rem;
@@ -466,7 +467,7 @@ nav a {
   color: black;
 }
 
-.card-frontside figcaption::before {
+.info-cards figcaption::before {
   content: "";
   position: absolute;
   top: 0;
@@ -477,18 +478,13 @@ nav a {
   z-index: -1;
 }
 
-.card-frontside h4 {
-  display: inline-block;
-  margin-bottom: 0.3rem;
-}
-
-.card-frontside p {
+.info-cards p {
   font: 0.8em;
   line-height: 1.2em;
 }
 
 @media (max-width:700px) {
-  .body-card {
+  .body-info-cards {
     flex-direction: column;
     width: 90%;
   }
