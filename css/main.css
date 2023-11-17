@@ -203,8 +203,8 @@ nav a {
     float: right;
     margin-top: -5.5rem;
   }
-  nav a{
-    padding:0;
+  nav a {
+    padding: 0;
   }
   header {
     background-color: #333;
@@ -824,6 +824,26 @@ nav a {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1240px) {
+  .topical-stats {
+    display: block;
+    flex: 0 1 calc(50% - 10px);
+    margin: 0.3rem;
+    margin-left: 0.3rem auto;
+    margin-right: 0.3rem auto;
+    flex: 0 1 calc(50% - 0.6rem); /* Sets the basis for each item */
+    margin: 0.3rem; /* Provides a little space between items */
+  }
+
+  .topical-stats-container {
+    width: 100%;
+    flex-direction: row;
+    display: block;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+
 .third-topical-paragraph {
   background-color: #f6f6f3;
   padding-bottom: 5em;
@@ -840,7 +860,6 @@ nav a {
 
 .learn-more-topical-heading {
   text-align: center;
-  background-color: #7e9695;
 }
 
 .card-section {
@@ -852,13 +871,11 @@ nav a {
   display: flex;
   padding: 5em;
   align-items: center;
-  background-color: #7e9695;
 }
 
 .topical-column {
   float: left;
   margin: auto;
-
   align-items: stretch;
   justify-content: center;
   transition-property: transform;
@@ -870,6 +887,7 @@ nav a {
   margin-left: auto;
   background: #fff;
   margin-right: auto;
+  box-shadow: 0 20px 20px -20px;
 }
 
 .topical-column:hover {
@@ -913,10 +931,6 @@ nav a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  padding-left: 2.2rem;
-  padding-right: 2.2rem;
   text-decoration: none;
   text-shadow: 0px 0px 0px #528ecc;
 }
@@ -1011,13 +1025,12 @@ nav a {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-  .footer{
+  .footer {
     height: auto;
   }
   .footer-col {
     width: 100%;
     margin: 1rem;
-
   }
 }
 
