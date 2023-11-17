@@ -201,9 +201,15 @@ nav a {
   nav ul {
     display: flex;
     flex-direction: column;
+    float: right;
+    margin-top: -5.5rem;
+  }
+  nav a{
+    padding:0;
   }
   header {
     background-color: #333;
+    height: 9rem;
   }
 
   nav ul li:nth-child(1) {
@@ -989,9 +995,6 @@ nav a {
 
 .footer-col {
   width: 30%;
-  margin: 2rem 1%;
-  width: 30%;
-  margin: 2rem 1%;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 2rem;
@@ -1037,11 +1040,13 @@ nav a {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-  .footer-col {
-    width: 100%;
+  .footer{
+    height: auto;
   }
   .footer-col {
+    width: 100%;
     margin: 1rem;
+
   }
 }
 
