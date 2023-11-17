@@ -42,11 +42,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
 .introduction {
   margin-bottom: 3rem;
   text-align: center;
@@ -440,6 +435,12 @@ nav a {
   overflow: hidden;
   box-shadow: 0 20px 20px -20px;
   padding: 0;
+}
+
+.title-cards{
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-frontside img {
