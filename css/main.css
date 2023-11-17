@@ -93,13 +93,24 @@ header {
   z-index: 100;
 }
 
-.meny-img {
+/* .meny-img {
   position: absolute;
   margin-left: 2em;
   width: 8em;
   color: #fff;
   filter: invert(1);
   margin-top: 0.625em;
+} */
+
+picture.meny-img img{
+
+  position: absolute;
+  margin-left: 2em;
+  width: 8em;
+  color: #fff;
+  filter: invert(1);
+  margin-top: 0.625em;
+
 }
 
 header nav ul li a {
