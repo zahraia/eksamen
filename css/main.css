@@ -104,20 +104,19 @@ header {
 } */
 
 picture.meny-img img {
-  /* GAMMEL CSS
   position: absolute;
   margin-left: 2em;
   width: 8em;
   color: #fff;
   filter: invert(1);
-  margin-top: 0.625em; */
+  margin-top: 0.625em;
 
-  position: absolute;
+  /* position: absolute;
   right: 90%;
   top: 0;
   width: 8em;
 
-  filter: invert(1);
+  filter: invert(1); */
 }
 
 header nav ul li a {
