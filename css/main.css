@@ -194,6 +194,7 @@ nav a {
   padding: 1rem;
   text-align: center;
   box-shadow: 0 -6px 20px 0;
+  position: relative;
 }
 
 .explore-oslomet-btn a {
@@ -546,12 +547,11 @@ nav a {
   grid-gap: 2%;
   flex-direction: row;
   width: 70%;
-  height: 55vh;
+  height: 45vh;
   margin-bottom: 5em;
   margin-left: auto;
   margin-right: auto;
   overflow-x: scroll;
-  margin-bottom: 10rem;
 
   /* 
   for andre browsere, kan skrive om dette i accessibility*/
@@ -573,7 +573,7 @@ nav a {
   grid-template-rows: repeat(2, 2fr);
   grid-gap: 5%;
   width: 70%;
-  height: 21rem;
+  height: 20vh;
   margin: auto;
   margin-bottom: 5rem;
 }
@@ -960,18 +960,11 @@ nav a {
   text-align: center;
   background-color: #2d2d1c;
   color: white;
-  height: 20vh;
 }
 
 .footer-col {
   width: 30%;
   margin: 2rem 1%;
-  width: 30%;
-  margin: 2rem 1%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 2rem;
- 
 }
 
 .footer-col ul {
