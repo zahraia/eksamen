@@ -278,7 +278,6 @@ nav a {
   background-color: #7e9695;
   width: 20rem;
   height: 3rem;
-  margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -470,7 +469,7 @@ nav a {
   justify-content: center;
   align-items: center;
   min-height: 30vh;
-  margin-bottom: 0;
+  padding-bottom: 5rem;
   width: 100%;
   padding-left: 15rem;
   padding-right: 15rem;
@@ -551,30 +550,6 @@ nav a {
   }
 }
 
-.life-container {
-  display: grid;
-  grid-template-columns: repeat(7, 23%);
-  grid-template-rows: 100%;
-  grid-gap: 2%;
-  flex-direction: row;
-  width: 70%;
-  height: 55vh;
-  margin-bottom: 5em;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: scroll;
-
-  /* 
-  for andre browsere, kan skrive om dette i accessibility*/
-
-  /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
-  scrollbar-color: darkgrey white;
-  /* thumb and track color */
-  scrollbar-width: thin;
-  /* thin, auto, or none */
-
-  scroll-behavior: smooth;
-}
 
 /* MOVE TO FRONTPAGECSS */
 .research-container {
@@ -585,7 +560,7 @@ nav a {
   width: 70%;
   height: 21rem;
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .research-article {
@@ -621,15 +596,47 @@ nav a {
   margin-left: 2em;
 } */
 
+.life-container {
+  display: grid;
+  grid-template-columns: repeat(7, 23%);
+  grid-template-rows: 100%;
+  grid-gap: 15%;
+  /*
+  flex-direction: row;
+  */
+  width: 70%;
+  height: 85vh;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+
+  /* 
+  for andre browsere, kan skrive om dette i accessibility*/
+
+  /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
+  scrollbar-color: darkgrey white;
+  /* thumb and track color */
+  scrollbar-width: thin;
+  /* thin, auto, or none */
+
+  scroll-behavior: smooth;
+}
+
 .life-column {
-  width: 100%;
-  height: 90%;
+  width: 140%;
+  height: 80%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition-timing-function: ease;
   transition-duration: 0.5s;
   margin-bottom: 3%;
   margin-top: 7%;
+}
+
+.life-container .life-column a{
+  color: black;
+  text-decoration: none;
 }
 
 .life-column:hover {
