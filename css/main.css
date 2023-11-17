@@ -201,10 +201,13 @@ nav a {
   nav ul {
     display: flex;
     flex-direction: column;
-    text-align: right;
   }
   header {
     background-color: #333;
+  }
+
+  nav ul li:nth-child(1) {
+    display: none;
   }
 }
 
@@ -409,31 +412,33 @@ nav a {
   -webkit-transform: rotate(-45deg);
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .upcoming-events {
     background-color: #f6f6f3;
     width: 100%;
   }
-  
+
   .upcoming-events ul {
     list-style: none;
   }
-  
+
   .events-grid-container {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  
+
   /*endre klassenavn */
-  .events-calendar-first, .events-calendar-second, .events-calendar-third {
+  .events-calendar-first,
+  .events-calendar-second,
+  .events-calendar-third {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: none;
   }
-  
+
   .events-date {
     display: flex;
     justify-content: center;
@@ -441,15 +446,15 @@ nav a {
     width: 100%;
     font-weight: bolder;
   }
-  
+
   .events-info {
     text-align: center;
   }
-  
+
   .events-details {
     text-align: center;
   }
-  
+
   .upcoming-events a {
     width: fit-content;
   }
@@ -480,7 +485,7 @@ nav a {
   padding: 0;
 }
 
-.h4{
+.h4 {
   display: inline-block;
   margin-bottom: 0.3rem;
   font-weight: bold;
@@ -526,7 +531,7 @@ nav a {
   line-height: 1.2em;
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .body-info-cards {
     flex-direction: column;
     width: 90%;
@@ -561,7 +566,7 @@ nav a {
   background-color: #708584;
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .button {
     font-size: 1rem;
     width: 13rem;
