@@ -1,27 +1,75 @@
-body {
-  background-color: white; 
-  font-family:verdana;
-  font-size:30px;
-  text-align:justify;
+html {
+  scroll-behavior: smooth;
 }
 
-*{
+body {
+  background-color: white;
+  font-family: verdana;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  
-  
 }
 
-h2{
-  text-transform:uppercase;
+h1 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.video{
-  padding-top: 140px;
+h2 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 7rem;
 }
 
-.headerimg{
+h3 {
+  padding-bottom: 1rem;
+  padding-top: 1.3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.introduction {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+@media (max-width: 700px) {
+  .introduction {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-weight: normal;
+  }
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CSS TO INDEX PAGE */
+.headerimg {
   width: 30%;
   position: absolute;
   top: 25%;
@@ -31,204 +79,975 @@ h2{
 
 header {
   position: fixed;
+  /* To have navbar fixed */
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 100px;
-  background: #ffd500;
+  background: rgb(45, 45, 28);
+  background: linear-gradient(
+    180deg,
+    rgba(45, 45, 28, 1) 10%,
+    rgba(45, 45, 28, 0.75) 40%,
+    rgba(45, 45, 28, 0.5) 64%,
+    rgba(255, 255, 255, 0) 100%
+  );
   z-index: 100;
+}
 
+/* .meny-img {
+  position: absolute;
+  margin-left: 2em;
+  width: 8em;
+  color: #fff;
+  filter: invert(1);
+  margin-top: 0.625em;
+} */
+
+picture.meny-img img {
+  /* GAMMEL CSS
+  position: absolute;
+  margin-left: 2em;
+  width: 8em;
+  color: #fff;
+  filter: invert(1);
+  margin-top: 0.625em; */
+
+  position: absolute;
+  right: 90%;
+  top: 0;
+  width: 8em;
+
+  filter: invert(1);
+}
+
+header nav ul li a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+header nav a:hover {
+  color: #fff500;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+header nav a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
 }
 
 nav {
   display: flex;
-  justify-content: center;
-  align-items: center; 
-  height: 100px; 
-
+  justify-content: right;
+  align-items: center;
+  height: 6.25em;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   cursor: pointer;
 }
 
-
-nav ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-
+nav a::after {
+  content: "";
+  width: 0%;
+  height: 0.1rem;
+  display: block;
+  background-color: #fff;
+  margin-top: 0.3rem;
 }
 
-.omoslomet{
-  padding: 5%;
+nav a:hover::after {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  font-weight: 300;
 }
 
 nav li {
   float: left;
+  color: white;
 }
 
-a {
+nav a {
   display: block;
-  padding: 20px;
+  padding: 1.25em;
   display: inline;
-  margin: 0 20px;
+  margin: 0 1.3rem;
+  text-decoration: none;
 }
 
+@media screen and (max-width: 840px) {
+  nav {
+    display: block;
+    margin: 0.3rem; /* Provides a little space between items */
+    margin-top: 7rem;
+  }
 
-.omoslomet{
-padding: 10%;
-}
-
-.infoboks{
-display: grid;
-grid-template-areas: 
-"oslomet kalender"
-"p35 accessibility"
-;
-}
-.oslomet {
-grid-area: oslomet;
-padding: 5%;
-}
-.kalender {
-grid-area: kalender;
-align-items: center;
-padding: 5%;
-}  
-.p35 {
-grid-area: p35;
-}
-.accessibility{
-grid-area: accessibility;
+  header {
+    position: absolute;
+  }
 }
 
-/*
-CSS TIL KALENDER:
-*/
-.month {
-padding: 70px 25px;
-width: 100%;
-background: #000000;
-text-align: center;
-color: #ffff00;
+@media screen and (max-width: 738px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  header {
+    background-color: #333;
+  }
 }
 
-.month ul {
-margin: 0;
-padding: 0;
-list-style-type: none;
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 89.7vh;
+  background-image: url("https://www.oslomet.no/var/oslomet/storage/images/9/7/4/2/252479-7-nor-NO/P32-fasade-OsloMet-foto-Benjamin-Ward-OsloMet-45223413981_3b266ee676_o-2400x1200px.jpg");
 }
 
-.month ul li {
-color: #ffff00;
-font-size: 20px;
-text-transform: uppercase;
-letter-spacing: 3px;
+.explore-oslomet-btn {
+  background-color: #7e9695;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 -6px 20px 0;
+  position: relative;
 }
 
-.month .prev {
-float: left;
-padding-top: 10px;
+.explore-oslomet-btn a {
+  color: white;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  text-decoration: none;
 }
 
-.month .next {
-float: right;
-padding-top: 10px;
-}
-
-.weekdays {
-margin: 0;
-padding: 10px 0;
-background-color: #ddd;
-}
-
-.weekdays li {
-display: inline-block;
-width: 13.6%;
-color: #666;
-text-align: center;
-}
-
-.days {
-padding: 10px 0;
-background: #eee;
-margin: 0;
-}
-
-.days li {
-list-style-type: none;
-display: inline-block;
-width: 13.6%;
-text-align: center;
-margin-bottom: 5px;
-font-size:12px;
-color: #777;
-}
-
-.days li .active {
-padding: 5px;
-background: #000000;
-color: #ffff00 !important
-}
-
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-.weekdays li, .days li {width: 13.1%;}
-}
-
-@media screen and (max-width: 420px) {
-.weekdays li, .days li {width: 12.5%;}
-.days li .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-.weekdays li, .days li {width: 12.2%;}
-}
-
-/*
-CSS TIL KALENDER SLUTT
-*/
-
-.footer {
+.explore-oslomet-btn a::before {
+  content: "";
+  position: absolute;
   left: 0;
   bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffd500;
+  transition: width 0.25s ease-out;
+}
+
+.explore-oslomet-btn a:hover::before {
   width: 100%;
-  background-color:#ffd500;
-  color:black;
+}
+
+/* https://www.w3schools.com/howto/howto_css_arrows.asp */
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.button-homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  background-color: #7e9695;
+  width: 20rem;
+  height: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+}
+
+.button-homepage:hover {
+  background-color: #708584;
+}
+
+.upcoming-events {
+  background-color: #f6f6f3;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.upcoming-events ul {
+  list-style: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "first"
+    "second"
+    "last";
+  /* for å få den sentrert: */
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*endre klassenavn */
+.calendar-event {
+  border: solid;
+  border-color: rgb(189, 188, 188);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  grid-area: first;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.calendar-date {
+  border: solid;
+  border-color: rgb(189, 188, 188);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  grid-area: second;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.calendar-last {
+  border: solid;
+  border-color: rgb(189, 188, 188);
+  border-left: none;
+  border-right: none;
+  grid-area: last;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.date {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9af4e;
+  color: white;
+  height: 5rem;
+  width: 5rem;
+  font-size: 1.1rem;
+}
+
+.event {
+  grid-column-start: 3;
+  grid-column-end: 13;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  margin-left: 0;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.more-info-event {
+  grid-column-start: 3;
+  grid-column-end: 13;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: small;
+}
+
+.upcoming-events a {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-decoration-thickness: 0.12rem;
+  font-weight: bolder;
+  width: 20%;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
+.upcoming-events p a:hover {
+  text-decoration-color: #d9af4e;
+}
+
+.arrow-events {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+@media (max-width: 700px) {
+  .upcoming-events {
+    background-color: #f6f6f3;
+    width: 100%;
+  }
+
+  .upcoming-events ul {
+    list-style: none;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /*endre klassenavn */
+  .calendar-event,
+  .calendar-date,
+  .calendar-last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: bolder;
+  }
+
+  .event {
+    text-align: center;
+  }
+
+  .more-info-event {
+    text-align: center;
+  }
+
+  .upcoming-events a {
+    width: fit-content;
+  }
+}
+
+.body-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  margin-top: 0.5rem;
+
+  margin-bottom: 0;
+  width: 70%;
+  margin: auto;
+}
+
+.card-frontside {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 100%;
+  margin: 0.6rem;
+  overflow: hidden;
+  box-shadow: 0 20px 20px -20px;
+  padding: 0;
+}
+
+.card-frontside img {
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+  transition: 0.25s ease;
+}
+
+.card-frontside:hover img {
+  transform: scale(1.1);
+}
+
+.card-frontside figcaption {
+  position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  height: 50%;
+  bottom: 0;
+  z-index: 1;
+  color: black;
+}
+
+.card-frontside figcaption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f6f6f3;
+  z-index: -1;
+}
+
+.card-frontside h4 {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.card-frontside p {
+  font: 0.8em;
+  line-height: 1.2em;
+}
+
+@media (max-width: 700px) {
+  .body-card {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+/*Hvorfor er denne her???? campuslife button???*/
+.button-homepage-campuslife {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  background-color: #7e9695;
+  width: 23rem;
+  height: 3rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+.button-homepage-campuslife a {
+  color: white;
+  text-decoration: none;
+}
+
+.button-homepage-campuslife:hover {
+  background-color: #708584;
+}
+
+@media (max-width: 700px) {
+  .button-homepage {
+    font-size: 1rem;
+    width: 13rem;
+    text-align: center;
+  }
+}
+
+.life-container {
+  display: grid;
+  grid-template-columns: repeat(7, 23%);
+  grid-template-rows: 100%;
+  grid-gap: 2%;
+  flex-direction: row;
+  width: 70%;
+  height: 55vh;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+
+  /* 
+  for andre browsere, kan skrive om dette i accessibility*/
+
+  /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
+  scrollbar-color: darkgrey white;
+  /* thumb and track color */
+  scrollbar-width: thin;
+  /* thin, auto, or none */
+
+  scroll-behavior: smooth;
+}
+
+/* MOVE TO FRONTPAGECSS */
+.research-container {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-gap: 5%;
+  width: 70%;
+  height: 21rem;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.research-article {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  color: black;
+  transition-duration: 0.5s;
+}
+
+.research-article:hover {
+  background-color: #70858462;
+}
+
+.research-container .research-article:nth-child(even) {
+  justify-self: end;
+}
+.research-article a {
+  color: black;
+  text-decoration: none;
+}
+
+.research-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.research-arrow {
+  float: right;
+}
+
+/* .research-container > .research-column:first-child {
+  margin-left: 2em;
+} */
+
+.life-column {
+  width: 100%;
+  height: 90%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  margin-bottom: 3%;
+  margin-top: 7%;
+}
+
+.life-column:hover {
+  transform: scale(1.1);
+}
+
+.life-container > .life-column:nth-child(1) {
+  padding-left: 2%;
+}
+
+.life-img {
+  width: 100%;
+}
+
+/* only styles the thumb (the part you drag around) */
+::-webkit-scrollbar-thumb {
+  background-color: #3f3f29;
+  border-radius: 0.6rem;
+}
+
+/* styles the entire scrollbar */
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+/* only styles the scrollbar's track */
+::-webkit-scrollbar-track {
+  background: white;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0.625rem;
+}
+
+.life-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.2em;
+}
+
+.life-faculty {
+  font-weight: 600;
+  color: orange;
+  margin-bottom: 1.3em;
+}
+
+.research-column p {
+  margin-left: 0.4em;
+}
+
+/* CSS TO P35 PAGE */
+.containerp35 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgtxtp35 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  padding-left: 0.6rem;
+  padding-right: 1.8rem;
+  height: 27.5rem;
+}
+
+.imgtxtp35:nth-child(odd) {
+  background-color: #f6f6f3;
+}
+
+.imgtxtp35:nth-child(even) {
+  background-color: #cbd5d4;
+}
+
+.imgtxtp35:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.imgp35 {
+  height: 27.5rem;
+  width: 31.9rem;
+  padding-right: 0;
+  margin-top: -1.8rem;
+  margin-bottom: -1.8rem;
+  margin-left: -1rem;
+}
+
+.textp35 {
+  flex: 1;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.textp35 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
+}
+
+.p35-card {
+  background-color: #f6f6f3;
+}
+
+@media (max-width: 700px) {
+  .containerp35 {
+    width: 100%;
+  }
+
+  .imgtxtp35 {
+    flex-direction: column;
+  }
+
+  .imgtxtp35:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .imgp35 {
+    height: 14rem;
+    width: 20rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .textp35 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .textp35 p {
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+}
+/* END CSS TO PAGE 4 P35 END */
+
+/* CSS TO TOPIC PAGE */
+.topical-content {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+.topical-content p {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+.header-content body {
+  width: 100%;
+  background-color: white;
+  font-family: verdana;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topical-paragraphs {
+  padding-bottom: 2em;
+}
+
+.center-topical-img {
+  width: 75%;
+  margin: auto;
+}
+
+.topical-stats {
+  width: 22em;
+
+  height: 12em;
+  padding: 2%;
+  /*margin-left: 5%; hva gjør denne?*/
+  margin: auto;
+  align-items: center;
+  background-color: #7e9695;
+  color: white;
   text-align: center;
 }
 
-.footer-logo {
-  border: none;
-  
+.topical-stats-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f6f3;
+  padding: 5em;
 }
 
-.footer-socials {
-  grid-column: 10/span 2;
-  width: 100%; 
+.stats-writing {
+  font-weight: 600;
 }
 
-.footer-socials .icon {
-  background-position: center;
+.third-topical-paragraph {
+  background-color: #f6f6f3;
+  padding-bottom: 5em;
+  padding-top: 0.5em;
+}
+
+.third-topical-list li {
+  align-items: center;
+  padding-left: 18%;
+  padding-right: 18%;
+  list-style: square inside;
+  padding-bottom: 1em;
+}
+
+.learn-more-topical-heading {
+  text-align: center;
+  background-color: #7e9695;
+}
+
+.card-section {
+  align-items: center;
+  background-color: #7e9695;
+}
+
+.topical-row-info {
+  display: flex;
+  padding: 5em;
+  align-items: center;
+  background-color: #7e9695;
+}
+
+.topical-column {
+  float: left;
+  margin: auto;
+
+  align-items: stretch;
+  justify-content: center;
+  transition-property: transform;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  margin: 0.5px;
+  height: 20rem;
+  width: 15rem;
+  margin-left: auto;
+  background: #fff;
+  margin-right: auto;
+}
+
+.topical-column:hover {
+  transform: scale(1.1);
+}
+
+.topical-card {
+  margin: 0.5rem;
+  height: 20rem;
+  width: 15rem;
+  background-color: #fff;
+}
+
+.img-card {
+  width: 100%;
+  padding: 0;
+}
+
+.container {
+  padding: 0 1rem;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.topical-button {
+  box-shadow: inset 0px 0px 10px 3px #7e9695;
+  background: linear-gradient(to bottom, #f6f6f3 5%, #f6f6f3 100%);
+  background-color: #f6f6f3;
+  border-radius: 1rem;
+  border: 2px solid #f6f6f3;
   display: inline-block;
-  margin-right: 10px;
+  cursor: pointer;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #528ecc;
 }
 
-.footer-socials .icon-facebook {
-  background-image: url(https://www.oslomet.no/bundles/oslomet/images/icon-facebook.svg);
+.topical-button:hover {
+  background: linear-gradient(to bottom, #f6f6f3 5%, #708584 100%);
 }
 
-.footer-socials .icon-instagram {
-  background-image: url(https://www.oslomet.no/bundles/oslomet/images/icon-instagram.svg);
+.topical-button:active {
+  position: relative;
+  top: 1px;
 }
 
-.footer-socials .icon-twitter {
-  background-image: url(https://www.oslomet.no/bundles/oslomet/images/icon-twitter.svg);
+.container p {
+  padding: 0.6rem;
 }
 
-.footer-socials .icon-linkedin {
-  background-image: url(https://www.oslomet.no/bundles/oslomet/images/icon-linkedin.svg);
+@media screen and (max-width: 1200px) {
+  .topical-column {
+    display: block;
+    flex: 0 1 calc(50% - 10px);
+    margin: 0.3rem;
+    margin-left: 0.3rem auto;
+    margin-right: 0.3rem auto;
+    flex: 0 1 calc(50% - 0.6rem); /* Sets the basis for each item */
+    margin: 0.3rem; /* Provides a little space between items */
+  }
+
+  .topical-row-info {
+    width: 100%;
+    flex-direction: row;
+    display: block;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+
+/* FOOTER CSS */
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* organize elements in rows that can wrap based on the screen size */
+  text-align: center;
+  background-color: #2d2d1c;
+  color: white;
+  height: 20vh;
+}
+
+.footer-col {
+  width: 30%;
+  margin: 2rem 1%;
+  width: 30%;
+  margin: 2rem 1%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #8da7a6;
+  padding-left: 0.2rem;
+}
+
+.footer-col .socials a {
+  display: inline-block;
+  padding: 0.25rem;
+  margin-right: 0.5rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.footer-col .socials a:hover {
+  color: white;
+  background-color: #899f9e;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .footer-col {
+    width: 100%;
+  }
+  .footer-col {
+    margin: 1rem;
+  }
+}
+
+.stat-number {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+#homepage {
+  width: 100%;
 }
