@@ -488,7 +488,7 @@ nav a {
   padding: 0;
 }
 
-.info-cards-title {
+.h4 {
   display: inline-block;
   margin-bottom: 0.3rem;
   font-weight: bold;
@@ -722,12 +722,13 @@ nav a {
   margin-top: -1.8rem;
   margin-bottom: -1.8rem;
   margin-left: -1rem;
+  margin-right: -1.8rem;
 }
 
 .textp35 {
   flex: 1;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .textp35 p {
