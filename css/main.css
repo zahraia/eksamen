@@ -538,6 +538,10 @@ nav a {
   .body-info-cards {
     flex-direction: column;
     width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*Hvorfor er denne her???? campuslife button???*/
