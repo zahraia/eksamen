@@ -58,15 +58,6 @@ p {
 }
 
 /* CSS FOR INDEX */
-.introduction {
-  margin-bottom: 3rem;
-  text-align: center;
-  font-size: 1.7rem;
-  margin-left: 9rem;
-  margin-right: 9rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: lighter;
-}
 
 .headerimg {
   width: 30%;
@@ -100,7 +91,6 @@ picture.meny-img img {
   color: #fff;
   filter: invert(1);
   margin-top: 0.625em;
-
 }
 
 header nav ul li a {
@@ -169,6 +159,38 @@ nav a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 840px) {
+  nav {
+    display: block;
+    margin: 0.3rem; /* Provides a little space between items */
+    margin-top: 7rem;
+  }
+
+  header {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: -5.5rem;
+  }
+  nav a {
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    height: 9rem;
+  }
+
+  nav ul li:nth-child(1) {
+    display: none;
+  }
+}
+
 .parallax {
   background-attachment: fixed;
   background-position: center;
@@ -207,6 +229,25 @@ nav a {
 
 .explore-oslomet-btn a:hover::before {
   width: 100%;
+}
+
+.introduction {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+@media (max-width: 700px) {
+  .introduction {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-weight: normal;
+  }
 }
 
 /* https://www.w3schools.com/howto/howto_css_arrows.asp */
@@ -411,11 +452,13 @@ nav a {
   font-weight: 500;
 }
 
+.research-column p {
+  margin-left: 0.4em;
+}
+
 .research-arrow {
   float: right;
 }
-
-
 
 .life-container {
   display: grid;
@@ -452,7 +495,7 @@ nav a {
   margin-top: 7%;
 }
 
-.life-container .life-column a{
+.life-container .life-column a {
   color: black;
   text-decoration: none;
 }
@@ -510,10 +553,19 @@ nav a {
   margin-bottom: 0.5em;
 }
 
-.research-column p {
-  margin-left: 0.4em;
-}
+@media screen and (max-width: 700px) {
+  .life-container {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(4, 5fr);
+    grid-gap: 2%;
+  }
 
+  .life-column {
+    width: fit-content;
+    margin: 1rem;
+    padding-block-end: 5rem;
+  }
+}
 
 /* MEDIA QUERIES SPECIFIC TO INDEX */
 @media screen and (max-width: 700px) {
@@ -563,7 +615,7 @@ nav a {
     width: fit-content;
   }
 
-  .research-container{
+  .research-container {
     grid-template-columns: 5fr;
     grid-template-rows: repeat(4, 5fr);
     height: fit-content;
@@ -571,52 +623,9 @@ nav a {
   }
 
   .research > .button-homepage {
-      margin-top: 20%;
+    margin-top: 20%;
   }
 }
-
-@media screen and (max-width: 840px) {
-  nav {
-    display: block;
-    margin: 0.3rem; /* Provides a little space between items */
-    margin-top: 7rem;
-  }
-
-  header {
-    position: absolute;
-  }
-}
-
-@media screen and (max-width: 840px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    margin-top: -5.5rem;
-  }
-  nav a {
-    padding: 0;
-  }
-  header {
-    background-color: #333;
-    height: 9rem;
-  }
-
-  nav ul li:nth-child(1) {
-    display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  .introduction {
-    font-size: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-weight: normal;
-  }
-}
-
-
 
 /* END CSS FOR INDEX */
 
@@ -643,7 +652,6 @@ nav a {
   box-shadow: 0 20px 20px -20px;
   padding: 0;
 }
-
 
 .info-cards img {
   position: relative;
@@ -703,7 +711,6 @@ nav a {
     text-align: center;
   }
 }
-
 
 /* MOVE TO FRONTPAGECSS */
 
@@ -855,10 +862,9 @@ nav a {
   .topical-stats {
     display: block;
     margin: 0.3rem auto;
-    flex: 0 1 calc(50% - 0.6rem); 
+    flex: 0 1 calc(50% - 0.6rem);
     padding: 1.5rem;
     width: 75%;
-    
   }
 
   .topical-stats-container {
@@ -871,7 +877,7 @@ nav a {
     padding-bottom: 2rem;
   }
 
-  .topical-content{
+  .topical-content {
     margin-top: 3rem;
   }
 }
@@ -983,7 +989,7 @@ nav a {
   .topical-column {
     display: block;
     margin: 1rem auto;
-}
+  }
 
   .topical-row-info {
     width: 100%;
