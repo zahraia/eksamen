@@ -196,7 +196,7 @@ nav a {
   }
 }
 
-@media screen and (max-width: 738px) {
+@media screen and (max-width: 840px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -826,8 +826,8 @@ nav a {
 }
 
 .topical-stats {
-  width: 22em;
-  height: 12em;
+  width: 22rem;
+  height: 14rem;
   padding: 2%;
   /*margin-left: 5%; hva gjør denne?*/
   margin: auto;
@@ -852,20 +852,25 @@ nav a {
 @media screen and (max-width: 1240px) {
   .topical-stats {
     display: block;
-    flex: 0 1 calc(50% - 10px);
-    margin: 0.3rem;
-    margin-left: 0.3rem auto;
-    margin-right: 0.3rem auto;
-    flex: 0 1 calc(50% - 0.6rem); /* Sets the basis for each item */
-    margin: 0.3rem; /* Provides a little space between items */
+    margin: 0.3rem auto;
+    flex: 0 1 calc(50% - 0.6rem); 
+    padding: 1.5rem;
+    width: 75%;
+    
   }
 
   .topical-stats-container {
     width: 100%;
-    flex-direction: row;
-    display: block;
+    flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
+    padding: 0;
+    padding: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .topical-content{
+    margin-top: 3rem;
   }
 }
 
@@ -899,7 +904,6 @@ nav a {
 }
 
 .topical-column {
-  float: left;
   margin: auto;
   align-items: stretch;
   justify-content: center;
@@ -976,18 +980,11 @@ nav a {
 @media screen and (max-width: 1200px) {
   .topical-column {
     display: block;
-    flex: 0 1 calc(50% - 10px);
-    margin: 0.3rem;
-    margin-left: 0.3rem auto;
-    margin-right: 0.3rem auto;
-    flex: 0 1 calc(50% - 0.6rem); /* Sets the basis for each item */
-    margin: 0.3rem; /* Provides a little space between items */
-  }
+    margin: 1rem auto;
+}
 
   .topical-row-info {
     width: 100%;
-    flex-direction: row;
-    display: block;
     flex-wrap: wrap;
     margin: auto;
   }
