@@ -553,19 +553,7 @@ nav a {
   margin-bottom: 0.5em;
 }
 
-@media screen and (max-width: 700px) {
-  .life-container {
-    grid-template-columns: 5fr;
-    grid-template-rows: repeat(4, 5fr);
-    grid-gap: 2%;
-  }
 
-  .life-column {
-    width: fit-content;
-    margin: 1rem;
-    padding-block-end: 5rem;
-  }
-}
 
 /* MEDIA QUERIES SPECIFIC TO INDEX */
 @media screen and (max-width: 700px) {
@@ -624,6 +612,19 @@ nav a {
 
   .research > .button-homepage {
     margin-top: 20%;
+  }
+
+  .life-container {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(4, 5fr);
+    grid-gap: 2%;
+    overflow-x: hidden;
+  }
+
+  .life-column {
+    width: fit-content;
+    margin: 1rem;
+    padding-block-end: 5rem;
   }
 }
 
