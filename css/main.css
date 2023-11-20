@@ -41,20 +41,15 @@ h3 {
   font-size: 1.5rem;
 }
 
-h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
 .h4 {
   display: inline-block;
   margin-bottom: 0.3rem;
   font-weight: bold;
-  font-size: 1rem;
 }
 
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
 }
 
 /* CSS FOR INDEX */
@@ -201,7 +196,7 @@ nav a {
 }
 
 .explore-oslomet-btn {
-  background-color: #7e9695;
+  background-color: #617574;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 -6px 20px 0;
@@ -212,7 +207,6 @@ nav a {
   color: white;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: larger;
   text-decoration: none;
 }
 
@@ -268,8 +262,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: large;
-  background-color: #7e9695;
+  background-color: #617574;
   width: 20rem;
   height: 3rem;
   margin-bottom: 4rem;
@@ -290,7 +283,7 @@ nav a {
 }
 
 .upcoming-events {
-  background-color: #f6f6f3;
+  background-color: #eff2f4;
   width: 100%;
   padding-bottom: 2rem;
 }
@@ -321,6 +314,7 @@ nav a {
   grid-area: first;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .events-calendar-second {
@@ -332,6 +326,7 @@ nav a {
   grid-area: second;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .events-calendar-third {
@@ -342,28 +337,33 @@ nav a {
   grid-area: last;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .events-date {
   grid-column-start: 1;
   grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
   margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #668298;
+  background-color: #647696;
   color: white;
+  font-weight: 600;
   height: 5rem;
   width: 5rem;
-  font-size: 1.1rem;
 }
 
 .events-info {
   grid-column-start: 3;
   grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin-top: 2rem;
   margin-left: 0;
   font-size: 1.1rem;
   font-family: sans-serif;
@@ -373,11 +373,14 @@ nav a {
 .events-details {
   grid-column-start: 3;
   grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
   display: flex;
   align-items: center;
   font-family: sans-serif;
   font-weight: normal;
   font-size: small;
+  margin-bottom: 2rem;
 }
 
 .upcoming-events a {
@@ -396,7 +399,7 @@ nav a {
 
 .upcoming-events p a:hover {
 /* endre farge */
-  text-decoration-color: #d9af4e;
+  text-decoration-color: #ffd500;
 }
 
 .arrow-events {
@@ -461,13 +464,17 @@ nav a {
   float: right;
 }
 
+.research-caption{
+  font-size: 1rem;
+}
+
 .life-container {
   display: grid;
   grid-template-columns: repeat(7, 23%);
   grid-template-rows: 100%;
   grid-gap: 15%;
   width: 70%;
-  height: 100vh;
+  height: 95vh;
   margin-bottom: 5em;
   margin-left: auto;
   margin-right: auto;
@@ -552,8 +559,13 @@ nav a {
   font-weight: 600;
   color: #5b7588;
   margin-bottom: 0.5em;
+  font-size: 1rem;
 }
 
+.life-explanation{
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
 
 
 /* MEDIA QUERIES SPECIFIC TO INDEX */
@@ -638,8 +650,8 @@ nav a {
   min-height: 30vh;
   padding-bottom: 3.5rem;
   width: 100%;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 14rem;
+  padding-right: 14rem;
 }
 
 .info-cards {
@@ -690,7 +702,7 @@ nav a {
 }
 
 .info-cards p {
-  font: 0.8em;
+  font-size: 1rem;
   line-height: 1.2em;
 }
 
@@ -728,92 +740,82 @@ nav a {
 /* MOVE TO FRONTPAGECSS */
 
 /* CSS TO P35 PAGE */
-.containerp35 {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+
+.p35img1 {
+  width: 66%;
+  display: block;
+  position: relative;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  width: auto;
+  background-image: url(../images/cantine_shop.jpg);
+  margin-bottom: 1rem;
+
 }
 
-.imgtxtp35 {
+.p35img2 {
+  width: 66%;
+  display: block;
+  position: relative;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  width: auto;
+  background-image: url(../images/library.jpg);
+  margin-bottom: 1rem;
+}
+
+.p35img3 {
+  width: 66%;
+  display: block;
+  position: relative;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  width: auto;
+  background-image: url(../images/datatorget.jpg);
+
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 33.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  margin-bottom: 3rem;
-  padding-left: 0.6rem;
-  padding-right: 1.8rem;
-  height: 27.5rem;
 }
 
-.imgtxtp35:nth-child(odd) {
-  background-color: #f6f6f3;
+.overlay p{
+  color: white;
 }
 
-.imgtxtp35:nth-child(even) {
-  background-color: #cbd5d4;
-}
-
-.imgtxtp35:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.imgp35 {
-  height: 27.5rem;
-  width: 31.9rem;
-  padding-right: 0;
-  margin-top: -1.8rem;
-  margin-bottom: -1.8rem;
-  margin-left: -1rem;
-  margin-right: -1.8rem;
-}
-
-.textp35 {
-  flex: 1;
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.textp35 p {
+.image-text{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
-  margin-top: 0.6rem;
+  padding: 1rem;  
 }
 
 .p35-card {
-  background-color: #f6f6f3;
+  background-color: #eff2f4;
 }
 
-@media (max-width: 700px) {
-  .containerp35 {
-    width: 100%;
-  }
 
-  .imgtxtp35 {
-    flex-direction: column;
-  }
-
-  .imgtxtp35:nth-child(even) {
-    flex-direction: column;
-  }
-
-  .imgp35 {
-    height: 14rem;
-    width: 20rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-
-  .textp35 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .textp35 p {
-    font-size: 1rem;
-    margin-top: 0rem;
-  }
-}
 /* END CSS TO PAGE 4 P35 END */
 
 /* CSS TO TOPIC PAGE */
@@ -854,7 +856,7 @@ nav a {
   /*margin-left: 5%; hva gjør denne?*/
   margin: auto;
   align-items: center;
-  background-color: #7e9695;
+  background-color: #617574;
   color: white;
   text-align: center;
 }
@@ -896,7 +898,7 @@ nav a {
 }
 
 .third-topical-paragraph {
-  background-color: #f6f6f3;
+  background-color: #eff2f4;
   padding-top: 0.5em;
   padding-bottom: 2rem;
 }
@@ -1067,7 +1069,7 @@ nav a {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .footer {
     height: auto;
   }
