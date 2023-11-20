@@ -43,7 +43,7 @@ h3 {
 
 .h4 {
   display: inline-block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
@@ -53,7 +53,6 @@ p {
 }
 
 /* CSS FOR INDEX */
-
 .headerimg {
   width: 30%;
   position: absolute;
@@ -160,7 +159,6 @@ nav a {
     margin: 0.3rem; /* Provides a little space between items */
     margin-top: 7rem;
   }
-
   header {
     position: absolute;
   }
@@ -180,9 +178,75 @@ nav a {
     background-color: #333;
     height: 9rem;
   }
-
   nav ul li:nth-child(1) {
     display: none;
+  }
+}
+
+/* FOOTER CSS */
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Organize elements in rows that can wrap based on the screen size */
+  text-align: center;
+  background-color: #2d2d1c;
+  color: white;
+}
+
+.footer-col {
+  width: 100%; /* Make the column take up the full width */
+  margin: auto; /* Center the column horizontally */
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 0.5rem; /*Adds margin between each list item, except the last one.*/
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #8da7a6;
+  padding-left: 0.2rem;
+}
+
+.footer-col .socials a {
+  padding: 0.25rem;
+  margin-right: 0.5rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.footer-col .socials a:hover {
+  color: white;
+  background-color: #899f9e;
+}
+
+/* For smaller to medium screens (phones, tablets) */
+@media screen and (max-width: 991px) {
+  .footer-col {
+    margin: 1rem; /* Adjust margin for the screens */
+  }
+}
+
+/* For larger screens (laptops/desktops) */
+@media screen and (min-width: 991px) {
+  .footer-col {
+    width: 30%; /* Reset width to original for larger screens, for 3-column layout */
   }
 }
 
@@ -197,7 +261,7 @@ nav a {
 
 .explore-oslomet-btn {
   background-color: #617574;
-  padding: 1rem;
+  padding: 1.1rem;
   text-align: center;
   box-shadow: 0 -6px 20px 0;
   position: relative;
@@ -819,8 +883,6 @@ nav a {
 }
 
 
-/* END CSS TO PAGE 4 P35 END */
-
 /* CSS TO TOPIC PAGE */
 .topical-content {
   width: 100%;
@@ -854,7 +916,7 @@ nav a {
 
 .topical-stats {
   width: 22rem;
-  height: 13rem;
+  height: 13.5rem;
   padding: 2%;
   /*margin-left: 5%; hva gjør denne?*/
   margin: auto;
@@ -1013,72 +1075,6 @@ nav a {
     width: 100%;
     flex-wrap: wrap;
     margin: auto;
-  }
-}
-
-/* FOOTER CSS */
-.footer {
-  display: flex;
-  flex-wrap: wrap; /* organize elements in rows that can wrap based on the screen size */
-  text-align: center;
-  background-color: #2d2d1c;
-  color: white;
-  height: 20vh;
-}
-
-.footer-col {
-  width: 30%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 2rem;
-}
-
-.footer-col ul {
-  list-style: none;
-  font-size: 0.9rem;
-}
-
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.footer-col ul li a {
-  color: white;
-  text-decoration: none;
-  transition: all 0.4s ease;
-}
-
-.footer-col ul li a:hover {
-  color: #8da7a6;
-  padding-left: 0.2rem;
-}
-
-.footer-col .socials a {
-  display: inline-block;
-  padding: 0.25rem;
-  margin-right: 0.5rem;
-  width: 2rem;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: white;
-  color: black;
-  transition: all 0.4s ease;
-}
-
-.footer-col .socials a:hover {
-  color: white;
-  background-color: #899f9e;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 700px) {
-  .footer {
-    height: auto;
-  }
-  .footer-col {
-    width: 100%;
-    margin: 1rem;
   }
 }
 
