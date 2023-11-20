@@ -351,7 +351,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d9af4e;
+  background-color: #c39d46;
   color: white;
   height: 5rem;
   width: 5rem;
@@ -848,7 +848,7 @@ nav a {
 
 .topical-stats {
   width: 22rem;
-  height: 14rem;
+  height: 13rem;
   padding: 2%;
   /*margin-left: 5%; hva gjør denne?*/
   margin: auto;
