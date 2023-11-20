@@ -351,7 +351,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c39d46;
+  background-color: #668298;
   color: white;
   height: 5rem;
   width: 5rem;
@@ -395,7 +395,8 @@ nav a {
 }
 
 .upcoming-events p a:hover {
-  text-decoration-color: #ffd500;
+/* endre farge */
+  text-decoration-color: #d9af4e;
 }
 
 .arrow-events {
@@ -549,7 +550,7 @@ nav a {
 
 .life-faculty {
   font-weight: 600;
-  color: #ad8c3e;
+  color: #5b7588;
   margin-bottom: 0.5em;
 }
 
