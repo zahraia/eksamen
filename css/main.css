@@ -395,7 +395,7 @@ nav a {
 }
 
 .upcoming-events p a:hover {
-  text-decoration-color: #d9af4e;
+  text-decoration-color: #ffd500;
 }
 
 .arrow-events {
@@ -549,7 +549,7 @@ nav a {
 
 .life-faculty {
   font-weight: 600;
-  color: #d9af4e;
+  color: #ad8c3e;
   margin-bottom: 0.5em;
 }
 
