@@ -742,7 +742,6 @@ nav a {
 /* CSS TO P35 PAGE */
 
 .p35img1 {
-  width: 66%;
   display: block;
   position: relative;  
   background-attachment: fixed;
@@ -784,12 +783,12 @@ nav a {
 
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 33.5rem;
+  height: 45.9rem;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
@@ -797,7 +796,7 @@ nav a {
   align-items: center;
 }
 
-.overlay p{
+.overlay p {
   color: white;
   text-align: center;
   padding-left: 15rem;
