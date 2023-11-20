@@ -799,6 +799,10 @@ nav a {
 
 .overlay p{
   color: white;
+  text-align: center;
+  padding-left: 15rem;
+  padding-right: 15rem
+  ; 
 }
 
 .image-text{
