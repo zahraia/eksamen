@@ -11,19 +11,19 @@
 </head>
 
 <body>
-  <!-- Header element that contains the navbar for the page. -->
+  <!-- Header element that contains the navigationbar for the website -->
   <header>
-    <!-- <a> element is used for add a link to the logo that can bring back to home page. -->
+    <!-- <a> element used to make the logo link to the homepage. -->
     <a href="index.html">
-      <!-- Picture element is used to add the Oslomet logo. -->
+      <!-- Picture element to add the Oslomet logo. -->
       <picture class="meny-img">
         <!-- TRENGER SOURCE  -->
         <img class="meny-img" src="./images/logo.png" alt="Oslomet logo" />
       </picture>
     </a>
-    <!-- Navigation element to put the different links for the navigation for the page. -->
+    <!-- Navigation element to add the different links for pages for the website -->
     <nav>
-    <!-- Unordered list element to have the links in a list form that don't need to be ordered. -->
+      <!-- Unordered list element to have the links in a list form. -->
       <ul>
         <!-- List elements that contain the navigation links. -->
         <li><a href="index.html">Home</a></li>
@@ -36,404 +36,353 @@
 
   <!-- kommentar her  -->
   <div class="parallax"></div>
-    <!-- Button that scrolls down to the beginning of the main part of the page, linked to id showed under -->
-    <p class="explore-oslomet-btn">
-      <a href="#explore-oslomet">Explore OsloMet <i class="arrow down"></i> </a>
+  <!-- Button that scrolls down to the beginning of the main part of the page, linked to id 
+      showed under -->
+  <p class="explore-oslomet-btn">
+    <a href="#explore-oslomet">Explore OsloMet<i class="arrow down"></i> </a>
+  </p>
+
+  <!-- Main content of the webpage starts here  -->
+  <main>
+
+    <!-- "Explore oslomet"-button is linked with this id, this is where it scrolls down to
+        when you click the button-->
+    <div id="explore-oslomet"></div>
+
+    <!-- Heading with introduction to OsloMet  -->
+    <h1>This is OsloMet</h1>
+    <p class="introduction">
+      Oslomet is Norway's third biggest university and was founded in 2011 as a college, but
+      was converted to a university in 2018. With us, there is a short distance between education
+      and research. Become something that means something! Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Duis scelerisque arcu ac mauris ornare, sit amet sagittis ipsum tempus.
     </p>
+    <!-- a-element is set as the parent element to make the whole button clickable, 
+        leading to an external site on a new tab.  -->
+    <a href="https://www.oslomet.no/om" target="_blank" class="button-homepage">
+      <p>Learn more about OsloMet</p>
+    </a>
 
-    <!-- Main content of the webpage starts here  -->
-    <main>
-
-      <!-- "Explore oslomet"-button is linked with this id, this is where it scrolls down to when you click the button-->
-      <div id="explore-oslomet"></div>
-      
-      <!-- Heading with introduction to OsloMet  -->
-      <h1>This is OsloMet</h1>
-      <p class="introduction">
-        Oslomet is Norway's third biggest university and was founded in 2011 as
-        a college, but was converted to a university in 2018. With us, there is
-        a short distance between education and research. Become something that
-        means something! Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Duis scelerisque arcu ac mauris ornare, sit amet sagittis ipsum
-        tempus.
+    <!-- Section used to group upcoming events -->
+    <section class="upcoming-events">
+      <h2 class="events-heading">Upcoming Events</h2>
+      <h3 class="events-year">2023</h3>
+      <!-- Unordered list with a grid display to place the different items the right places -->
+      <ul class="events-grid-container">
+        <!-- Three list elements, one per event, each with their own class used to specify their 
+            placement in the grid -->
+        <li class="events-calendar-first">
+          <!-- Three div elemtents, each with their own class used to specify their placement 
+              in the grid and used to make their own style -->
+          <div class="events-date">22 NOV</div>
+          <div class="events-info">Michael Jackson on being the first man on mars</div>
+          <div class="events-details">NASA institute / Center for earth and space research |
+            Conferences and seminars | Pilestredet 35, PH170</div>
+        </li>
+        <!-- New list element with the same structure as the first one in this section -->
+        <li class="events-calendar-second">
+          <div class="events-date">24 NOV</div>
+          <div class="events-info">"Younglings should go out more"- Leonardo DaVinci 2023</div>
+          <div class="events-details">Hybrid arrangement | Conferences and seminars |
+            Pilestredet 32, N002.107</div>
+        </li>
+        <!-- New list element with the same structure as the first one in this section -->
+        <li class="events-calendar-third">
+          <div class="events-date">30 NOV</div>
+          <div class="events-info">NordSec 2023-conference – Artificial intelligence, cybersecurity.</div>
+          <div class="events-details">Pilestredet, Oslo | Faculty for technology | Art and design</div>
+        </li>
+      </ul>
+      <!-- An external link leading to OsloMets very own events site, target="_blank" opens 
+          the link in a new tab -->
+      <p>
+        <a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt" target="_blank">
+          Check out other events <i class="arrow-events right"></i></a>
       </p>
-      <!--Button leading to an external site on a new tab. The a-element is set as the parent element
-        to make the whole button clickable -->
-      <a href="https://www.oslomet.no/om" target="_blank" class="button-homepage">
-        <p>Learn more about OsloMet</p>
-      </a>
+    </section>
 
-      <!--Section used to group the upcoming events: -->
-      <section class="upcoming-events">
-        <!--Heading for upcoming events -->
-        <h2 class="events-heading">Upcoming Events</h2>
-        <!--Heading showcasing which year the event is taking place in -->
-        <h3 class="events-year">2023</h3>
-        <!-- unordered list with a grid display used to place the different items the right places -->
-        <ul class="events-grid-container">
-          <!-- Three list elements, oner per event, each with their own class used to specify 
-              their placement in the grid -->
-          <li class="events-calendar-first">
-            <!-- Three div elemtents, each with their own class used to specify 
-              their placement in the grid and used to make their own style -->
-            <div class="events-date">22 NOV</div>
-            <div class="events-info">
-              Michael Jackson on being the first man on mars
-            </div>
-            <div class="events-details">
-              NASA institute / Center for earth and space research | Conferences and seminars | Pilestredet 35, PH170
-            </div>
-          </li>
-          <!--New list element with the same structure as the first one in this section -->
-          <li class="events-calendar-second">
-            <div class="events-date">24 NOV</div>
-            <div class="events-info">
-              "Younglings should go out more"- Leonardo DaVinci 2023
-            </div>
-            <div class="events-details">
-              Hybrid arrangement | Conferences and seminars | Pilestredet 32, N002.107
-            </div>
-          </li>
-          <!--New list element with the same structure as the first one in this section -->
-          <li class="events-calendar-third">
-            <div class="events-date">30 NOV</div>
-            <div class="events-info">
-              NordSec 2023-conference – Artificial intelligence, cybersecurity.
-            </div>
-            <div class="events-details">
-              Pilestredet, Oslo | Faculty for technology | Art and design
-            </div>
-          </li>
-        </ul>
-        <!-- An external link leading to OsloMets very own events site, target="_blank" opens the link in a new tab -->
-        <p>
-          <a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt" target="_blank">Check out other events <i
-              class="arrow-events right"></i></a>
-        </p>
-      </section>
-
-      <!--New section used to group news about OsloMet -->
-      <section class="news">
-        <h2>News from Campus</h2>
-
-        <!-- div-element used for the placements of the text-boxes -->
-        <div class="body-info-cards">
-          <!-- Figure element used to make the card-like boxes with pictures and text -->
-<!-- NOTE TO MARYAM M.: Maybe change figure to something else?? check out figcaption too -->
-          <figure class="info-cards">
-            <!-- a-element inside the figure-element to make everything else inside the figure element a link -->
-            <!-- external link that opens in new tab -->
-            <a href="https://www.oslomet.no/forskning/forskningsnyheter/slik-blir-du-en-bevisst-leder" target="_blank">
-              <!--Photo: Pixabay, from https://www.pexels.com/nb-no/@pixabay/  -->
-              <img src="./images/mantkd.jpg" alt="The new academic director of TKD.">
-              <!-- figcaption used to caption the text -->
-              <figcaption>
-                <!-- Paragraph element with a class (all paragraphs with this class is styled to look like a heading) -->
-                <p class="h4">
-                  Joe Biden named new academic director for TKD
-                </p>
-                <p>
-                  After he-who-must-not-be-named's scandal on live television, Joe Biden was the most promising
-                  candidate...
-                </p>
-              </figcaption>
-            </a>
-          </figure>
-          <!-- new figure-element with the same structure as the last one in this section -->
-          <figure class="info-cards">
-            <a href="https://www.oslomet.no/forskning/forskningsnyheter/vanskelig-folge-hygienerad-pa-kjokkenet"
-              target="_blank">
-              <!--Photo: Valeria Boltneva, from https://www.pexels.com/nb-no/@valeriya/  -->
-              <img src="./images/cantine_food.jpg" alt="Salad from the cantine.">
-              <figcaption>
-                <p class="h4">
-                  Professors at OsloMet strikes: "We want better food at the cantine"
-                </p>
-                <p>
-                  Witnesses say they saw professors demanding better food, and screaming that the cantine food taste like ****...
-                </p>
-              </figcaption>
-            </a>
-          </figure>
-          <!-- New figure element with the same structure as the last one in this section -->
-          <figure class="info-cards">
-            <a href="https://student.oslomet.no/siste-nytt/-/nyhet/skrive-oppgave-spar-tid-med-surveybanken-"
-              target="_blank">
-              <!--Photo: Monstera Production, from https://www.pexels.com/nb-no/@gabby-k/  -->
-              <img src="./images/bachelor_thesis.jpg" alt="Writing a thesis in math.">
-              <figcaption>
-                <p class="h4">
-                  Get your bachelor's thesis written for NOK 10,000
-                </p>
-                <p>
-                  More and more people fail their bachelor thesis. We have therefore developed an AI that writes your
-                  thesis for you. Check it out!
-                </p>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-<!-- NOTE SO MM: why is this here??? and not under section???-->
-        <a href="https://student.oslomet.no/siste-nytt" target="_blank" class="button-homepage">
-          <p>Read more campus news</p>
-        </a>
-      </section>
-      <!-- Button leading to an external site on a new tab -->
-
-
-      <!-- TIL HER  -->
-
-      <section class="research">
-        <h2>Research</h2>
-        <div class="research-container">
-          <figure class="research-article">
-            <a href="https://www.oslomet.no/forskning/forskningsnyheter/hvordan-ungdom-delta-demokratiet"
-              target="_blank">
-              <!-- Source: https://www.oslomet.no/forskning/forskningsnyheter/hvordan-ungdom-delta-demokratiet  -->
-              <figcaption>
-                <p class="research-title">
-                  How to encourage the youth to participate in the democracy?
-                </p>
-                <p class="research-arrow">
-                  <i class="arrow-events right" class="research-arrow"></i>
-                </p>
-                <p class="research-caption">
-                  New studies conducted by Oslomet shows that the solution is in the classroom.
-                </p>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="research-article">
-            <a href="https://www.oslomet.no/forskning/forskningsnyheter/trangboddhet-barn-unge" target="_blank">
-              <!-- Source: https://www.oslomet.no/forskning/forskningsnyheter/trangboddhet-barn-unge  -->
-              <figcaption>
-                <p class="research-title">
-                  The impact living in a cramped space has on children
-                </p>
-                <p class="research-arrow">
-                  <i class="arrow-events right" class="research-arrow"></i>
-                </p>
-
-                <p class="research-caption">
-                  New studies conducted by Oslomet shows that the solution is in the classroom.
-                </p>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="research-article">
-            <a href="https://www.oslomet.no/en/research/featured-research/make-digitalisation-work-for-all-citizens"
-              target="_blank">
-              <!-- Source: https://www.oslomet.no/en/research/featured-research/make-digitalisation-work-for-all-citizens  -->
-              <figcaption>
-                <p class="research-title"> Digitalization and accessibility</p>
-                <p class="research-arrow">
-                  <i class="arrow-events right" class="research-arrow"></i>
-                </p>
-                <p class="research-caption">
-                  Digital resources need to be accessible for everyone, which is why Oslomet is lifeing how to do that.
-                </p>
-              </figcaption>
-            </a>
-          </figure>
-
-          <figure class="research-article">
-            <a href="https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste" target="_blank">
-              <figcaption>
-                <!-- Source: https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste  -->
-                <p class="research-title">
-                  Picture books for adults
-                </p>
-                <p class="research-arrow">
-                  <i class="arrow-events right" class="research-arrow"></i>
-                </p>
-
-                <p class="research-caption">
-                  Scientists now believe pcture books for adults will soon become mainstream, due
-                  to increased availability.
-                </p>
-              </figcaption>
-            </a>
-          </figure>
-        </div>
-        <!--Button leading to an external site on a new tab -->
-        <a href="https://www.oslomet.no/en/research" target="_blank" class="button-homepage">
-          <p>
-            Read more campus research
-          </p>
-        </a>
-      </section>
-
-      <h2>Life at Campus</h2>
-      <section class="life-container">
-        <div class="life-column">
-          <a href="https://www.oslomet.no/forskning/forskningsnyheter/trenger-ledere-som-skjonner-digitalisering" target="_blank">
-            <picture>
-              <!-- Photo: Private, Screenshot from Microsoft Word  -->
-              <img src="./images/petition.jpg" alt="A petition to fire Joe Biden." class="life-img">
-            </picture>
-            <figure class="life-cards">
-              <p class="life-title">
-                Sign the petition fire Joe Biden
-              </p>
-              <p class="life-faculty">Petition, Education</p>
-              <p class="life-explanation">
-                Most students are not satisfied with the new director of TKD. Join us to sign the petition to fire Joe
-                Biden!
-              </p>
-            </figure>
+    <!--NOTE TO MARYAM: KLASSEN NEWS BRUKES IKKE? New section used to group news about OsloMet -->
+    <section class="news">
+      <h2>News from Campus</h2>
+      <!-- div-element used for the placements of the text-boxes -->
+      <div class="body-info-cards">
+        <!-- Figure element used to make the card-like boxes with pictures and text -->
+        <!-- NOTE TO MARYAM M.: Maybe change figure to something else?? check out figcaption too -->
+        <figure class="info-cards">
+          <!-- a-element inside the figure-element to make everything else inside the figure 
+              element a link -->
+          <!-- external link that opens in new tab -->
+          <a href="https://www.oslomet.no/forskning/forskningsnyheter/slik-blir-du-en-bevisst-leder" target="_blank">
+            <!--Photo: Pixabay, from https://www.pexels.com/nb-no/@pixabay/  -->
+            <img src="./images/mantkd.jpg" alt="The new academic director of TKD.">
+            <!-- figcaption used to caption the text -->
+            <figcaption>
+              <!-- Paragraph element with a class (all paragraphs with this class is styled to look 
+                  like a heading) -->
+              <p class="h4">Joe Biden named new academic director for TKD</p>
+              <p>After he-who-must-not-be-named's scandal on live television, Joe Biden was the most
+                promising candidate...</p>
+            </figcaption>
           </a>
-        </div>
-
-        <div class="life-column">
-          <a href="https://student.oslomet.no/treningstilbud" target="_blank">
-            <picture>
-              <!-- Photo: Patrick Case, from https://www.pexels.com/nb-no/@case-originals/  -->
-              <img src="./images/cricket.jpg" alt="Cricket player hitting a ball." class="life-img">
-            </picture>
-            <figure class="life-cards">
-              <p class="life-title">Join a cricket team</p>
-              <p class="life-faculty">Sports </p>
-              <p class="life-explanation">
-                Would you like valuable experience, friends from India and a much more enjoyable study time? Then you
-                should join one of our cricket teams!
-              </p>
-            </figure>
-          </a>
-        </div>
-
-        <div class="life-column">
-          <a href="https://www.oslomet.no/studier/studenthistorier/endelig-studiestart" target="_blank">
-            <picture>
-              <!-- Photo: Wolfgang, from https://www.pexels.com/nb-no/@wolfgang-1002140/  -->
-              <img src="./images/consertjustinbieber.jpg"
-                alt="Stage with musicians surrounded by an enthusiastic crowd." class="life-img">
-            </picture>
-            <figure class="life-cards">
-              <p class="life-title">See Justin Bieber perform every friday! </p>
-              <p class="life-faculty">Faculty of social sciences</p>
-              <p class="life-explanation">
-                We at OsloMet are Beliebers. End every week at campus with iconic Justin Bieber songs like <em>Baby</em>
-                and so on!
-              </p>
-            </figure>
-          </a>
-        </div>
-
-        <div class="life-column">
-          <a href="https://www.oslomet.no/en/study/student-stories/kjeller-student-know-your-local-area"
+        </figure>
+        <!-- new figure-element with the same structure as the last one in this section -->
+        <figure class="info-cards">
+          <a href="https://www.oslomet.no/forskning/forskningsnyheter/vanskelig-folge-hygienerad-pa-kjokkenet"
             target="_blank">
-            <picture>
-              <!-- Photo: Buro Millenial, from https://www.pexels.com/nb-no/@buro-millennial-636760/  -->
-              <img src="./images/kjellermet.jpg" alt="Happy students from KjellerMet" class="life-img">
-            </picture>
-            <figure class="life-cards">
-              <p class="life-title">Tired of OsloMet? Become a part of KjellerMet</p>
-              <p class="life-faculty">Education</p>
-              <p class="life-explanation">
-                KjellerMet is the new OsloMet! Unlike the old fashioned OsloMet, KjellerMet is new inside out, with
-                modern architecture.
-              </p>
-            </figure>
+            <!--Photo: Valeria Boltneva, from https://www.pexels.com/nb-no/@valeriya/  -->
+            <img src="./images/cantine_food.jpg" alt="Salad from the cantine.">
+            <figcaption>
+              <p class="h4">Professors at OsloMet strikes: "We want better food at the cantine"</p>
+              <p>Witnesses say they saw professors demanding better food, and screaming that the
+                cantine food taste like ****...</p>
+            </figcaption>
           </a>
-        </div>
-
-        <div class="life-column">
-          <a href="https://www.lifeinnorway.net/camping-in-norway/" target="_blank">
-            <picture>
-              <!-- Photo: Kindel Media, from https://www.pexels.com/nb-no/bilde/sitte-samvaer-akustisk-gitar-gitarist-7149181/  -->
-              <img src="./images/camping-trip.jpg" class="life-img"
-                alt="Happy students sitting outside a tent with a guitar.">
-            </picture>
-            <figure class="life-cards">
-              <p class="life-title">
-                Wilderness Retreat: OsloMet Camping Expedition
-              </p>
-              <p class="life-faculty">Outdoor Adventures</p>
-              <p class="life-explanation">
-                Hey OsloMet adventurers! Ready to escape into nature? Pack your tents, gather around the bonfire, and
-                let's make some s'more memories together.
-              </p>
-            </figure>
+        </figure>
+        <!-- New figure element with the same structure as the last one in this section -->
+        <figure class="info-cards">
+          <a href="https://student.oslomet.no/siste-nytt/-/nyhet/skrive-oppgave-spar-tid-med-surveybanken-"
+            target="_blank">
+            <!-- Photo: Monstera Production, from https://www.pexels.com/nb-no/@gabby-k/  -->
+            <img src="./images/bachelor_thesis.jpg" alt="Writing a thesis in math.">
+            <figcaption>
+              <p class="h4">Get your bachelor's thesis written for NOK 10,000</p>
+              <p>More and more people fail their bachelor thesis. We have therefore developed an AI
+                that writes yourthesis for you. Check it out!</p>
+            </figcaption>
           </a>
-        </div>
+        </figure>
+      </div>
+      <!-- NOTE SO MM: why is this here??? and not under section???-->
+      <a href="https://student.oslomet.no/siste-nytt" target="_blank" class="button-homepage">
+        <p>Read more campus news</p>
+      </a>
+    </section>
+    <!-- Button leading to an external site on a new tab -->
 
-        <div class="life-column">
-          <a href="https://www.oslomet.no/forskning/forskningsnyheter/varm-teknologi" target="_blank">
-            <picture>
-              <!-- Photo: Pixabay, from https://www.pexels.com/nb-no/bilde/youtube-display-skjerm-apper-267350/  -->
-              <img src="./images/app-development.jpg" alt="Rows of different mobile apps." class="life-img">
-            </picture>
-            <figure class="life-cards">
-              <p class="life-title">
-                Join the App Development Team!
+
+    <!-- TIL HER  -->
+
+    <!-- Research  -->
+    <section class="research">
+      <h2>Research</h2>
+      <div class="research-container">
+        <figure class="research-article">
+          <a href="https://www.oslomet.no/forskning/forskningsnyheter/hvordan-ungdom-delta-demokratiet" target="_blank">
+            <!-- Source: https://www.oslomet.no/forskning/forskningsnyheter/hvordan-ungdom-delta-demokratiet  -->
+            <figcaption>
+              <p class="research-title">How to encourage the youth to participate in the democracy?</p>
+              <p class="research-arrow">
+                <i class="arrow-events right" class="research-arrow"></i>
               </p>
-              <p class="life-faculty">Tech Titans: App Innovators</p>
-              <p class="life-explanation">
-                Are you eager to dive into the world of app development? Collaborate, learn, and bring your ideas to
-                life!
-              </p>
-            </figure>
+              <p class="research-caption">New studies conducted by Oslomet shows that the solution is
+                in the classroom.</p>
+            </figcaption>
           </a>
-        </div>
+        </figure>
 
-        <div class="life-column">
-          <a href="https://www.utefilm.no/" target="_blank">
-            <picture>
-              <!-- Photo: Pixabay, from https://www.pexels.com/nb-no/bilde/kino-mat-popcorn-salt-popcorn-33129/ -->
-              <img src="./images/kino-oslomet.jpg" alt="Popcorn in an old-school red and white box." class="life-img">
-            </picture>
-            <figure class="life-cards">
-              <p class="life-title">
-                Join the open-air cinema every first day of the month!
+        <figure class="research-article">
+          <a href="https://www.oslomet.no/forskning/forskningsnyheter/trangboddhet-barn-unge" target="_blank">
+            <!-- Source: https://www.oslomet.no/forskning/forskningsnyheter/trangboddhet-barn-unge  -->
+            <figcaption>
+              <p class="research-title">The impact living in a cramped space has on children</p>
+              <p class="research-arrow">
+                <i class="arrow-events right" class="research-arrow"></i>
               </p>
-              <p class="life-faculty">Faculty of social sciences </p>
-              <p class="life-explanation">
-                Join for an awesome open-air cinema experience! Grab your blankets and friends for a night of movie
-                magic under the stars every month.
-              </p>
-            </figure>
+              <p class="research-caption"> New studies conducted by Oslomet shows that the solution is
+                in the classroom.</p>
+            </figcaption>
           </a>
-        </div>
-      </section>
+        </figure>
 
-    </main>
+        <figure class="research-article">
+          <a href="https://www.oslomet.no/en/research/featured-research/make-digitalisation-work-for-all-citizens"
+            target="_blank">
+            <!-- Source: https://www.oslomet.no/en/research/featured-research/make-digitalisation-work-for-all-citizens  -->
+            <figcaption>
+              <p class="research-title">Digitalization and accessibility</p>
+              <p class="research-arrow">
+                <i class="arrow-events right" class="research-arrow"></i>
+              </p>
+              <p class="research-caption">Digital resources need to be accessible for everyone, which is
+                why Oslomet is lifeing how to do that.</p>
+            </figcaption>
+          </a>
+        </figure>
 
-    <!-- Webpage ends with a semantic footer element which represents the company's adress, phone number, email, and links to socials -->
-    <footer class="footer">
-      <!-- The same class is used for all three columns. 
+        <figure class="research-article">
+          <a href="https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste" target="_blank">
+            <figcaption>
+              <!-- Source: https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste  -->
+              <p class="research-title">Picture books for adults</p>
+              <p class="research-arrow">
+                <i class="arrow-events right" class="research-arrow"></i>
+              </p>
+              <p class="research-caption">Scientists now believe pcture books for adults will soon
+                become mainstream, due to increased availability.</p>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
+      <!--Button leading to an external site on a new tab -->
+      <a href="https://www.oslomet.no/en/research" target="_blank" class="button-homepage">
+        <p>Read more campus research</p>
+      </a>
+    </section>
+
+    <!-- Life at Campus  -->
+    <h2>Life at Campus</h2>
+    <section class="life-container">
+      <div class="life-column">
+        <a href="https://www.oslomet.no/forskning/forskningsnyheter/trenger-ledere-som-skjonner-digitalisering"
+          target="_blank">
+          <picture>
+            <!-- Photo: Private, Screenshot from Microsoft Word  -->
+            <img src="./images/petition.jpg" alt="A petition to fire Joe Biden." class="life-img">
+          </picture>
+          <figure class="life-cards">
+            <p class="life-title">Sign the petition fire Joe Biden</p>
+            <p class="life-faculty">Petition, Education</p>
+            <p class="life-explanation">Most students are not satisfied with the new director of TKD.
+              Join us to sign the petition to fire Joe Biden!</p>
+          </figure>
+        </a>
+      </div>
+
+      <div class="life-column">
+        <a href="https://student.oslomet.no/treningstilbud" target="_blank">
+          <picture>
+            <!-- Photo: Patrick Case, from https://www.pexels.com/nb-no/@case-originals/  -->
+            <img src="./images/cricket.jpg" alt="Cricket player hitting a ball." class="life-img">
+          </picture>
+          <figure class="life-cards">
+            <p class="life-title">Join a cricket team</p>
+            <p class="life-faculty">Sports</p>
+            <p class="life-explanation">Would you like valuable experience, friends from India and a
+              much more enjoyable study time? Then you should join one of our cricket teams!</p>
+          </figure>
+        </a>
+      </div>
+
+      <div class="life-column">
+        <a href="https://www.oslomet.no/studier/studenthistorier/endelig-studiestart" target="_blank">
+          <picture>
+            <!-- Photo: Wolfgang, from https://www.pexels.com/nb-no/@wolfgang-1002140/  -->
+            <img src="./images/consertjustinbieber.jpg" alt="Stage with musicians surrounded by an enthusiastic crowd."
+              class="life-img">
+          </picture>
+          <figure class="life-cards">
+            <p class="life-title">See Justin Bieber perform every friday! </p>
+            <p class="life-faculty">Faculty of social sciences</p>
+            <p class="life-explanation">We at OsloMet are Beliebers. End every week at campus with
+              iconic Justin Bieber songs like <em>Baby</em> and so on!</p>
+          </figure>
+        </a>
+      </div>
+
+      <div class="life-column">
+        <a href="https://www.oslomet.no/en/study/student-stories/kjeller-student-know-your-local-area" target="_blank">
+          <picture>
+            <!-- Photo: Buro Millenial, from https://www.pexels.com/nb-no/@buro-millennial-636760/  -->
+            <img src="./images/kjellermet.jpg" alt="Happy students from KjellerMet" class="life-img">
+          </picture>
+          <figure class="life-cards">
+            <p class="life-title">Tired of OsloMet? Become a part of KjellerMet</p>
+            <p class="life-faculty">Education</p>
+            <p class="life-explanation">KjellerMet is the new OsloMet! Unlike the old fashioned OsloMet,
+              KjellerMet is new inside out, with modern architecture.
+            </p>
+          </figure>
+        </a>
+      </div>
+
+      <div class="life-column">
+        <a href="https://www.lifeinnorway.net/camping-in-norway/" target="_blank">
+          <picture>
+            <!-- Photo: Kindel Media, from https://www.pexels.com/nb-no/bilde/sitte-samvaer-akustisk-gitar-gitarist-7149181/  -->
+            <img src="./images/camping-trip.jpg" class="life-img" alt="Happy students sitting outside 
+              a tent with a guitar.">
+          </picture>
+          <figure class="life-cards">
+            <p class="life-title">Wilderness Retreat: OsloMet Camping Expedition</p>
+            <p class="life-faculty">Outdoor Adventures</p>
+            <p class="life-explanation">Hey OsloMet adventurers! Ready to escape into nature? Pack your 
+              tents, gather around the bonfire, and let's make some s'more memories together.</p>
+          </figure>
+        </a>
+      </div>
+
+      <div class="life-column">
+        <a href="https://www.oslomet.no/forskning/forskningsnyheter/varm-teknologi" target="_blank">
+          <picture>
+            <!-- Photo: Pixabay, from https://www.pexels.com/nb-no/bilde/youtube-display-skjerm-apper-267350/  -->
+            <img src="./images/app-development.jpg" alt="Rows of different mobile apps." class="life-img">
+          </picture>
+          <figure class="life-cards">
+            <p class="life-title">Join the App Development Team!</p>
+            <p class="life-faculty">Tech Titans: App Innovators</p>
+            <p class="life-explanation">Are you eager to dive into the world of app development?
+              Collaborate, learn, and bring your ideas to life!</p>
+          </figure>
+        </a>
+      </div>
+
+      <div class="life-column">
+        <a href="https://www.utefilm.no/" target="_blank">
+          <picture>
+            <!-- Photo: Pixabay, from https://www.pexels.com/nb-no/bilde/kino-mat-popcorn-salt-popcorn-33129/ -->
+            <img src="./images/kino-oslomet.jpg" alt="Popcorn in an old-school red and white box." class="life-img">
+          </picture>
+          <figure class="life-cards">
+            <p class="life-title">Join the open-air cinema every first day of the month!</p>
+            <p class="life-faculty">Faculty of social sciences </p>
+            <p class="life-explanation">Join for an awesome open-air cinema experience! Grab your
+              blankets and friends for a night of movie magic under the stars every month.
+            </p>
+          </figure>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Webpage ends with a semantic footer element which represents three columns: the company's adress, 
+      phone number and email, and links to socials -->
+  <footer class="footer">
+    <!-- Same "footer-col" class is used for all three columns. 
           First Column with University Information -->
-      <div class="footer-col">
-        <p class="h4">Oslo Metropolitan University</p>
-        <ul>
-          <li>Postbox 4, St. Olavs plass</li>
-          <li>0130 Oslo</li>
-        </ul>
+    <div class="footer-col">
+      <p class="h4">Oslo Metropolitan University</p>
+      <ul>
+        <li>Postbox 4, St. Olavs plass</li>
+        <li>0130 Oslo</li>
+      </ul>
+    </div>
+    <!-- Second Column with Contact Information -->
+    <div class="footer-col">
+      <p class="h4">Contact information</p>
+      <ul>
+        <li><a href="tel:+4767235000">Tel.: 67 23 50 00</a></li>
+        <li>
+          <a href="mailto:someone@example.com">Email: post@oslomet.no</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Third Column with Social Media Links -->
+    <div class="footer-col">
+      <p class="h4">Follow Us</p>
+      <div class="socials">
+        <!-- Source: https://www.w3schools.com/icons/ 
+            class="fa fa-" refers to the Font Awesome class that styles the icons. -->
+        <a href="https://www.facebook.com/oslomet/" target="_blank" class="fa fa-facebook"
+          aria-label="Check out our facebook-page."></a>
+        <a href="https://www.instagram.com/oslomet/" target="_blank" class="fa fa-instagram"
+          aria-label="Check out our Instagram-page."></a>
+        <a href="https://twitter.com/OsloMet" target="_blank" class="fa fa-twitter"
+          aria-label="Check out our Twitter-page."></a>
+        <a href="https://no.linkedin.com/school/oslomet/" target="_blank" class="fa fa-linkedin"
+          aria-label="Check out our LinkedIn-page."></a>
       </div>
-      <!-- Second Column with Contact Information -->
-      <div class="footer-col">
-        <p class="h4">Contact information</p>
-        <ul>
-          <li><a href="tel:+4767235000">Tel.: 67 23 50 00</a></li>
-          <li>
-            <a href="mailto:someone@example.com">Email: post@oslomet.no</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Third Column with Social Media Links -->
-      <div class="footer-col">
-        <p class="h4">Follow Us</p>
-        <div class="socials">
-          <!-- class="fa fa-" refers to the Font Awesome class that styles the icons.
-          Source: https://www.w3schools.com/icons/ -->
-          <a href="https://www.facebook.com/oslomet/" target="_blank" class="fa fa-facebook" aria-label="Check out our facebook-page."></a>
-          <a href="https://www.instagram.com/oslomet/" target="_blank" class="fa fa-instagram" aria-label="Check out our Instagram-page."></a>
-          <a href="https://twitter.com/OsloMet" target="_blank" class="fa fa-twitter" aria-label="Check out our Twitter-page."></a>
-          <a href="https://no.linkedin.com/school/oslomet/" target="_blank" class="fa fa-linkedin" aria-label="Check out our LinkedIn-page."></a>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 
 </html>
