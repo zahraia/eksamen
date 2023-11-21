@@ -226,6 +226,10 @@ nav a {
   text-align: center;
   box-shadow: 0 -6px 20px 0;
   position: relative;
+  height: 10.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .explore-oslomet-btn a {
@@ -295,7 +299,8 @@ nav a {
 }
 
 .button-homepage:hover {
-  background-color: #708584;
+  background-color: #3d5a59;
+  border: #333 2px solid;
 }
 
 .upcoming-events {
@@ -942,6 +947,23 @@ nav a {
     font-weight: normal;
   }
 }
+
+@media screen and (max-width:1200px) {
+
+  .life-container {
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(4, 5fr);
+    grid-gap: 2%;
+    overflow-x: hidden;
+  }
+
+  .life-column {
+    width: fit-content;
+    margin: 1rem;
+    padding-block-end: 5rem;
+  }
+  
+}
 @media screen and (max-width: 700px) {
   .upcoming-events {
     background-color: #f6f6f3;
@@ -1013,6 +1035,7 @@ nav a {
     padding-block-end: 5rem;
   }
 }
+
 
 @media (max-width: 700px) {
   .button-homepage {
