@@ -1,3 +1,4 @@
+/* CSS FOR ALL PAGES */
 html {
   scroll-behavior: smooth;
 }
@@ -18,7 +19,7 @@ body {
 }
 
 h1 {
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 4rem;
@@ -26,12 +27,11 @@ h1 {
 }
 
 h2 {
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 1.5rem;
   text-align: center;
   font-size: 2.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-top: 7rem;
 }
 
 h3 {
@@ -41,34 +41,18 @@ h3 {
   font-size: 1.5rem;
 }
 
-h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.introduction {
-  margin-bottom: 3rem;
-  text-align: center;
-  font-size: 1.7rem;
-  margin-left: 9rem;
-  margin-right: 9rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: lighter;
-}
-@media (max-width: 700px) {
-  .introduction {
-    font-size: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-weight: normal;
-  }
+.h4 {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
 }
 
-/* CSS TO INDEX PAGE */
+/* CSS FOR NAVIGATION BAR */
 .headerimg {
   width: 30%;
   position: absolute;
@@ -94,30 +78,13 @@ header {
   z-index: 100;
 }
 
-/* .meny-img {
+picture.meny-img img {
   position: absolute;
   margin-left: 2em;
   width: 8em;
   color: #fff;
   filter: invert(1);
   margin-top: 0.625em;
-} */
-
-picture.meny-img img {
-  /* GAMMEL CSS
-  position: absolute;
-  margin-left: 2em;
-  width: 8em;
-  color: #fff;
-  filter: invert(1);
-  margin-top: 0.625em; */
-
-  position: absolute;
-  right: 90%;
-  top: 0;
-  width: 8em;
-
-  filter: invert(1);
 }
 
 header nav ul li a {
@@ -186,27 +153,63 @@ nav a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 840px) {
-  nav {
-    display: block;
-    margin: 0.3rem; /* Provides a little space between items */
-    margin-top: 7rem;
-  }
-
-  header {
-    position: absolute;
-  }
+/* FOOTER CSS */
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Organize elements in rows that can wrap based on the screen size */
+  text-align: center;
+  background-color: #2d2d1c;
+  color: white;
 }
 
-@media screen and (max-width: 738px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-  }
-  header {
-    background-color: #333;
-  }
+.footer-col {
+  width: 100%; /* Make the column take up the full width */
+  margin: auto; /* Center the column horizontally */
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 0.5rem; /*Adds margin between each list item, except the last one.*/
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #8da7a6;
+  padding-left: 0.2rem;
+}
+
+.footer-col .socials a {
+  padding: 0.25rem;
+  margin-right: 0.5rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.footer-col .socials a:hover {
+  color: white;
+  background-color: #899f9e;
+}
+
+/* CSS FOR INDEX-PAGE */
+
+#homepage {
+  width: 100%;
 }
 
 .parallax {
@@ -219,8 +222,8 @@ nav a {
 }
 
 .explore-oslomet-btn {
-  background-color: #7e9695;
-  padding: 1rem;
+  background-color: #617574;
+  padding: 1.1rem;
   text-align: center;
   box-shadow: 0 -6px 20px 0;
   position: relative;
@@ -230,7 +233,6 @@ nav a {
   color: white;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: larger;
   text-decoration: none;
 }
 
@@ -247,6 +249,16 @@ nav a {
 
 .explore-oslomet-btn a:hover::before {
   width: 100%;
+}
+
+.introduction {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
 }
 
 /* https://www.w3schools.com/howto/howto_css_arrows.asp */
@@ -267,12 +279,11 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: large;
-  background-color: #7e9695;
+  background-color: #617574;
   width: 20rem;
   height: 3rem;
-  margin-top: 4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
@@ -289,7 +300,7 @@ nav a {
 }
 
 .upcoming-events {
-  background-color: #f6f6f3;
+  background-color: #eff2f4;
   width: 100%;
   padding-bottom: 2rem;
 }
@@ -298,7 +309,7 @@ nav a {
   list-style: none;
 }
 
-.grid-container {
+.events-grid-container {
   display: grid;
   grid-template-areas:
     "first"
@@ -311,7 +322,7 @@ nav a {
 }
 
 /*endre klassenavn */
-.calendar-event {
+.events-calendar-first {
   border: solid;
   border-color: rgb(189, 188, 188);
   border-left: none;
@@ -320,9 +331,10 @@ nav a {
   grid-area: first;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
-.calendar-date {
+.events-calendar-second {
   border: solid;
   border-color: rgb(189, 188, 188);
   border-left: none;
@@ -331,9 +343,10 @@ nav a {
   grid-area: second;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
-.calendar-last {
+.events-calendar-third {
   border: solid;
   border-color: rgb(189, 188, 188);
   border-left: none;
@@ -341,42 +354,50 @@ nav a {
   grid-area: last;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
-.date {
+.events-date {
   grid-column-start: 1;
   grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
   margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d9af4e;
+  background-color: #647696;
   color: white;
+  font-weight: 600;
   height: 5rem;
   width: 5rem;
-  font-size: 1.1rem;
 }
 
-.event {
+.events-info {
   grid-column-start: 3;
   grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin-top: 2rem;
   margin-left: 0;
   font-size: 1.1rem;
   font-family: sans-serif;
   font-weight: bolder;
 }
 
-.more-info-event {
+.events-details {
   grid-column-start: 3;
   grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
   display: flex;
   align-items: center;
   font-family: sans-serif;
   font-weight: normal;
   font-size: small;
+  margin-bottom: 2rem;
 }
 
 .upcoming-events a {
@@ -394,7 +415,8 @@ nav a {
 }
 
 .upcoming-events p a:hover {
-  text-decoration-color: #d9af4e;
+/* endre farge */
+  text-decoration-color: #ffd500;
 }
 
 .arrow-events {
@@ -410,201 +432,20 @@ nav a {
   -webkit-transform: rotate(-45deg);
 }
 
-@media (max-width: 700px) {
-  .upcoming-events {
-    background-color: #f6f6f3;
-    width: 100%;
-  }
-
-  .upcoming-events ul {
-    list-style: none;
-  }
-
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  /*endre klassenavn */
-  .calendar-event,
-  .calendar-date,
-  .calendar-last {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-  }
-
-  .date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-weight: bolder;
-  }
-
-  .event {
-    text-align: center;
-  }
-
-  .more-info-event {
-    text-align: center;
-  }
-
-  .upcoming-events a {
-    width: fit-content;
-  }
-}
-
-.body-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 30vh;
-  margin-top: 0.5rem;
-
-  margin-bottom: 0;
-  width: 70%;
-  margin: auto;
-}
-
-.card-frontside {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25rem;
-  width: 100%;
-  margin: 0.6rem;
-  overflow: hidden;
-  box-shadow: 0 20px 20px -20px;
-  padding: 0;
-}
-
-.card-frontside img {
-  position: relative;
-  vertical-align: top;
-  max-width: 100%;
-  transition: 0.25s ease;
-}
-
-.card-frontside:hover img {
-  transform: scale(1.1);
-}
-
-.card-frontside figcaption {
-  position: absolute;
-  padding-top: 1rem;
-  padding-bottom: 2.4rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  height: 50%;
-  bottom: 0;
-  z-index: 1;
-  color: black;
-}
-
-.card-frontside figcaption::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.research {
   background-color: #f6f6f3;
-  z-index: -1;
+  padding-bottom: 0.5rem;
 }
 
-.card-frontside h4 {
-  display: inline-block;
-  margin-bottom: 0.3rem;
-}
-
-.card-frontside p {
-  font: 0.8em;
-  line-height: 1.2em;
-}
-
-@media (max-width: 700px) {
-  .body-card {
-    flex-direction: column;
-    width: 90%;
-  }
-}
-/*Hvorfor er denne her???? campuslife button???*/
-.button-homepage-campuslife {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: large;
-  background-color: #7e9695;
-  width: 23rem;
-  height: 3rem;
-  margin-bottom: 5rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 900;
-  transition: 0.5s;
-}
-
-.button-homepage-campuslife a {
-  color: white;
-  text-decoration: none;
-}
-
-.button-homepage-campuslife:hover {
-  background-color: #708584;
-}
-
-@media (max-width: 700px) {
-  .button-homepage {
-    font-size: 1rem;
-    width: 13rem;
-    text-align: center;
-  }
-}
-
-.life-container {
-  display: grid;
-  grid-template-columns: repeat(7, 23%);
-  grid-template-rows: 100%;
-  grid-gap: 2%;
-  flex-direction: row;
-  width: 70%;
-  height: 55vh;
-  margin-bottom: 5em;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: scroll;
-
-  /* 
-  for andre browsere, kan skrive om dette i accessibility*/
-
-  /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
-  scrollbar-color: darkgrey white;
-  /* thumb and track color */
-  scrollbar-width: thin;
-  /* thin, auto, or none */
-
-  scroll-behavior: smooth;
-}
-
-/* MOVE TO FRONTPAGECSS */
 .research-container {
   display: grid;
   grid-template-columns: repeat(2, 5fr);
   grid-template-rows: repeat(2, 2fr);
   grid-gap: 5%;
   width: 70%;
-  height: 21rem;
+  height: fit-content;
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .research-article {
@@ -632,23 +473,55 @@ nav a {
   font-weight: 500;
 }
 
+.research-column p {
+  margin-left: 0.4em;
+}
+
 .research-arrow {
   float: right;
 }
 
-/* .research-container > .research-column:first-child {
-  margin-left: 2em;
-} */
+.research-caption{
+  font-size: 1rem;
+}
+
+.life-container {
+  display: grid;
+  grid-template-columns: repeat(7, 23%);
+  grid-template-rows: 100%;
+  grid-gap: 15%;
+  width: 70%;
+  height: 95vh;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+
+  /* for andre browsere, kan skrive om dette i accessibility*/
+
+  /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
+  scrollbar-color: darkgrey white;
+  /* thumb and track color */
+  scrollbar-width: thin;
+  /* thin, auto, or none */
+
+  scroll-behavior: smooth;
+}
 
 .life-column {
-  width: 100%;
-  height: 90%;
+  width: 140%;
+  height: 80%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition-timing-function: ease;
   transition-duration: 0.5s;
   margin-bottom: 3%;
   margin-top: 7%;
+}
+
+.life-container .life-column a {
+  color: black;
+  text-decoration: none;
 }
 
 .life-column:hover {
@@ -682,111 +555,113 @@ nav a {
   border-radius: 0.625rem;
 }
 
+.life-cards {
+  padding-top: 1rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  height: 50%;
+  bottom: 0;
+  z-index: 1;
+}
+
 .life-title {
-  font-weight: 600;
-  font-size: 1.3rem;
+  font-weight: bolder;
+  font-size: 1.1rem;
   margin-bottom: 0.2em;
 }
 
 .life-faculty {
   font-weight: 600;
-  color: orange;
-  margin-bottom: 1.3em;
+  color: #5b7588;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
 }
 
-.research-column p {
-  margin-left: 0.4em;
+.life-explanation{
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 /* CSS TO P35 PAGE */
-.containerp35 {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+
+.p35img1 {
+  display: block;
+  position: relative;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  width: auto;
+  background-image: url(../images/cantine_shop.jpg);
+  margin-bottom: 1rem;
 }
 
-.imgtxtp35 {
+.p35img2 {
+  width: 66%;
+  display: block;
+  position: relative;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  width: auto;
+  background-image: url(../images/library.jpg);
+  margin-bottom: 1rem;
+}
+
+.p35img3 {
+  width: 66%;
+  display: block;
+  position: relative;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  width: auto;
+  background-image: url(../images/datatorget.jpg);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  margin-bottom: 3rem;
-  padding-left: 0.6rem;
-  padding-right: 1.8rem;
-  height: 27.5rem;
 }
 
-.imgtxtp35:nth-child(odd) {
-  background-color: #f6f6f3;
+.overlay p {
+  color: white;
+  text-align: center;
+  padding-left: 15rem;
+  padding-right: 15rem
+  ; 
 }
 
-.imgtxtp35:nth-child(even) {
-  background-color: #cbd5d4;
-}
-
-.imgtxtp35:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.imgp35 {
-  height: 27.5rem;
-  width: 31.9rem;
-  padding-right: 0;
-  margin-top: -1.8rem;
-  margin-bottom: -1.8rem;
-  margin-left: -1rem;
-}
-
-.textp35 {
-  flex: 1;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.textp35 p {
+.image-text{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
-  margin-top: 0.6rem;
+  padding: 1rem;  
 }
 
 .p35-card {
-  background-color: #f6f6f3;
+  background-color: #eff2f4;
 }
 
-@media (max-width: 700px) {
-  .containerp35 {
-    width: 100%;
-  }
 
-  .imgtxtp35 {
-    flex-direction: column;
-  }
-
-  .imgtxtp35:nth-child(even) {
-    flex-direction: column;
-  }
-
-  .imgp35 {
-    height: 14rem;
-    width: 20rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-
-  .textp35 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .textp35 p {
-    font-size: 1rem;
-    margin-top: 0rem;
-  }
-}
-/* END CSS TO PAGE 4 P35 END */
-
-/* CSS TO TOPIC PAGE */
+/* CSS TO TOPICAL PAGE */
 .topical-content {
   width: 100%;
   margin: auto;
@@ -796,7 +671,6 @@ nav a {
 .topical-content p {
   width: 65%;
   margin: auto;
-  margin-bottom: 3em;
 }
 
 .header-content body {
@@ -810,7 +684,7 @@ nav a {
 }
 
 .topical-paragraphs {
-  padding-bottom: 2em;
+  padding-bottom: 4rem;
 }
 
 .center-topical-img {
@@ -818,35 +692,11 @@ nav a {
   margin: auto;
 }
 
-.topical-stats {
-  width: 22em;
-
-  height: 12em;
-  padding: 2%;
-  /*margin-left: 5%; hva gjør denne?*/
-  margin: auto;
-  align-items: center;
-  background-color: #7e9695;
-  color: white;
-  text-align: center;
-}
-
-.topical-stats-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-color: #f6f6f3;
-  padding: 5em;
-}
-
-.stats-writing {
-  font-weight: 600;
-}
 
 .third-topical-paragraph {
-  background-color: #f6f6f3;
-  padding-bottom: 5em;
+  background-color: #eff2f4;
   padding-top: 0.5em;
+  padding-bottom: 2rem;
 }
 
 .third-topical-list li {
@@ -859,7 +709,6 @@ nav a {
 
 .learn-more-topical-heading {
   text-align: center;
-  background-color: #7e9695;
 }
 
 .card-section {
@@ -871,13 +720,10 @@ nav a {
   display: flex;
   padding: 5em;
   align-items: center;
-  background-color: #7e9695;
 }
 
 .topical-column {
-  float: left;
   margin: auto;
-
   align-items: stretch;
   justify-content: center;
   transition-property: transform;
@@ -889,6 +735,7 @@ nav a {
   margin-left: auto;
   background: #fff;
   margin-right: auto;
+  box-shadow: 0 20px 20px -20px;
 }
 
 .topical-column:hover {
@@ -932,10 +779,6 @@ nav a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  padding-left: 2.2rem;
-  padding-right: 2.2rem;
   text-decoration: none;
   text-shadow: 0px 0px 0px #528ecc;
 }
@@ -953,101 +796,303 @@ nav a {
   padding: 0.6rem;
 }
 
-@media screen and (max-width: 1200px) {
-  .topical-column {
-    display: block;
-    flex: 0 1 calc(50% - 10px);
-    margin: 0.3rem;
-    margin-left: 0.3rem auto;
-    margin-right: 0.3rem auto;
-    flex: 0 1 calc(50% - 0.6rem); /* Sets the basis for each item */
-    margin: 0.3rem; /* Provides a little space between items */
-  }
 
-  .topical-row-info {
-    width: 100%;
-    flex-direction: row;
-    display: block;
-    flex-wrap: wrap;
-    margin: auto;
-  }
-}
+/* SHARED BY INDEX AND P35 */
 
-/* FOOTER CSS */
-.footer {
+.body-info-cards {
   display: flex;
-  flex-wrap: wrap; /* organize elements in rows that can wrap based on the screen size */
-  text-align: center;
-  background-color: #2d2d1c;
-  color: white;
-  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  padding-bottom: 3.5rem;
+  width: 100%;
+  padding-left: 14rem;
+  padding-right: 14rem;
 }
 
-.footer-col {
-  width: 30%;
-  margin: 2rem 1%;
-  width: 30%;
-  margin: 2rem 1%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 2rem;
+.info-cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 100%;
+  margin: 0.6rem;
+  overflow: hidden;
+  box-shadow: 0 20px 20px -20px;
+  padding: 0;
 }
 
-.footer-col ul {
-  list-style: none;
-  font-size: 0.9rem;
+.info-cards img {
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+  transition: 0.25s ease;
 }
 
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 0.5rem;
+.info-cards:hover img {
+  transform: scale(1.1);
 }
 
-.footer-col ul li a {
-  color: white;
-  text-decoration: none;
-  transition: all 0.4s ease;
-}
-
-.footer-col ul li a:hover {
-  color: #8da7a6;
-  padding-left: 0.2rem;
-}
-
-.footer-col .socials a {
-  display: inline-block;
-  padding: 0.25rem;
-  margin-right: 0.5rem;
-  width: 2rem;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: white;
+.info-cards figcaption {
+  position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  height: 50%;
+  bottom: 0;
+  z-index: 1;
   color: black;
-  transition: all 0.4s ease;
 }
 
-.footer-col .socials a:hover {
+.info-cards figcaption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f6f6f3;
+  z-index: -1;
+}
+
+.info-cards p {
+  font-size: 1rem;
+  line-height: 1.2em;
+}
+
+/* SHARED BY TOPICAL AND P35 */
+
+.stats {
+  width: 22rem;
+  height: 13.5rem;
+  padding: 2%;
+  margin: auto;
+  align-items: center;
+  background-color: #617574;
   color: white;
-  background-color: #899f9e;
+  text-align: center;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .footer-col {
-    width: 100%;
-  }
-  .footer-col {
-    margin: 1rem;
-  }
+.stats-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f6f3;
+  padding: 5em;
 }
 
-.stat-number {
+.stats-writing {
+  font-weight: 600;
+}
+
+.stats-number {
   font-size: 2em;
   text-align: center;
   font-weight: 600;
   margin-bottom: 3%;
 }
 
-#homepage {
-  width: 100%;
+
+/* SHARED MEDIA QUERIES */
+@media screen and (max-width: 840px) {
+  nav {
+    display: block;
+    margin: 0.3rem; /* Provides a little space between items */
+    margin-top: 7rem;
+  }
+  header {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: -5.5rem;
+  }
+  nav a {
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    height: 9rem;
+  }
+  nav ul li:nth-child(1) {
+    display: none;
+  }
+}
+
+/* For smaller to medium screens (phones, tablets) */
+@media screen and (max-width: 991px) {
+  .footer-col {
+    margin: 1rem; /* Adjust margin for the screens */
+  }
+}
+
+/* For larger screens (laptops/desktops) */
+@media screen and (min-width: 991px) {
+  .footer-col {
+    width: 30%; /* Reset width to original for larger screens, for 3-column layout */
+  }
+}
+
+
+/* MEDIA QUERIES FOR INDEX */
+@media (max-width: 700px) {
+  .introduction {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-weight: normal;
+  }
+}
+@media screen and (max-width: 700px) {
+  .upcoming-events {
+    background-color: #f6f6f3;
+    width: 100%;
+  }
+
+  .upcoming-events ul {
+    list-style: none;
+  }
+
+  .events-grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /*endre klassenavn */
+  .events-calendar-first,
+  .events-calendar-second,
+  .events-calendar-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .events-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: bolder;
+  }
+
+  .events-info {
+    text-align: center;
+  }
+
+  .events-details {
+    text-align: center;
+  }
+
+  .upcoming-events a {
+    width: fit-content;
+  }
+
+  .research-container {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(4, 5fr);
+    height: fit-content;
+    grid-gap: 2%;
+  }
+
+  .research > .button-homepage {
+    margin-top: 20%;
+  }
+
+  .life-container {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(4, 5fr);
+    grid-gap: 2%;
+    overflow-x: hidden;
+  }
+
+  .life-column {
+    width: fit-content;
+    margin: 1rem;
+    padding-block-end: 5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .button-homepage {
+    font-size: 1rem;
+    width: 13rem;
+    text-align: center;
+  }
+}
+
+/* MEDIA QUERIES FOR P35 */
+
+/* MEDIA QUERIES FOR TOPICAL */
+
+@media screen and (max-width: 1240px) {
+  .topical-content {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .topical-column {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .topical-row-info {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+
+/* MEDIA QUERIES SHARED BY INDEX AND P35 */
+@media (max-width:1200px) {
+  .body-info-cards {
+    flex-direction: row;
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .body-info-cards {
+    flex-direction: column;
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* MEDIA QUERIES SHARED BY TOPICAL AND P35 */
+
+@media screen and (max-width: 1240px) {
+  .stats {
+    display: block;
+    margin: 0.3rem auto;
+    flex: 0 1 calc(50% - 0.6rem);
+    padding: 1.5rem;
+    width: 75%;
+  }
+
+  .stats-container {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0;
+    padding: 2rem;
+    padding-bottom: 2rem;
+  }
 }
