@@ -806,15 +806,34 @@ nav a {
 .accessibility-img{
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-}
-
-.accessibility-main > picture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80%;
 }
 
+/* .accessibility-main > picture{
+  width: 80%;
+} */
+
 .accessibility-p{
   margin-bottom: 4rem;
+}
+
+.accessibility-figure{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.accessibility-img figcaption{
+  margin-top: var(--gap-unit);
+  font-size: small;
+  width: 100%;
 }
 
 /* SHARED BY INDEX AND P35 */
