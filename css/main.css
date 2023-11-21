@@ -190,11 +190,11 @@ nav a {
 }
 
 .footer-col .socials a {
-  padding: 0.25rem;
-  margin-right: 0.5rem;
-  width: 2rem;
+  padding: 0.4rem;
+  margin-right: 1rem;
+  width: 2.5rem;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-decoration: none;
   background-color: white;
   color: black;
@@ -728,7 +728,7 @@ nav a {
   transition-timing-function: ease;
   transition-duration: 0.5s;
   margin: 0.5px;
-  height: 20rem;
+  height: 22rem;
   width: 15rem;
   margin-left: auto;
   background: #fff;
@@ -794,6 +794,28 @@ nav a {
   padding: 0.6rem;
 }
 
+/*CSS FOR ACCESSIBILITY PAGE*/
+.accessibility-main{
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.accessibility-img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.accessibility-main > picture{
+  width: 80%;
+}
+
+.accessibility-p{
+  margin-bottom: 4rem;
+}
 
 /* SHARED BY INDEX AND P35 */
 .body-info-cards {
@@ -814,20 +836,22 @@ nav a {
   align-items: center;
   height: 25rem;
   width: 100%;
-  margin: 0.6rem;
+  margin: 1.2rem;
   overflow: hidden;
   box-shadow: 0 20px 20px -20px;
   padding: 0;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
 }
 
 .info-cards img {
   position: relative;
   vertical-align: top;
   max-width: 100%;
-  transition: 0.25s ease;
+  transition: 0.5s ease;
 }
 
-.info-cards:hover img {
+.info-cards:hover  {
   transform: scale(1.1);
 }
 
@@ -889,7 +913,6 @@ nav a {
   font-weight: 600;
   margin-bottom: 3%;
 }
-
 
 /* SHARED MEDIA QUERIES */
 /* Media Queries for the nav-bar */
