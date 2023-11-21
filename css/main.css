@@ -300,7 +300,6 @@ nav a {
 
 .button-homepage:hover {
   background-color: #3d5a59;
-  border: #333 2px solid;
 }
 
 .upcoming-events {
@@ -812,6 +811,14 @@ nav a {
   width: 80%;
 }
 
+.accessibility-img img{
+  width: 30rem;
+  height: 20rem;
+  margin: 1rem;
+  margin-bottom: 0;
+  border: black 1px solid;
+}
+
 /* .accessibility-main > picture{
   width: 80%;
 } */
@@ -823,6 +830,7 @@ nav a {
 .accessibility-figure{
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -831,7 +839,7 @@ nav a {
 }
 
 .accessibility-img figcaption{
-  margin-top: var(--gap-unit);
+  text-align: center;
   font-size: small;
   width: 100%;
 }
