@@ -795,11 +795,27 @@ nav a {
 
 /*CSS FOR ACCESSIBILITY PAGE*/
 .accessibility-main{
-  width: 80%;
+  width: 70%;
   margin: auto;
   align-items: center;
   justify-content: center;
  
+}
+
+.att3{
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.att2{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
 }
 
 .accessibility-img{
@@ -808,12 +824,12 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+
 }
 
 .accessibility-img img{
-  width: 30rem;
-  height: 20rem;
+  /* width: 30rem;
+  height: 20rem; */
   margin: 1rem;
   margin-bottom: 0;
   border: black 1px solid;
@@ -835,13 +851,21 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  /* width: 80%; */
 }
 
 .accessibility-img figcaption{
   text-align: center;
   font-size: small;
   width: 100%;
+}
+
+.accessibility-main > figcaption{
+  text-align: center;
+  font-size: small;
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
 }
 
 /* SHARED BY INDEX AND P35 */
