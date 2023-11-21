@@ -52,7 +52,7 @@ p {
   font-size: 1.2rem;
 }
 
-/* CSS FOR INDEX */
+/* CSS FOR NAVIGATION BAR */
 .headerimg {
   width: 30%;
   position: absolute;
@@ -250,6 +250,7 @@ nav a {
   }
 }
 
+/* CSS FOR INDEX-PAGE */
 .parallax {
   background-attachment: fixed;
   background-position: center;
@@ -544,8 +545,7 @@ nav a {
   margin-right: auto;
   overflow-x: scroll;
 
-  /* 
-  for andre browsere, kan skrive om dette i accessibility*/
+  /* for andre browsere, kan skrive om dette i accessibility*/
 
   /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
   scrollbar-color: darkgrey white;
@@ -803,6 +803,7 @@ nav a {
 
 /* MOVE TO FRONTPAGECSS */
 
+
 /* CSS TO P35 PAGE */
 
 .p35img1 {
@@ -816,7 +817,6 @@ nav a {
   width: auto;
   background-image: url(../images/cantine_shop.jpg);
   margin-bottom: 1rem;
-
 }
 
 .p35img2 {
@@ -844,7 +844,6 @@ nav a {
   min-height: 90vh;
   width: auto;
   background-image: url(../images/datatorget.jpg);
-
 }
 
 .overlay {
@@ -883,7 +882,7 @@ nav a {
 }
 
 
-/* CSS TO TOPIC PAGE */
+/* CSS TO TOPICAL PAGE */
 .topical-content {
   width: 100%;
   margin: auto;
