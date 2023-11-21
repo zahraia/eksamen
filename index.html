@@ -11,16 +11,21 @@
 </head>
 
 <body>
+  <!-- Header element that contains the navbar for the page. -->
   <header>
+    <!-- <a> element is used for add a link to the logo that can bring back to home page. -->
     <a href="index.html">
-  <!-- kommentar for menybar her  -->
+      <!-- Picture element is used to add the Oslomet logo. -->
       <picture class="meny-img">
         <!-- TRENGER SOURCE  -->
         <img class="meny-img" src="./images/logo.png" alt="Oslomet logo" />
       </picture>
     </a>
+    <!-- Navigation element to put the different links for the navigation for the page. -->
     <nav>
+    <!-- Unordered list element to have the links in a list form that don't need to be ordered. -->
       <ul>
+        <!-- List elements that contain the navigation links. -->
         <li><a href="index.html">Home</a></li>
         <li><a href="./other-pages/pilestredet35.html">Pilestredet 35</a></li>
         <li><a href="./other-pages/topical.html">Topical</a></li>
@@ -36,16 +41,13 @@
       <a href="#explore-oslomet">Explore OsloMet <i class="arrow down"></i> </a>
     </p>
 
-    <!-- kommentar  -->
+    <!-- Main content of the webpage starts here  -->
     <main>
 
-
-      <!-- kommentar her  -->
-
-      <!-- id linked to button showed over, start of the main page, this is where it scrolls down to -->
+      <!-- "Explore oslomet"-button is linked with this id, this is where it scrolls down to when you click the button-->
       <div id="explore-oslomet"></div>
-      <!-- Heading with introduction to the site/general introduction to OsloMet  -->
-
+      
+      <!-- Heading with introduction to OsloMet  -->
       <h1>This is OsloMet</h1>
       <p class="introduction">
         Oslomet is Norway's third biggest university and was founded in 2011 as
@@ -55,22 +57,22 @@
         elit. Duis scelerisque arcu ac mauris ornare, sit amet sagittis ipsum
         tempus.
       </p>
-
-      <!--Button leading to an external site on a new tab, to make the whole button clickable,
-        the a-element is set as the parent element, that way, you do not need to click only the text for it to work -->
+      <!--Button leading to an external site on a new tab. The a-element is set as the parent element
+        to make the whole button clickable -->
       <a href="https://www.oslomet.no/om" target="_blank" class="button-homepage">
         <p>Learn more about OsloMet</p>
       </a>
 
-      <!--New section: a little calendar showing some of the upcoming events -->
+      <!--Section used to group the upcoming events: -->
       <section class="upcoming-events">
         <!--Heading for upcoming events -->
         <h2 class="events-heading">Upcoming Events</h2>
         <!--Heading showcasing which year the event is taking place in -->
         <h3 class="events-year">2023</h3>
-        <!-- unordered list with a frid display to place the different items the right places -->
+        <!-- unordered list with a grid display used to place the different items the right places -->
         <ul class="events-grid-container">
-          <!-- Three list elements, oner per event-->
+          <!-- Three list elements, oner per event, each with their own class used to specify 
+              their placement in the grid -->
           <li class="events-calendar-first">
             <!-- Three div elemtents, each with their own class used to specify 
               their placement in the grid and used to make their own style -->
@@ -82,6 +84,7 @@
               NASA institute / Center for earth and space research | Conferences and seminars | Pilestredet 35, PH170
             </div>
           </li>
+          <!--New list element with the same structure as the first one in this section -->
           <li class="events-calendar-second">
             <div class="events-date">24 NOV</div>
             <div class="events-info">
@@ -91,7 +94,7 @@
               Hybrid arrangement | Conferences and seminars | Pilestredet 32, N002.107
             </div>
           </li>
-
+          <!--New list element with the same structure as the first one in this section -->
           <li class="events-calendar-third">
             <div class="events-date">30 NOV</div>
             <div class="events-info">
@@ -109,17 +112,23 @@
         </p>
       </section>
 
-      <!--New section: News about OsloMet -->
+      <!--New section used to group news about OsloMet -->
       <section class="news">
         <h2>News from Campus</h2>
 
-        <!-- div-element used for the cards shown -->
+        <!-- div-element used for the placements of the text-boxes -->
         <div class="body-info-cards">
+          <!-- Figure element used to make the card-like boxes with pictures and text -->
+<!-- NOTE TO MARYAM M.: Maybe change figure to something else?? check out figcaption too -->
           <figure class="info-cards">
-            <!--Photografer: Pixabay, from https://www.pexels.com/nb-no/@pixabay/  -->
+            <!-- a-element inside the figure-element to make everything else inside the figure element a link -->
+            <!-- external link that opens in new tab -->
             <a href="https://www.oslomet.no/forskning/forskningsnyheter/slik-blir-du-en-bevisst-leder" target="_blank">
+              <!--Photo: Pixabay, from https://www.pexels.com/nb-no/@pixabay/  -->
               <img src="./images/mantkd.jpg" alt="The new academic director of TKD.">
+              <!-- figcaption used to caption the text -->
               <figcaption>
+                <!-- Paragraph element with a class (all paragraphs with this class is styled to look like a heading) -->
                 <p class="h4">
                   Joe Biden named new academic director for TKD
                 </p>
@@ -130,10 +139,11 @@
               </figcaption>
             </a>
           </figure>
+          <!-- new figure-element with the same structure as the last one in this section -->
           <figure class="info-cards">
-            <!--Photografer: Valeria Boltneva, from https://www.pexels.com/nb-no/@valeriya/  -->
             <a href="https://www.oslomet.no/forskning/forskningsnyheter/vanskelig-folge-hygienerad-pa-kjokkenet"
               target="_blank">
+              <!--Photo: Valeria Boltneva, from https://www.pexels.com/nb-no/@valeriya/  -->
               <img src="./images/cantine_food.jpg" alt="Salad from the cantine.">
               <figcaption>
                 <p class="h4">
@@ -145,11 +155,11 @@
               </figcaption>
             </a>
           </figure>
-
+          <!-- New figure element with the same structure as the last one in this section -->
           <figure class="info-cards">
             <a href="https://student.oslomet.no/siste-nytt/-/nyhet/skrive-oppgave-spar-tid-med-surveybanken-"
               target="_blank">
-              <!--Photografer: Monstera Production, from https://www.pexels.com/nb-no/@gabby-k/  -->
+              <!--Photo: Monstera Production, from https://www.pexels.com/nb-no/@gabby-k/  -->
               <img src="./images/bachelor_thesis.jpg" alt="Writing a thesis in math.">
               <figcaption>
                 <p class="h4">
@@ -162,8 +172,8 @@
               </figcaption>
             </a>
           </figure>
-
         </div>
+<!-- NOTE SO MM: why is this here??? and not under section???-->
         <a href="https://student.oslomet.no/siste-nytt" target="_blank" class="button-homepage">
           <p>Read more campus news</p>
         </a>
@@ -255,13 +265,12 @@
         </a>
       </section>
 
-
       <h2>Life at Campus</h2>
       <section class="life-container">
         <div class="life-column">
           <a href="https://www.oslomet.no/forskning/forskningsnyheter/trenger-ledere-som-skjonner-digitalisering" target="_blank">
             <picture>
-              <!-- Photografer: Maryam Mahmood, Screenshot from Microsoft Word  -->
+              <!-- Photo: Private, Screenshot from Microsoft Word  -->
               <img src="./images/petition.jpg" alt="A petition to fire Joe Biden." class="life-img">
             </picture>
             <figure class="life-cards">
@@ -280,7 +289,7 @@
         <div class="life-column">
           <a href="https://student.oslomet.no/treningstilbud" target="_blank">
             <picture>
-              <!-- Photografer: Patrick Case, from https://www.pexels.com/nb-no/@case-originals/  -->
+              <!-- Photo: Patrick Case, from https://www.pexels.com/nb-no/@case-originals/  -->
               <img src="./images/cricket.jpg" alt="Cricket player hitting a ball." class="life-img">
             </picture>
             <figure class="life-cards">
@@ -297,7 +306,7 @@
         <div class="life-column">
           <a href="https://www.oslomet.no/studier/studenthistorier/endelig-studiestart" target="_blank">
             <picture>
-              <!-- Photografer: Wolfgang, from https://www.pexels.com/nb-no/@wolfgang-1002140/  -->
+              <!-- Photo: Wolfgang, from https://www.pexels.com/nb-no/@wolfgang-1002140/  -->
               <img src="./images/consertjustinbieber.jpg"
                 alt="Stage with musicians surrounded by an enthusiastic crowd." class="life-img">
             </picture>
@@ -316,7 +325,7 @@
           <a href="https://www.oslomet.no/en/study/student-stories/kjeller-student-know-your-local-area"
             target="_blank">
             <picture>
-              <!-- Photografer: Buro Millenial, from https://www.pexels.com/nb-no/@buro-millennial-636760/  -->
+              <!-- Photo: Buro Millenial, from https://www.pexels.com/nb-no/@buro-millennial-636760/  -->
               <img src="./images/kjellermet.jpg" alt="Happy students from KjellerMet" class="life-img">
             </picture>
             <figure class="life-cards">
@@ -333,7 +342,7 @@
         <div class="life-column">
           <a href="https://www.lifeinnorway.net/camping-in-norway/" target="_blank">
             <picture>
-              <!-- Photografer: Kindel Media, from https://www.pexels.com/nb-no/bilde/sitte-samvaer-akustisk-gitar-gitarist-7149181/  -->
+              <!-- Photo: Kindel Media, from https://www.pexels.com/nb-no/bilde/sitte-samvaer-akustisk-gitar-gitarist-7149181/  -->
               <img src="./images/camping-trip.jpg" class="life-img"
                 alt="Happy students sitting outside a tent with a guitar.">
             </picture>
@@ -353,7 +362,7 @@
         <div class="life-column">
           <a href="https://www.oslomet.no/forskning/forskningsnyheter/varm-teknologi" target="_blank">
             <picture>
-              <!-- Photografer: Pixabay, from https://www.pexels.com/nb-no/bilde/youtube-display-skjerm-apper-267350/  -->
+              <!-- Photo: Pixabay, from https://www.pexels.com/nb-no/bilde/youtube-display-skjerm-apper-267350/  -->
               <img src="./images/app-development.jpg" alt="Rows of different mobile apps." class="life-img">
             </picture>
             <figure class="life-cards">
@@ -372,7 +381,7 @@
         <div class="life-column">
           <a href="https://www.utefilm.no/" target="_blank">
             <picture>
-              <!-- Photografer: Pixabay, from https://www.pexels.com/nb-no/bilde/kino-mat-popcorn-salt-popcorn-33129/ -->
+              <!-- Photo: Pixabay, from https://www.pexels.com/nb-no/bilde/kino-mat-popcorn-salt-popcorn-33129/ -->
               <img src="./images/kino-oslomet.jpg" alt="Popcorn in an old-school red and white box." class="life-img">
             </picture>
             <figure class="life-cards">
@@ -416,11 +425,12 @@
       <div class="footer-col">
         <p class="h4">Follow Us</p>
         <div class="socials">
-          <!-- class="fa fa-" refers to the Font Awesome class that styles the icons -->
+          <!-- class="fa fa-" refers to the Font Awesome class that styles the icons.
+          Source: https://www.w3schools.com/icons/ -->
           <a href="https://www.facebook.com/oslomet/" target="_blank" class="fa fa-facebook" aria-label="Check out our facebook-page."></a>
           <a href="https://www.instagram.com/oslomet/" target="_blank" class="fa fa-instagram" aria-label="Check out our Instagram-page."></a>
           <a href="https://twitter.com/OsloMet" target="_blank" class="fa fa-twitter" aria-label="Check out our Twitter-page."></a>
-          <a href="https://no.linkedin.com/school/oslomet/" target="_blank" class="fa fa-linkedin" aria-label="Check out our LinkedIn-page."><a>
+          <a href="https://no.linkedin.com/school/oslomet/" target="_blank" class="fa fa-linkedin" aria-label="Check out our LinkedIn-page."></a>
         </div>
       </div>
     </footer>

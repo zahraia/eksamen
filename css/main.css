@@ -41,6 +41,7 @@ h3 {
   font-size: 1.5rem;
 }
 
+/* Class to make paragraphs look like heading 4 */
 .h4 {
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -224,7 +225,7 @@ nav a {
   background-color: #617574;
   padding: 1.1rem;
   text-align: center;
-  box-shadow: 0 -6px 20px 0;
+  box-shadow: 0 -6px 20px 0; 
   position: relative;
   height: 10.3vh;
   display: flex;
@@ -795,7 +796,7 @@ nav a {
 
 /*CSS FOR ACCESSIBILITY PAGE*/
 .accessibility-main{
-  width: 70%;
+  width: 65%;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -954,7 +955,7 @@ nav a {
   padding: 5em;
 }
 
-.stats-writing {
+.stats-text {
   font-weight: 600;
 }
 

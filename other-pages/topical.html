@@ -11,14 +11,20 @@
 </head>
 
 <body>
+  <!-- Header element that contains the navbar for the page. -->
   <header>
+    <!-- <a> element is used for add a link to the logo that can bring back to home page. -->
     <a href="../index.html">
+      <!-- Picture element is used to add the Oslomet logo. -->
       <picture class="meny-img">
         <img class="meny-img" src="../images/logo.png" alt="Oslomet logo" />
       </picture>
     </a>
+    <!-- Navigation element to put the different links for the navigation for the page. -->
     <nav>
+      <!-- Unordered list element to have the links in a list form that don't need to be ordered. -->
       <ul>
+        <!-- List elements that contain the navigation links. -->
         <li><a href="../index.html">Home</a></li>
         <li><a href="pilestredet35.html">Pilestredet 35</a></li>
         <li><a href="topical.html">Topical</a></li>
@@ -26,10 +32,13 @@
       </ul>
     </nav>
   </header>
-  
+  <!-- <div> element is used for the main content for this page that is about AI and politics. -->
   <div class="topical-content">
+    <!-- Main heading for topical page. -->
     <h1>AI and Politics</h1>
+    <!-- Heading for first paragraph about implementing a law on the topical page. -->
     <h2 class="topical-headings">Should this law be implemented?</h2>
+    <!-- <p> element that conatins the text about implementing a law. -->
     <p class="topical-paragraphs">
       The main theme of the case is really the term “Fake news”, how hard it
       can be to identify and define this term, and all the problems that comes
@@ -43,34 +52,40 @@
       Fake News through digital tools and systems.
     </p>
   </div>
-
+  <!-- <section> element used to create a container for statistics about AI. -->
   <section class="stats-container">
+    <!-- Each statistic is wrapped in a <div> with the class "stats" for visual grouping and styling.
+        First statistic with a class for stats-number and text for styling number and text. -->
     <div class="stats">
+      <!-- <p> element that contains the statistic numbers. -->
       <p class="stats-number">1 out of 10</p>
-      <p class="stats-writing">
+      <!-- <p> element that contains the statistic text. -->
+      <p class="stats-text">
         Enterprises use artificial intelligence-technology.
       </p>
       <!-- Source for all stats: https://www.ssb.no/teknologi-og-innovasjon/informasjons-og-kommunikasjonsteknologi-ikt/statistikk/bruk-av-ikt-i-naeringslivet/artikler/1-av-10-foretak-bruker-kunstig-intelligens-teknologi -->
     </div>
-
+    <!-- Second div element with the same build-up as the first one for topical statistic about AI. -->
     <div class="stats">
       <p class="stats-number">4%</p>
-      <p class="stats-writing">
+      <p class="stats-text">
         Of enterprises use artificial intelligence for machine learning.
       </p>
     </div>
-
+    <!-- Third div element with the same build-up as the first one for topical statistic about AI. -->
     <div class="stats">
       <p class="stats-number">58%</p>
-      <p class="stats-writing">
+      <p class="stats-text">
         Of enterprises are not able to use artificial intelligence in their
         work to due lack of knowledge and experience.
       </p>
     </div>
   </section>
-
+  <!-- <div> element is used for the New Law content -->
   <div class="topical-content">
+    <!--Heading for New Law content. -->
     <h2 class="topical-headings">New Law</h2>
+    <!-- This paragraph element contains the new law text. -->
     <p class="topical-paragraphs">
       Banning AI generated content entirely could be seen as a restriction on
       freedom of speech. People have the right to express themselves,
@@ -85,10 +100,13 @@
       deliberate misinformation. All in all this law should not be passed into
       action!
     </p>
-
+    <!-- <div> element is used for the information content that is the third paragraph. -->
     <div class="third-topical-paragraph">
+      <!--Heading for information content. -->
       <h2 class="topical-headings">Information</h2>
+      <!-- Unordered list element to have the informations in a list form that don't need to be ordered. -->
       <ul class="third-topical-list">
+        <!-- List element to have informations listed as facts. -->
         <li>
           An unintended consequence might be putting too much regulative power
           in Government authorities through this law. A government role in
@@ -119,27 +137,33 @@
       </ul>
     </div>
   </div>
-
+  <!--Heading for learning more about AI card links -->
   <h2 class="learn-more-topical-heading">
     Interested in learning more about Artificial intelligence?
   </h2>
+  <!-- <section> element used to create a container for topical page card link about AI. 
+      It gives a clear separation of this specific content as a section within the page -->
   <section class="topical-row-info">
+    <!-- <div> element used for the placements of the each topical page card -->
     <div class="topical-column">
+      <!-- <picture> element used for the images  -->
       <picture>
         <img class="img-card" src="../images/AI1.jpg" alt="Blue lines of light in front of a modern city." />
       </picture>
       <!-- Photografer: Pixabay, from https://www.pexels.com/nb-no/bilde/opplyst-futuristisk-kunstig-intelligens-lys-bakgrunn-373543/ -->
+
+      <!-- <div> element used for the placement of the information text on the cards.  -->
       <div class="container">
+        <!-- This paragraph element has the content that shows where the link will send. -->
         <p>What's the difference between open vs. closed AI?</p>
         <!--Button leading to an external site on a new tab -->
         <a href="https://www.techtarget.com/searchenterpriseai/feature/Attributes-of-open-vs-closed-AI-explained" target="_blank">
-          <p class="topical-button" style="vertical-align: middle">
-            <span>Learn more </span>
-          </p>
+          <!-- This <p> contains the text on the button. -->
+          <p class="topical-button" style="vertical-align: middle"> Learn more</p>
         </a>
       </div>
     </div>
-
+    <!-- Second div element with the same build-up as the first one for topical learn more cards. -->
     <div class="topical-column">
       <picture>
         <img class="img-card" src="../images/AI2.jpg"
@@ -154,7 +178,7 @@
         </a>
       </div>
     </div>
-
+    <!-- Third div element with the same build-up as the first one or topical learn more cards. -->
     <div class="topical-column">
       <picture>
         <img class="img-card" src="../images/AI3.jpg" alt="Robotic arm's finger touching human hand's finger." />
@@ -168,7 +192,7 @@
         </a>
       </div>
     </div>
-
+    <!-- Fourth div element with the same build-up as the first one or topical learn more cards. -->
     <div class="topical-column">
       <picture>
         <img class="img-card" src="../images/AI4.jpg" alt="Robotic hand touching geometric shape." />
@@ -208,7 +232,7 @@
         <a href="https://www.facebook.com/oslomet/" target="_blank" class="fa fa-facebook" aria-label="Check out our facebook-page."></a>
         <a href="https://www.instagram.com/oslomet/" target="_blank" class="fa fa-instagram" aria-label="Check out our Instagram-page."></a>
         <a href="https://twitter.com/OsloMet" target="_blank" class="fa fa-twitter" aria-label="Check out our Twitter-page."></a>
-        <a href="https://no.linkedin.com/school/oslomet/" target="_blank" class="fa fa-linkedin" aria-label="Check out our LinkedIn-page."><a>
+        <a href="https://no.linkedin.com/school/oslomet/" target="_blank" class="fa fa-linkedin" aria-label="Check out our LinkedIn-page."></a>
       </div>
     </div>
   </footer>
