@@ -153,36 +153,6 @@ nav a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 840px) {
-  nav {
-    display: block;
-    margin: 0.3rem; /* Provides a little space between items */
-    margin-top: 7rem;
-  }
-  header {
-    position: absolute;
-  }
-}
-
-@media screen and (max-width: 840px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    margin-top: -5.5rem;
-  }
-  nav a {
-    padding: 0;
-  }
-  header {
-    background-color: #333;
-    height: 9rem;
-  }
-  nav ul li:nth-child(1) {
-    display: none;
-  }
-}
-
 /* FOOTER CSS */
 .footer {
   display: flex;
@@ -236,21 +206,12 @@ nav a {
   background-color: #899f9e;
 }
 
-/* For smaller to medium screens (phones, tablets) */
-@media screen and (max-width: 991px) {
-  .footer-col {
-    margin: 1rem; /* Adjust margin for the screens */
-  }
-}
-
-/* For larger screens (laptops/desktops) */
-@media screen and (min-width: 991px) {
-  .footer-col {
-    width: 30%; /* Reset width to original for larger screens, for 3-column layout */
-  }
-}
-
 /* CSS FOR INDEX-PAGE */
+
+#homepage {
+  width: 100%;
+}
+
 .parallax {
   background-attachment: fixed;
   background-position: center;
@@ -298,15 +259,6 @@ nav a {
   margin-right: 9rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: lighter;
-}
-
-@media (max-width: 700px) {
-  .introduction {
-    font-size: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-weight: normal;
-  }
 }
 
 /* https://www.w3schools.com/howto/howto_css_arrows.asp */
@@ -631,179 +583,6 @@ nav a {
   line-height: 1.3rem;
 }
 
-
-/* MEDIA QUERIES SPECIFIC TO INDEX */
-@media screen and (max-width: 700px) {
-  .upcoming-events {
-    background-color: #f6f6f3;
-    width: 100%;
-  }
-
-  .upcoming-events ul {
-    list-style: none;
-  }
-
-  .events-grid-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  /*endre klassenavn */
-  .events-calendar-first,
-  .events-calendar-second,
-  .events-calendar-third {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-  }
-
-  .events-date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-weight: bolder;
-  }
-
-  .events-info {
-    text-align: center;
-  }
-
-  .events-details {
-    text-align: center;
-  }
-
-  .upcoming-events a {
-    width: fit-content;
-  }
-
-  .research-container {
-    grid-template-columns: 5fr;
-    grid-template-rows: repeat(4, 5fr);
-    height: fit-content;
-    grid-gap: 2%;
-  }
-
-  .research > .button-homepage {
-    margin-top: 20%;
-  }
-
-  .life-container {
-    grid-template-columns: 5fr;
-    grid-template-rows: repeat(4, 5fr);
-    grid-gap: 2%;
-    overflow-x: hidden;
-  }
-
-  .life-column {
-    width: fit-content;
-    margin: 1rem;
-    padding-block-end: 5rem;
-  }
-}
-
-/* END CSS FOR INDEX */
-
-.body-info-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 30vh;
-  padding-bottom: 3.5rem;
-  width: 100%;
-  padding-left: 14rem;
-  padding-right: 14rem;
-}
-
-.info-cards {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25rem;
-  width: 100%;
-  margin: 0.6rem;
-  overflow: hidden;
-  box-shadow: 0 20px 20px -20px;
-  padding: 0;
-}
-
-.info-cards img {
-  position: relative;
-  vertical-align: top;
-  max-width: 100%;
-  transition: 0.25s ease;
-}
-
-.info-cards:hover img {
-  transform: scale(1.1);
-}
-
-.info-cards figcaption {
-  position: absolute;
-  padding-top: 1rem;
-  padding-bottom: 2.4rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  height: 50%;
-  bottom: 0;
-  z-index: 1;
-  color: black;
-}
-
-.info-cards figcaption::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #f6f6f3;
-  z-index: -1;
-}
-
-.info-cards p {
-  font-size: 1rem;
-  line-height: 1.2em;
-}
-
-@media (max-width:1200px) {
-  .body-info-cards {
-    flex-direction: row;
-    width: 90%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (max-width: 700px) {
-  .body-info-cards {
-    flex-direction: column;
-    width: 90%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-/*Hvorfor er denne her???? campuslife button???*/
-
-@media (max-width: 700px) {
-  .button-homepage {
-    font-size: 1rem;
-    width: 13rem;
-    text-align: center;
-  }
-}
-
-/* MOVE TO FRONTPAGECSS */
-
-
 /* CSS TO P35 PAGE */
 
 .p35img1 {
@@ -851,7 +630,7 @@ nav a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 45.9rem;
+  height: 90vh;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
@@ -913,53 +692,6 @@ nav a {
   margin: auto;
 }
 
-.topical-stats {
-  width: 22rem;
-  height: 13.5rem;
-  padding: 2%;
-  /*margin-left: 5%; hva gjør denne?*/
-  margin: auto;
-  align-items: center;
-  background-color: #617574;
-  color: white;
-  text-align: center;
-}
-
-.topical-stats-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-color: #f6f6f3;
-  padding: 5em;
-}
-
-.stats-writing {
-  font-weight: 600;
-}
-
-@media screen and (max-width: 1240px) {
-  .topical-stats {
-    display: block;
-    margin: 0.3rem auto;
-    flex: 0 1 calc(50% - 0.6rem);
-    padding: 1.5rem;
-    width: 75%;
-  }
-
-  .topical-stats-container {
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 0;
-    padding: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .topical-content {
-    margin-top: 3rem;
-  }
-}
 
 .third-topical-paragraph {
   background-color: #eff2f4;
@@ -1064,6 +796,249 @@ nav a {
   padding: 0.6rem;
 }
 
+
+/* SHARED BY INDEX AND P35 */
+
+.body-info-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  padding-bottom: 3.5rem;
+  width: 100%;
+  padding-left: 14rem;
+  padding-right: 14rem;
+}
+
+.info-cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 100%;
+  margin: 0.6rem;
+  overflow: hidden;
+  box-shadow: 0 20px 20px -20px;
+  padding: 0;
+}
+
+.info-cards img {
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+  transition: 0.25s ease;
+}
+
+.info-cards:hover img {
+  transform: scale(1.1);
+}
+
+.info-cards figcaption {
+  position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  height: 50%;
+  bottom: 0;
+  z-index: 1;
+  color: black;
+}
+
+.info-cards figcaption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f6f6f3;
+  z-index: -1;
+}
+
+.info-cards p {
+  font-size: 1rem;
+  line-height: 1.2em;
+}
+
+/* SHARED BY TOPICAL AND P35 */
+
+.stats {
+  width: 22rem;
+  height: 13.5rem;
+  padding: 2%;
+  margin: auto;
+  align-items: center;
+  background-color: #617574;
+  color: white;
+  text-align: center;
+}
+
+.stats-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f6f3;
+  padding: 5em;
+}
+
+.stats-writing {
+  font-weight: 600;
+}
+
+.stats-number {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+
+/* SHARED MEDIA QUERIES */
+@media screen and (max-width: 840px) {
+  nav {
+    display: block;
+    margin: 0.3rem; /* Provides a little space between items */
+    margin-top: 7rem;
+  }
+  header {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: -5.5rem;
+  }
+  nav a {
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    height: 9rem;
+  }
+  nav ul li:nth-child(1) {
+    display: none;
+  }
+}
+
+/* For smaller to medium screens (phones, tablets) */
+@media screen and (max-width: 991px) {
+  .footer-col {
+    margin: 1rem; /* Adjust margin for the screens */
+  }
+}
+
+/* For larger screens (laptops/desktops) */
+@media screen and (min-width: 991px) {
+  .footer-col {
+    width: 30%; /* Reset width to original for larger screens, for 3-column layout */
+  }
+}
+
+
+/* MEDIA QUERIES FOR INDEX */
+@media (max-width: 700px) {
+  .introduction {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-weight: normal;
+  }
+}
+@media screen and (max-width: 700px) {
+  .upcoming-events {
+    background-color: #f6f6f3;
+    width: 100%;
+  }
+
+  .upcoming-events ul {
+    list-style: none;
+  }
+
+  .events-grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /*endre klassenavn */
+  .events-calendar-first,
+  .events-calendar-second,
+  .events-calendar-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .events-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: bolder;
+  }
+
+  .events-info {
+    text-align: center;
+  }
+
+  .events-details {
+    text-align: center;
+  }
+
+  .upcoming-events a {
+    width: fit-content;
+  }
+
+  .research-container {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(4, 5fr);
+    height: fit-content;
+    grid-gap: 2%;
+  }
+
+  .research > .button-homepage {
+    margin-top: 20%;
+  }
+
+  .life-container {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(4, 5fr);
+    grid-gap: 2%;
+    overflow-x: hidden;
+  }
+
+  .life-column {
+    width: fit-content;
+    margin: 1rem;
+    padding-block-end: 5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .button-homepage {
+    font-size: 1rem;
+    width: 13rem;
+    text-align: center;
+  }
+}
+
+/* MEDIA QUERIES FOR P35 */
+
+/* MEDIA QUERIES FOR TOPICAL */
+
+@media screen and (max-width: 1240px) {
+  .topical-content {
+    margin-top: 3rem;
+  }
+}
 @media screen and (max-width: 1200px) {
   .topical-column {
     display: block;
@@ -1077,13 +1052,47 @@ nav a {
   }
 }
 
-.stat-number {
-  font-size: 2em;
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 3%;
+/* MEDIA QUERIES SHARED BY INDEX AND P35 */
+@media (max-width:1200px) {
+  .body-info-cards {
+    flex-direction: row;
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-#homepage {
-  width: 100%;
+@media (max-width: 700px) {
+  .body-info-cards {
+    flex-direction: column;
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* MEDIA QUERIES SHARED BY TOPICAL AND P35 */
+
+@media screen and (max-width: 1240px) {
+  .stats {
+    display: block;
+    margin: 0.3rem auto;
+    flex: 0 1 calc(50% - 0.6rem);
+    padding: 1.5rem;
+    width: 75%;
+  }
+
+  .stats-container {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0;
+    padding: 2rem;
+    padding-bottom: 2rem;
+  }
 }
