@@ -153,7 +153,7 @@ nav a {
   text-decoration: none;
 }
 
-/* FOOTER CSS */
+/* CSS FOR FOOTER */
 .footer {
   display: flex;
   flex-wrap: wrap; /* Organize elements in rows that can wrap based on the screen size */
@@ -207,7 +207,6 @@ nav a {
 }
 
 /* CSS FOR INDEX-PAGE */
-
 #homepage {
   width: 100%;
 }
@@ -491,20 +490,16 @@ nav a {
   grid-template-rows: 100%;
   grid-gap: 15%;
   width: 70%;
-  height: 95vh;
+  height: 70vh;
   margin-bottom: 5em;
   margin-left: auto;
   margin-right: auto;
   overflow-x: scroll;
 
-  /* for andre browsere, kan skrive om dette i accessibility*/
-
   /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
   scrollbar-color: darkgrey white;
   /* thumb and track color */
   scrollbar-width: thin;
-  /* thin, auto, or none */
-
   scroll-behavior: smooth;
 }
 
@@ -584,7 +579,6 @@ nav a {
 }
 
 /* CSS TO P35 PAGE */
-
 .p35img1 {
   display: block;
   position: relative;  
@@ -642,8 +636,7 @@ nav a {
   color: white;
   text-align: center;
   padding-left: 15rem;
-  padding-right: 15rem
-  ; 
+  padding-right: 15rem; 
 }
 
 .image-text{
@@ -798,7 +791,6 @@ nav a {
 
 
 /* SHARED BY INDEX AND P35 */
-
 .body-info-cards {
   display: flex;
   justify-content: center;
@@ -863,7 +855,6 @@ nav a {
 }
 
 /* SHARED BY TOPICAL AND P35 */
-
 .stats {
   width: 22rem;
   height: 13.5rem;
@@ -896,6 +887,7 @@ nav a {
 
 
 /* SHARED MEDIA QUERIES */
+/* Media Queries for the nav-bar */
 @media screen and (max-width: 840px) {
   nav {
     display: block;
@@ -926,6 +918,7 @@ nav a {
   }
 }
 
+/* Media Queries for footer */
 /* For smaller to medium screens (phones, tablets) */
 @media screen and (max-width: 991px) {
   .footer-col {
@@ -939,7 +932,6 @@ nav a {
     width: 30%; /* Reset width to original for larger screens, for 3-column layout */
   }
 }
-
 
 /* MEDIA QUERIES FOR INDEX */
 @media (max-width: 700px) {
