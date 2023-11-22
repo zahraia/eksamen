@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 1.5rem;
   text-align: center;
   font-size: 2.5rem;
@@ -36,6 +36,7 @@ h2 {
 
 h3 {
   padding-bottom: 1rem;
+  padding-top: 1.3rem;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -53,13 +54,18 @@ p {
 }
 
 /* CSS FOR NAVIGATION BAR */
+.headerimg {
+  width: 30%;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  filter: invert(1);
+}
 
-
-/* General design for the header container. */
 header {
   position: fixed;
   /* To have navbar fixed */
-  top: 0; 
+  top: 0;
   left: 0;
   width: 100%;
   background: rgb(45, 45, 28);
@@ -72,7 +78,7 @@ header {
   );
   z-index: 100;
 }
-/* Design for the oslomet logo. */
+
 picture.meny-img img {
   position: absolute;
   margin-left: 2em;
@@ -81,7 +87,7 @@ picture.meny-img img {
   filter: invert(1);
   margin-top: 0.625em;
 }
-/* For customize every a item */
+
 header nav ul li a {
   font-size: 1.2rem;
   color: white;
@@ -89,29 +95,29 @@ header nav ul li a {
   display: block;
   transition: all 0.4s ease;
 }
-/* This code gives nav links colour and transition affect. */
+
 header nav a:hover {
   color: #fff500;
   text-decoration: none;
   transition: 0.6s;
 }
-/* This code clear on top of the element */
+
 header nav a:focus {
   background-size: 0 0.1em, 100% 0.1em;
 }
-/* Designs the navigation bar and each nav elements positions */
+
 nav {
   display: flex;
   justify-content: right;
   align-items: center;
   height: 6.25em;
 }
-/* This code does the cursor pointer on the "a" element and clears the underline */
+
 nav a {
   text-decoration: none;
   cursor: pointer;
 }
-/* This code does the animation under the links */
+
 nav a::after {
   content: "";
   width: 0%;
@@ -121,12 +127,11 @@ nav a::after {
   margin-top: 0.3rem;
 }
 
-/* This code does the animation after hover */
 nav a:hover::after {
   width: 100%;
   transition: all 0.5s;
 }
-/* This code designs the general links */
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -135,12 +140,12 @@ nav ul {
   color: white;
   font-weight: 300;
 }
-/* This code designs the each links */
+
 nav li {
   float: left;
   color: white;
 }
-/* This code designs the each a element */
+
 nav a {
   display: block;
   padding: 1.25em;
@@ -251,15 +256,15 @@ nav a {
   width: 100%;
 }
 
-/* Shares same css with p35 (ingress) */ 
 .introduction {
   margin-bottom: 4rem;
   margin-left: 10rem;
   margin-right: 10rem;
   font-size: 1.7rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: lighter;
-  text-align: center;
 }
 
 /* https://www.w3schools.com/howto/howto_css_arrows.asp */
@@ -283,8 +288,8 @@ nav a {
   background-color: #617574;
   width: 20rem;
   height: 3rem;
-  margin-top: 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
@@ -303,7 +308,7 @@ nav a {
 .upcoming-events {
   background-color: #eff2f4;
   width: 100%;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .upcoming-events ul {
@@ -581,7 +586,6 @@ nav a {
 
 /* CSS TO P35 PAGE */
 .p35img1 {
-  background-image: url(../images/cantine_shop.jpg);
   display: block;
   position: relative;  
   background-attachment: fixed;
@@ -590,10 +594,11 @@ nav a {
   background-size: cover;
   min-height: 90vh;
   width: auto;
+  background-image: url(../images/cantine_shop.jpg);
+  margin-bottom: 1rem;
 }
 
 .p35img2 {
-  background-image: url(../images/library.jpg);
   width: 66%;
   display: block;
   position: relative;  
@@ -603,10 +608,11 @@ nav a {
   background-size: cover;
   min-height: 90vh;
   width: auto;
+  background-image: url(../images/library.jpg);
+  margin-bottom: 1rem;
 }
 
 .p35img3 {
-  background-image: url(../images/datatorget.jpg);
   width: 66%;
   display: block;
   position: relative;  
@@ -616,6 +622,7 @@ nav a {
   background-size: cover;
   min-height: 90vh;
   width: auto;
+  background-image: url(../images/datatorget.jpg);
 }
 
 .overlay {
@@ -650,12 +657,10 @@ nav a {
 
 .p35-card {
   background-color: #eff2f4;
-  padding-bottom: 1rem;
 }
 
 
 /* CSS TO TOPICAL PAGE */
-
 .topical-content {
   width: 100%;
   margin: auto;
@@ -873,6 +878,7 @@ nav a {
   justify-content: center;
   align-items: center;
   min-height: 30vh;
+  padding-bottom: 3.5rem;
   width: 100%;
   padding-left: 14rem;
   padding-right: 14rem;
