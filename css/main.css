@@ -10,17 +10,18 @@ body {
   font-family: verdana;
   line-height: 1.5;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* Applies the font-family for all elements unless other is specified */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; 
 }
 
+/* Styles all elements across all pages */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* Styles all h1 */
 h1 {
   margin-top: 7rem;
   margin-bottom: 1rem;
@@ -28,6 +29,7 @@ h1 {
   font-size: 3.5rem;
 }
 
+/* Styles all h2 */
 h2 {
   padding-top: 4rem;
   padding-bottom: 1.5rem;
@@ -35,6 +37,7 @@ h2 {
   font-size: 2.5rem;
 }
 
+/* Styles all h3 */
 h3 {
   padding-bottom: 1rem;
   text-align: center;
@@ -45,16 +48,17 @@ h3 {
 .h4 {
   display: inline-block;
   margin-bottom: 0.5rem;
+  /* Makes the font bolder */
   font-weight: bold;
 }
 
+/* Basic styling to p-elements */
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
 }
 
 /* CSS FOR NAVIGATION BAR */
-
 
 /* General design for the header container. */
 header {
@@ -74,6 +78,8 @@ header {
   );
   z-index: 100;
 }
+
+
 /* Design for the oslomet logo. */
 picture.meny-img img {
   position: absolute;
@@ -83,7 +89,7 @@ picture.meny-img img {
   filter: invert(1);
   margin-top: 0.625em;
 }
-/* For customize every a item */
+/* To customize every a item */
 header nav ul li a {
   font-size: 1.2rem;
   color: white;
@@ -91,16 +97,14 @@ header nav ul li a {
   display: block;
   transition: all 0.4s ease;
 }
-/* This code gives nav links colour and transition affect. */
+
+/* When the links in the navbar are hovered on, the code turns it orange, slowly */
 header nav a:hover {
   color: #fff500;
   text-decoration: none;
   transition: 0.6s;
 }
-/* This code clears on top of the element */
-header nav a:focus {
-  background-size: 0 0.1em, 100% 0.1em;
-}
+
 /* Designs the navigation bar and each nav elements positions */
 nav {
   display: flex;
@@ -108,19 +112,20 @@ nav {
   align-items: center;
   height: 6.25em;
 }
-/* This code does the cursor pointer on the "a" element and clears the underline */
+
 nav a {
   text-decoration: none;
   cursor: pointer;
 }
+
 /* Source: https://www.youtube.com/watch?v=J4Et-MdY-qs&t=23s */
 nav a::after {
   content: "";
-  width: 0%;
-  height: 0.1rem;
+  width: 0%; 
+  height: 0.1rem; 
   display: block;
   background-color: #fff;
-  margin-top: 0.3rem;
+  margin-top: 0.3rem; /* Used to adjust the distance between the link and the white line */
 }
 
 /* Source: https://www.youtube.com/watch?v=J4Et-MdY-qs&t=23s */
@@ -129,21 +134,22 @@ nav a:hover::after {
   transition: all 0.5s;
 }
 
-/* This code designs the general links */
+/* This code designs the unordered list in nav */
 nav ul {
-  list-style-type: none;
+  list-style-type: none;   /* Takes away bullet points */
   margin: 0;
   padding: 0;
   overflow: hidden;
   color: white;
   font-weight: 300;
 }
-/* This code designs the each links */
+/* This code designs each lis item in nav */
 nav li {
-  float: left;
+  float: left;  /* Makes the item float left in the space available to it */
   color: white;
 }
-/* This code designs the each a element */
+
+/* This code designs  each a element */
 nav a {
   display: block;
   padding: 1.25em;
@@ -159,7 +165,6 @@ nav a {
   text-align: center;
   background-color: #2d2d1c;
   color: white;
-  /* margin-top: 6rem; */
 }
 
 .footer-col {
@@ -175,7 +180,7 @@ nav a {
 }
 
 .footer-col ul li:not(:last-child) {
-  margin-bottom: 0.5rem; /*Adds margin between each list item, except the last one.*/
+  margin-bottom: 0.5rem; /*Adds margin between each list item in the footer, except the last one.*/
 }
 
 .footer-col ul li a {
@@ -188,7 +193,8 @@ nav a {
   color: #8da7a6;
   padding-left: 0.2rem;
 }
-
+/* 
+Styles and adds space in between the social media icons */
 .footer-col .socials a {
   padding: 0.4rem;
   margin-right: 0.7rem;
@@ -201,16 +207,15 @@ nav a {
   transition: all 0.4s ease;
 }
 
+/* Turns the links in the social-media icons in the footer another color when hovered on */
 .footer-col .socials a:hover {
   color: white;
   background-color: #899f9e;
 }
 
 /* CSS FOR INDEX-PAGE */
-#homepage {
-  width: 100%;
-}
 
+/* Creates a parallax effect of the image, by making it fixed and center, so other elements scroll on top of it */
 .parallax {
   background-attachment: fixed;
   background-position: center;
@@ -239,11 +244,12 @@ nav a {
   text-decoration: none;
 }
 
+/* Used for the undeline effect */
 .explore-oslomet-btn a::before {
-  content: "";
+  content: ""; /* empty so that nothing shows before the cursor hover over the link*/
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0; /* it is at the bottom of the box*/
   width: 0;
   height: 0.1rem;
   background-color: #ffd500;
@@ -256,19 +262,7 @@ nav a {
   width: 100%;
 }
 
-/* Shares same css with p35 (ingress) */ 
-.introduction {
-  margin-bottom: 4rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  font-size: 1.7rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: lighter;
-  text-align: center;
-  text-align: center;
-}
-
-/* https://www.w3schools.com/howto/howto_css_arrows.asp */
+/* Source: https://www.w3schools.com/howto/howto_css_arrows.asp */
 .arrow {
   border: solid white;
   border-width: 0 0.019rem 0.019rem 0;
@@ -277,6 +271,7 @@ nav a {
   margin: 0.25rem;
 }
 
+/* Source: https://www.w3schools.com/howto/howto_css_arrows.asp */
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -566,6 +561,7 @@ nav a {
 }
 
 /* CSS TO P35 PAGE */
+
 .p35img1 {
   /* Photo: Private */
   background-image: url(../images/cantine_shop.jpg);
@@ -576,7 +572,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 90vh;
-  width: auto;
+  width: auto; 
 }
 
 .p35img2 {
@@ -607,25 +603,23 @@ nav a {
   width: auto;
 }
 
-/* Used  */
+/* Used to overlay a shadow over the image to make the text more visible */
 .overlay {
-  position: absolute;
+  position: absolute; /*  */
   top: 0;
   left: 0;
   width: 100%;
   height: 90vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4); /* gradient of the color to still make the image visible */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 }
 
 .overlay p {
-  color: white;
-  text-align: center;
-  /* padding-left: 15rem;
-  padding-right: 15rem;  */
+  color: white;    /* Styled the text more visible */
+  text-align: center; 
   width: 80%;
 }
 
@@ -639,6 +633,7 @@ nav a {
   padding: 1rem;  
 }
 
+/* Used for the background-color for the cards in p35-page without changing the other pages cards */
 .p35-card {
   background-color: #eff2f4;
   padding-bottom: 6rem;
@@ -676,11 +671,7 @@ nav a {
   padding-bottom: 1em;
 }
 
-.card-section {
-  align-items: center;
-  background-color: #7e9695;
-}
-
+/* Styles all the cards in topical */
 .topical-row-info {
   display: flex;
   padding-top: 2rem;
@@ -792,12 +783,12 @@ nav a {
 
 .accessibility-img {
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; /* Margin used for space around each image, and between images.*/
   display: flex;
   align-items: center;
   justify-content: center;
 
-}
+} 
 
 .accessibility-p {
   margin-bottom: 2.5rem;
@@ -813,7 +804,6 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: 80%; */
 }
 
 .accessibility-img figcaption {
@@ -832,13 +822,26 @@ nav a {
 }
 
 /* SHARED BY INDEX AND P35 */
+
+.introduction {
+  margin-bottom: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  font-size: 1.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  text-align: center;
+}
+
+/* Used for the placement and layout of the cards  */
 .body-info-cards {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 30vh;
   width: 100%;
-  padding-left: 14rem;
+  padding-left: 14rem; /* Padding right and left used to center the class */
   padding-right: 14rem;
 }
 
@@ -853,13 +856,14 @@ nav a {
   overflow: hidden;
   box-shadow: 0 20px 20px -20px;
   padding: 0;
-  transition-timing-function: ease;
+  /* Used here to make the transition smooth when the cursor moves off the box too: */
+  transition-timing-function: ease; 
   transition-duration: 0.5s;
 }
 
 .info-cards img {
   position: relative;
-  vertical-align: top;
+  vertical-align: top; 
   max-width: 100%;
   transition: 0.5s ease;
 }
@@ -896,7 +900,7 @@ nav a {
   line-height: 1.2em;
 }
 
-/* */
+/*  */
 .buttons {
   display: flex;
   justify-content: center;
@@ -908,7 +912,6 @@ nav a {
   margin-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
-  /* Padding to */
   padding-top: 2rem; 
   padding-bottom: 2rem;
   font-weight: 900;

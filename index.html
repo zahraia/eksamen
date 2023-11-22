@@ -99,14 +99,17 @@
       <h2>News from Campus</h2>
       <!-- SOURCE: https://www.youtube.com/watch?v=NgjJWdeVRos&ab_channel=Codehal -->
       <div class="body-info-cards">
-        <!-- Three figure elements with same class containing a photo with a belonging caption -->
+        <!-- Three figure elements, for each new, with same class containing a photo with a belonging caption 
+          wrapped in an a-element to make it interactive -->
         <!-- First new -->
         <figure class="info-cards">
           <a href="https://www.oslomet.no/forskning/forskningsnyheter/slik-blir-du-en-bevisst-leder" target="_blank">
+            <!-- Image wrapped in a picture element for flexibility-->
             <picture>
               <!--Photo: Chloe, from https://www.pexels.com/photo/man-in-white-dress-shirt-holding-suit-jacket-1043474/ -->
               <img src="./images/mantkd.jpg" alt="The new academic director of TKD.">              
             </picture>
+            <!-- Caption for the image -->
             <figcaption>
               <p class="h4">Joe Biden named new academic director for TKD</p>
               <p>After he-who-must-not-be-named's scandal on live television, Joe Biden was the most
@@ -155,7 +158,8 @@
     <section class="research">
       <h2>Research</h2>
       <div class="research-container">
-        <!-- Four div elements with same class for same structure, different link, title and caption -->
+        <!-- Four div elements, for each research article, with same class containing a title and text 
+          wrapped in an a-element to make it interactive -->
         <!-- First research article -->
         <div class="research-article">
           <a href="https://www.oslomet.no/forskning/forskningsnyheter/hvordan-ungdom-delta-demokratiet" target="_blank">
@@ -163,6 +167,7 @@
             <p class="research-title">How to encourage the youth to participate in the democracy?</p>
             <!-- Arrow from FontAwesome used to style the icon -->
             <p class="research-arrow"><i class="arrow-events right"></i></p>
+            <!-- Text for the title -->
             <p class="research-caption">New studies conducted by Oslomet shows that the solution is in
               the classroom.</p>
           </a>
@@ -209,18 +214,19 @@
     <section class="life">
       <h2>Life at Campus</h2>
       <div class="life-container">
-        <!-- Four figure elements with same class containing a photo with a belonging caption -->
+        <!-- Four figure elements with same class containing a photo with a belonging caption 
+          wrapped in an a-element to make it interactive -->
         <!-- First life article -->
         <figure class="life-column">
           <a href="https://www.oslomet.no/forskning/forskningsnyheter/trenger-ledere-som-skjonner-digitalisering"
             target="_blank">
+           <!-- Image wrapped in a picture element for flexibility-->
             <picture>
               <!-- Photo: Private -->
               <img src="./images/petition.png" alt="A petition to fire Joe Biden." class="life-img">
             </picture>
-            <!-- Figcaption together all text under the image -->
             <figcaption class="life-cards">
-              <!-- Different p-classes to style them differently with ease -->
+              <!-- Caption defined in different p-classes to style them differently with ease -->
               <p class="life-title">Sign the petition fire Joe Biden</p>
               <p class="life-faculty">Petition, Education</p>
               <p class="life-explanation">Most students are not satisfied with the new director of TKD.
@@ -327,11 +333,11 @@
     </section>
   </main>
 
-  <!-- Webpage ends with a semantic footer element which represents three columns: the company's adress, 
-      phone number and email, and links to socials -->
+  <!-- Webpage ends with a semantic footer element representing the company's adress, phone number 
+    and email, and links to socials -->
   <footer class="footer">
-    <!-- Same "footer-col" class used for all three columns for styling their placement.
-          First Column with University Information -->
+    <!-- Three div elements with same class -->
+    <!-- First Column with University Information -->
     <div class="footer-col">
       <p class="h4">Oslo Metropolitan University</p>
       <ul>
