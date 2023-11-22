@@ -1,4 +1,6 @@
 /* CSS FOR ALL PAGES */
+
+/* Makes scrolling smoother on all pages */
 html {
   scroll-behavior: smooth;
 }
@@ -10,6 +12,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 * {
@@ -22,17 +25,14 @@ h1 {
   margin-top: 7rem;
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 4rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3.5rem;
 }
 
 h2 {
   padding-top: 4rem;
-  padding-top: 4rem;
   padding-bottom: 1.5rem;
   text-align: center;
   font-size: 2.5rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h3 {
@@ -64,6 +64,7 @@ header {
   left: 0;
   width: 100%;
   background: rgb(45, 45, 28);
+  /* Source: https://cssgradient.io/ */
   background: linear-gradient(
     180deg,
     rgba(45, 45, 28, 1) 10%,
@@ -96,7 +97,7 @@ header nav a:hover {
   text-decoration: none;
   transition: 0.6s;
 }
-/* This code clear on top of the element */
+/* This code clears on top of the element */
 header nav a:focus {
   background-size: 0 0.1em, 100% 0.1em;
 }
@@ -112,7 +113,7 @@ nav a {
   text-decoration: none;
   cursor: pointer;
 }
-/* This code does the animation under the links */
+/* Source: https://www.youtube.com/watch?v=J4Et-MdY-qs&t=23s */
 nav a::after {
   content: "";
   width: 0%;
@@ -122,11 +123,12 @@ nav a::after {
   margin-top: 0.3rem;
 }
 
-/* This code does the animation after hover */
+/* Source: https://www.youtube.com/watch?v=J4Et-MdY-qs&t=23s */
 nav a:hover::after {
   width: 100%;
   transition: all 0.5s;
 }
+
 /* This code designs the general links */
 nav ul {
   list-style-type: none;
@@ -157,7 +159,7 @@ nav a {
   text-align: center;
   background-color: #2d2d1c;
   color: white;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 
 .footer-col {
@@ -222,7 +224,7 @@ nav a {
   background-color: #617574;
   padding: 1.1rem;
   text-align: center;
-  box-shadow: 0 -6px 20px 0; 
+  box-shadow: 0 -0.037rem 0.123rem 0; 
   position: relative;
   height: 10.3vh;
   display: flex;
@@ -243,9 +245,11 @@ nav a {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px;
+  height: 0.1rem;
   background-color: #ffd500;
-  transition: width 0.25s ease-out;
+  transition-property: width;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
 }
 
 .explore-oslomet-btn a:hover::before {
@@ -267,7 +271,7 @@ nav a {
 /* https://www.w3schools.com/howto/howto_css_arrows.asp */
 .arrow {
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.019rem 0.019rem 0;
   display: inline-block;
   padding: 0.25rem;
   margin: 0.25rem;
@@ -276,32 +280,6 @@ nav a {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-}
-
-.button-homepage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #617574;
-  width: 20rem;
-  height: 3rem;
-  margin-top: 2.5rem;
-  margin-bottom: 5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 5rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 900;
-  transition: 0.5s;
-  color: white;
-  text-decoration: none;
-}
-
-.button-homepage:hover {
-  background-color: #3d5a59;
 }
 
 .upcoming-events {
@@ -321,7 +299,7 @@ nav a {
     "first"
     "second"
     "last";
-  /* for å få den sentrert: */
+  /* To have it on the center: */
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -415,7 +393,6 @@ nav a {
   text-decoration-color: black;
   text-decoration-thickness: 0.12rem;
   font-weight: bolder;
-  width: 20%;
   margin: auto;
   margin-top: 1.5rem;
 }
@@ -427,7 +404,7 @@ nav a {
 
 .arrow-events {
   border: solid black;
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.019rem 0.019rem 0;
   display: inline-block;
   padding: 0.25rem;
   margin: 0.25rem;
@@ -509,6 +486,10 @@ nav a {
   scroll-behavior: smooth;
 }
 
+.life{
+  margin-bottom: 6rem;
+}
+
 .life-column {
   width: 140%;
   height: 80%;
@@ -552,7 +533,7 @@ nav a {
 /* only styles the scrollbar's track */
 ::-webkit-scrollbar-track {
   background: white;
-  box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 0.031rem grey;
   border-radius: 0.625rem;
 }
 
@@ -586,6 +567,7 @@ nav a {
 
 /* CSS TO P35 PAGE */
 .p35img1 {
+  /* Photo: Private */
   background-image: url(../images/cantine_shop.jpg);
   display: block;
   position: relative;  
@@ -598,6 +580,7 @@ nav a {
 }
 
 .p35img2 {
+  /* Photo: Private */
   background-image: url(../images/library.jpg);
   width: 66%;
   display: block;
@@ -611,6 +594,7 @@ nav a {
 }
 
 .p35img3 {
+  /* Photo: Private */
   background-image: url(../images/datatorget.jpg);
   width: 66%;
   display: block;
@@ -623,6 +607,7 @@ nav a {
   width: auto;
 }
 
+/* Used  */
 .overlay {
   position: absolute;
   top: 0;
@@ -639,8 +624,9 @@ nav a {
 .overlay p {
   color: white;
   text-align: center;
-  padding-left: 15rem;
-  padding-right: 15rem; 
+  /* padding-left: 15rem;
+  padding-right: 15rem;  */
+  width: 80%;
 }
 
 .image-text{
@@ -655,42 +641,27 @@ nav a {
 
 .p35-card {
   background-color: #eff2f4;
-  padding-bottom: 1rem;
+  padding-bottom: 6rem;
 }
 
 
 /* CSS TO TOPICAL PAGE */
 
-.topical-content {
-  width: 100%;
-  margin: auto;
-  align-items: center;
-}
-
-.topical-content p {
-  width: 65%;
+/* Styles h2s in topical */
+.topical-headings{
+  width: 70%;
   margin: auto;
 }
 
-.header-content body {
-  width: 100%;
-  background-color: white;
-  font-family: verdana;
-  line-height: 1.5;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.topical-paragraphs{
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4rem;
 }
 
 .topical-paragraphs {
   padding-bottom: 4rem;
 }
-
-.center-topical-img {
-  width: 75%;
-  margin: auto;
-}
-
 
 .third-topical-paragraph {
   background-color: #eff2f4;
@@ -705,10 +676,6 @@ nav a {
   padding-bottom: 1em;
 }
 
-.learn-more-topical-heading {
-  text-align: center;
-}
-
 .card-section {
   align-items: center;
   background-color: #7e9695;
@@ -721,6 +688,9 @@ nav a {
   padding-right: 4em;
   padding-bottom: 2em;
   align-items: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .topical-column {
@@ -730,7 +700,7 @@ nav a {
   transition-property: transform;
   transition-timing-function: ease;
   transition-duration: 0.5s;
-  margin: 0.5px;
+  margin: 0.003rem;
   height: 22rem;
   width: 15rem;
   margin-left: auto;
@@ -768,12 +738,13 @@ nav a {
   display: table;
 }
 
+/* source: https://www.bestcssbuttongenerator.com/#/25*/
 .topical-button {
   box-shadow: inset 0px 0px 10px 3px #7e9695;
   background: linear-gradient(to bottom, #f6f6f3 5%, #f6f6f3 100%);
   background-color: #f6f6f3;
-  border-radius: 1rem;
-  border: 2px solid #f6f6f3;
+  border-radius: 1rem; /* To make the button corners round. */
+  border: 0.012rem solid #f6f6f3;
   display: inline-block;
   cursor: pointer;
   color: black;
@@ -799,11 +770,8 @@ nav a {
 
 /*CSS FOR ACCESSIBILITY PAGE*/
 .accessibility-main {
-  width: 65%;
   margin: auto;
-  align-items: center;
-  justify-content: center;
- 
+  margin-bottom: 6rem;
 }
 
 .att3 {
@@ -831,20 +799,11 @@ nav a {
 
 }
 
-.accessibility-img img {
-  /* width: 30rem;
-  height: 20rem; */
-  margin: 1rem;
-  margin-bottom: 0;
-  border: black 1px solid;
-}
-
-/* .accessibility-main > picture{
-  width: 80%;
-} */
-
 .accessibility-p {
   margin-bottom: 2.5rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .accessibility-figure {
@@ -937,6 +896,34 @@ nav a {
   line-height: 1.2em;
 }
 
+/* */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #617574;
+  width: 20rem;
+  height: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* Padding to */
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
+  font-weight: 900;
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+  transition-timing-function: ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.buttons:hover {
+  background-color: #647696;
+  color: black;
+}
+
 /* SHARED BY TOPICAL AND P35 */
 .stats {
   width: 22rem;
@@ -979,9 +966,7 @@ nav a {
   header {
     position: absolute;
   }
-}
 
-@media screen and (max-width: 840px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -998,7 +983,12 @@ nav a {
   nav ul li:nth-child(1) {
     display: none;
   }
+
+  .index-title{
+    margin-top: 4rem;
+  }
 }
+
 
 /* Media Queries for footer */
 /* For smaller to medium screens (phones, tablets) */
@@ -1016,15 +1006,6 @@ nav a {
 }
 
 /* MEDIA QUERIES FOR INDEX */
-/* mq for introduction on index- and P35-page */
-@media (max-width: 840px) {
-  .introduction {
-    font-size: 1.4rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    font-weight: normal;
-  }
-}
 
 /* mq for life at campus */
 @media screen and (max-width:1200px) {
@@ -1096,7 +1077,7 @@ nav a {
     grid-gap: 2%;
   }
 
-  .research > .button-homepage {
+  .research > .buttons {
     margin-top: 20%;
   }
 
@@ -1116,7 +1097,7 @@ nav a {
 
 /* mq for buttons on index */
 @media (max-width: 700px) {
-  .button-homepage {
+  .buttons {
     font-size: 1rem;
     width: 13rem;
     text-align: center;
@@ -1144,8 +1125,31 @@ nav a {
     width: 100%;
     flex-wrap: wrap;
     margin: auto;
+    margin-bottom: 6rem;
   }
 }
+/* 
+MEDIA QUERIES FOR ACCESSIBILITY */
+
+@media  screen and (max-width: 900px) {
+  
+.att3{
+  width:95%;
+}
+
+.accessibility-img{
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.att2{
+  width: 95%;
+}
+
+}
+
+
 
 /* MEDIA QUERIES SHARED BY INDEX AND P35 */
 @media (max-width:1200px) {
@@ -1171,6 +1175,16 @@ nav a {
   }
 }
 
+/* mq for introduction on index- and P35-page */
+@media (max-width: 840px) {
+  .introduction {
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: normal;
+  }
+}
+
 /* MEDIA QUERIES SHARED BY TOPICAL AND P35 */
 
 @media screen and (max-width: 1240px) {
@@ -1190,5 +1204,13 @@ nav a {
     padding: 0;
     padding: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+/* SHARED BY ALL PAGES EXCEPT INDEX */
+
+@media screen and (max-width:840px){
+  .other-pages-titles{
+    margin-top: 10rem;
   }
 }
