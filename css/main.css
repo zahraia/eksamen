@@ -1,4 +1,6 @@
 /* CSS FOR ALL PAGES */
+
+/* Makes scrolling smoother on all pages */
 html {
   scroll-behavior: smooth;
 }
@@ -8,66 +10,65 @@ body {
   font-family: verdana;
   line-height: 1.5;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* Applies the font-family for all elements unless other is specified */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; 
 }
 
+/* Styles all elements across all pages */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* Styles all h1 */
 h1 {
   margin-top: 7rem;
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 4rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3.5rem;
 }
 
+/* Styles all h2 */
 h2 {
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 1.5rem;
   text-align: center;
   font-size: 2.5rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/* Styles all h3 */
 h3 {
   padding-bottom: 1rem;
-  padding-top: 1.3rem;
   text-align: center;
   font-size: 1.5rem;
 }
 
+/* Class to make paragraphs look like heading 4 */
 .h4 {
   display: inline-block;
   margin-bottom: 0.5rem;
+  /* Makes the font bolder */
   font-weight: bold;
 }
 
+/* Basic styling to p-elements */
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
 }
 
 /* CSS FOR NAVIGATION BAR */
-.headerimg {
-  width: 30%;
-  position: absolute;
-  top: 25%;
-  left: 35%;
-  filter: invert(1);
-}
 
+/* General design for the header container. */
 header {
   position: fixed;
   /* To have navbar fixed */
-  top: 0;
+  top: 0; 
   left: 0;
   width: 100%;
   background: rgb(45, 45, 28);
+  /* Source: https://cssgradient.io/ */
   background: linear-gradient(
     180deg,
     rgba(45, 45, 28, 1) 10%,
@@ -78,6 +79,8 @@ header {
   z-index: 100;
 }
 
+
+/* Design for the oslomet logo. */
 picture.meny-img img {
   position: absolute;
   margin-left: 2em;
@@ -86,7 +89,7 @@ picture.meny-img img {
   filter: invert(1);
   margin-top: 0.625em;
 }
-
+/* To customize every a item */
 header nav ul li a {
   font-size: 1.2rem;
   color: white;
@@ -95,16 +98,14 @@ header nav ul li a {
   transition: all 0.4s ease;
 }
 
+/* When the links in the navbar are hovered on, the code turns it orange, slowly */
 header nav a:hover {
   color: #fff500;
   text-decoration: none;
   transition: 0.6s;
 }
 
-header nav a:focus {
-  background-size: 0 0.1em, 100% 0.1em;
-}
-
+/* Designs the navigation bar and each nav elements positions */
 nav {
   display: flex;
   justify-content: right;
@@ -117,34 +118,38 @@ nav a {
   cursor: pointer;
 }
 
+/* Source: https://www.youtube.com/watch?v=J4Et-MdY-qs&t=23s */
 nav a::after {
   content: "";
-  width: 0%;
-  height: 0.1rem;
+  width: 0%; 
+  height: 0.1rem; 
   display: block;
   background-color: #fff;
-  margin-top: 0.3rem;
+  margin-top: 0.3rem; /* Used to adjust the distance between the link and the white line */
 }
 
+/* Source: https://www.youtube.com/watch?v=J4Et-MdY-qs&t=23s */
 nav a:hover::after {
   width: 100%;
   transition: all 0.5s;
 }
 
+/* This code designs the unordered list in nav */
 nav ul {
-  list-style-type: none;
+  list-style-type: none;   /* Takes away bullet points */
   margin: 0;
   padding: 0;
   overflow: hidden;
   color: white;
   font-weight: 300;
 }
-
+/* This code designs each lis item in nav */
 nav li {
-  float: left;
+  float: left;  /* Makes the item float left in the space available to it */
   color: white;
 }
 
+/* This code designs  each a element */
 nav a {
   display: block;
   padding: 1.25em;
@@ -153,7 +158,7 @@ nav a {
   text-decoration: none;
 }
 
-/* FOOTER CSS */
+/* CSS FOR FOOTER */
 .footer {
   display: flex;
   flex-wrap: wrap; /* Organize elements in rows that can wrap based on the screen size */
@@ -165,8 +170,8 @@ nav a {
 .footer-col {
   width: 100%; /* Make the column take up the full width */
   margin: auto; /* Center the column horizontally */
-  margin-bottom: 2rem;
   margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .footer-col ul {
@@ -175,7 +180,7 @@ nav a {
 }
 
 .footer-col ul li:not(:last-child) {
-  margin-bottom: 0.5rem; /*Adds margin between each list item, except the last one.*/
+  margin-bottom: 0.5rem; /*Adds margin between each list item in the footer, except the last one.*/
 }
 
 .footer-col ul li a {
@@ -188,19 +193,21 @@ nav a {
   color: #8da7a6;
   padding-left: 0.2rem;
 }
-
+/* 
+Styles and adds space in between the social media icons */
 .footer-col .socials a {
-  padding: 0.25rem;
-  margin-right: 0.5rem;
-  width: 2rem;
+  padding: 0.4rem;
+  margin-right: 0.7rem;
+  width: 2.5rem;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-decoration: none;
   background-color: white;
   color: black;
   transition: all 0.4s ease;
 }
 
+/* Turns the links in the social-media icons in the footer another color when hovered on */
 .footer-col .socials a:hover {
   color: white;
   background-color: #899f9e;
@@ -208,10 +215,7 @@ nav a {
 
 /* CSS FOR INDEX-PAGE */
 
-#homepage {
-  width: 100%;
-}
-
+/* Creates a parallax effect of the image, by making it fixed and center, so other elements scroll on top of it */
 .parallax {
   background-attachment: fixed;
   background-position: center;
@@ -225,8 +229,12 @@ nav a {
   background-color: #617574;
   padding: 1.1rem;
   text-align: center;
-  box-shadow: 0 -6px 20px 0;
+  box-shadow: 0 -0.037rem 0.123rem 0; 
   position: relative;
+  height: 10.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .explore-oslomet-btn a {
@@ -236,73 +244,44 @@ nav a {
   text-decoration: none;
 }
 
+/* Used for the undeline effect */
 .explore-oslomet-btn a::before {
-  content: "";
+  content: ""; /* empty so that nothing shows before the cursor hover over the link*/
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0; /* it is at the bottom of the box*/
   width: 0;
-  height: 2px;
+  height: 0.1rem;
   background-color: #ffd500;
-  transition: width 0.25s ease-out;
+  transition-property: width;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
 }
 
 .explore-oslomet-btn a:hover::before {
   width: 100%;
 }
 
-.introduction {
-  margin-bottom: 3rem;
-  text-align: center;
-  font-size: 1.7rem;
-  margin-left: 9rem;
-  margin-right: 9rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: lighter;
-}
-
-/* https://www.w3schools.com/howto/howto_css_arrows.asp */
+/* Source: https://www.w3schools.com/howto/howto_css_arrows.asp */
 .arrow {
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.019rem 0.019rem 0;
   display: inline-block;
   padding: 0.25rem;
   margin: 0.25rem;
 }
 
+/* Source: https://www.w3schools.com/howto/howto_css_arrows.asp */
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
-.button-homepage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #617574;
-  width: 20rem;
-  height: 3rem;
-  margin-bottom: 4rem;
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 900;
-  transition: 0.5s;
-  color: white;
-  text-decoration: none;
-}
-
-.button-homepage:hover {
-  background-color: #708584;
-}
-
 .upcoming-events {
   background-color: #eff2f4;
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .upcoming-events ul {
@@ -315,7 +294,7 @@ nav a {
     "first"
     "second"
     "last";
-  /* for å få den sentrert: */
+  /* To have it on the center: */
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -409,7 +388,6 @@ nav a {
   text-decoration-color: black;
   text-decoration-thickness: 0.12rem;
   font-weight: bolder;
-  width: 20%;
   margin: auto;
   margin-top: 1.5rem;
 }
@@ -421,7 +399,7 @@ nav a {
 
 .arrow-events {
   border: solid black;
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.019rem 0.019rem 0;
   display: inline-block;
   padding: 0.25rem;
   margin: 0.25rem;
@@ -491,21 +469,20 @@ nav a {
   grid-template-rows: 100%;
   grid-gap: 15%;
   width: 70%;
-  height: 95vh;
-  margin-bottom: 5em;
+  height: 70vh;
   margin-left: auto;
   margin-right: auto;
   overflow-x: scroll;
-
-  /* for andre browsere, kan skrive om dette i accessibility*/
 
   /* some browsers, like firefox, do not support webkit, which is why styling for scrollbar is also added here */
   scrollbar-color: darkgrey white;
   /* thumb and track color */
   scrollbar-width: thin;
-  /* thin, auto, or none */
-
   scroll-behavior: smooth;
+}
+
+.life{
+  margin-bottom: 6rem;
 }
 
 .life-column {
@@ -551,7 +528,7 @@ nav a {
 /* only styles the scrollbar's track */
 ::-webkit-scrollbar-track {
   background: white;
-  box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 0.031rem grey;
   border-radius: 0.625rem;
 }
 
@@ -586,6 +563,8 @@ nav a {
 /* CSS TO P35 PAGE */
 
 .p35img1 {
+  /* Photo: Private */
+  background-image: url(../images/cantine_shop.jpg);
   display: block;
   position: relative;  
   background-attachment: fixed;
@@ -593,12 +572,12 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 90vh;
-  width: auto;
-  background-image: url(../images/cantine_shop.jpg);
-  margin-bottom: 1rem;
+  width: auto; 
 }
 
 .p35img2 {
+  /* Photo: Private */
+  background-image: url(../images/library.jpg);
   width: 66%;
   display: block;
   position: relative;  
@@ -608,11 +587,11 @@ nav a {
   background-size: cover;
   min-height: 90vh;
   width: auto;
-  background-image: url(../images/library.jpg);
-  margin-bottom: 1rem;
 }
 
 .p35img3 {
+  /* Photo: Private */
+  background-image: url(../images/datatorget.jpg);
   width: 66%;
   display: block;
   position: relative;  
@@ -622,28 +601,26 @@ nav a {
   background-size: cover;
   min-height: 90vh;
   width: auto;
-  background-image: url(../images/datatorget.jpg);
 }
 
+/* Used to overlay a shadow over the image to make the text more visible */
 .overlay {
-  position: absolute;
+  position: absolute; /*  */
   top: 0;
   left: 0;
   width: 100%;
   height: 90vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4); /* gradient of the color to still make the image visible */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 }
 
 .overlay p {
-  color: white;
-  text-align: center;
-  padding-left: 15rem;
-  padding-right: 15rem
-  ; 
+  color: white;    /* Styled the text more visible */
+  text-align: center; 
+  width: 80%;
 }
 
 .image-text{
@@ -656,47 +633,34 @@ nav a {
   padding: 1rem;  
 }
 
+/* Used for the background-color for the cards in p35-page without changing the other pages cards */
 .p35-card {
   background-color: #eff2f4;
+  padding-bottom: 6rem;
 }
 
 
 /* CSS TO TOPICAL PAGE */
-.topical-content {
-  width: 100%;
-  margin: auto;
-  align-items: center;
-}
 
-.topical-content p {
-  width: 65%;
+/* Styles h2s in topical */
+.topical-headings{
+  width: 70%;
   margin: auto;
 }
 
-.header-content body {
-  width: 100%;
-  background-color: white;
-  font-family: verdana;
-  line-height: 1.5;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.topical-paragraphs{
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4rem;
 }
 
 .topical-paragraphs {
   padding-bottom: 4rem;
 }
 
-.center-topical-img {
-  width: 75%;
-  margin: auto;
-}
-
-
 .third-topical-paragraph {
   background-color: #eff2f4;
-  padding-top: 0.5em;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .third-topical-list li {
@@ -707,19 +671,17 @@ nav a {
   padding-bottom: 1em;
 }
 
-.learn-more-topical-heading {
-  text-align: center;
-}
-
-.card-section {
-  align-items: center;
-  background-color: #7e9695;
-}
-
+/* Styles all the cards in topical */
 .topical-row-info {
   display: flex;
-  padding: 5em;
+  padding-top: 2rem;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 2em;
   align-items: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .topical-column {
@@ -729,8 +691,8 @@ nav a {
   transition-property: transform;
   transition-timing-function: ease;
   transition-duration: 0.5s;
-  margin: 0.5px;
-  height: 20rem;
+  margin: 0.003rem;
+  height: 22rem;
   width: 15rem;
   margin-left: auto;
   background: #fff;
@@ -767,12 +729,13 @@ nav a {
   display: table;
 }
 
+/* source: https://www.bestcssbuttongenerator.com/#/25*/
 .topical-button {
   box-shadow: inset 0px 0px 10px 3px #7e9695;
   background: linear-gradient(to bottom, #f6f6f3 5%, #f6f6f3 100%);
   background-color: #f6f6f3;
-  border-radius: 1rem;
-  border: 2px solid #f6f6f3;
+  border-radius: 1rem; /* To make the button corners round. */
+  border: 0.012rem solid #f6f6f3;
   display: inline-block;
   cursor: pointer;
   color: black;
@@ -796,17 +759,89 @@ nav a {
   padding: 0.6rem;
 }
 
+/*CSS FOR ACCESSIBILITY PAGE*/
+.accessibility-main {
+  margin: auto;
+  margin-bottom: 6rem;
+}
+
+.att3 {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.att2 {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
+}
+
+.accessibility-img {
+  margin-left: auto;
+  margin-right: auto; /* Margin used for space around each image, and between images.*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+} 
+
+.accessibility-p {
+  margin-bottom: 2.5rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accessibility-figure {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.accessibility-img figcaption {
+  text-align: center;
+  font-size: small;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.accessibility-main > figcaption {
+  text-align: center;
+  font-size: small;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
 
 /* SHARED BY INDEX AND P35 */
 
+.introduction {
+  margin-bottom: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  font-size: 1.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  text-align: center;
+}
+
+/* Used for the placement and layout of the cards  */
 .body-info-cards {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 30vh;
-  padding-bottom: 3.5rem;
   width: 100%;
-  padding-left: 14rem;
+  padding-left: 14rem; /* Padding right and left used to center the class */
   padding-right: 14rem;
 }
 
@@ -817,20 +852,23 @@ nav a {
   align-items: center;
   height: 25rem;
   width: 100%;
-  margin: 0.6rem;
+  margin: 1.2rem;
   overflow: hidden;
   box-shadow: 0 20px 20px -20px;
   padding: 0;
+  /* Used here to make the transition smooth when the cursor moves off the box too: */
+  transition-timing-function: ease; 
+  transition-duration: 0.5s;
 }
 
 .info-cards img {
   position: relative;
-  vertical-align: top;
+  vertical-align: top; 
   max-width: 100%;
-  transition: 0.25s ease;
+  transition: 0.5s ease;
 }
 
-.info-cards:hover img {
+.info-cards:hover  {
   transform: scale(1.1);
 }
 
@@ -862,8 +900,34 @@ nav a {
   line-height: 1.2em;
 }
 
-/* SHARED BY TOPICAL AND P35 */
+/*  */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #617574;
+  width: 20rem;
+  height: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
+  font-weight: 900;
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+  transition-timing-function: ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
+.buttons:hover {
+  background-color: #647696;
+  color: black;
+}
+
+/* SHARED BY TOPICAL AND P35 */
 .stats {
   width: 22rem;
   height: 13.5rem;
@@ -883,7 +947,7 @@ nav a {
   padding: 5em;
 }
 
-.stats-writing {
+.stats-text {
   font-weight: 600;
 }
 
@@ -894,8 +958,8 @@ nav a {
   margin-bottom: 3%;
 }
 
-
 /* SHARED MEDIA QUERIES */
+/* Media Queries for the nav-bar */
 @media screen and (max-width: 840px) {
   nav {
     display: block;
@@ -905,9 +969,7 @@ nav a {
   header {
     position: absolute;
   }
-}
 
-@media screen and (max-width: 840px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -919,13 +981,19 @@ nav a {
   }
   header {
     background-color: #333;
-    height: 9rem;
+    height: 8.5rem;
   }
   nav ul li:nth-child(1) {
     display: none;
   }
+
+  .index-title{
+    margin-top: 4rem;
+  }
 }
 
+
+/* Media Queries for footer */
 /* For smaller to medium screens (phones, tablets) */
 @media screen and (max-width: 991px) {
   .footer-col {
@@ -940,17 +1008,25 @@ nav a {
   }
 }
 
-
 /* MEDIA QUERIES FOR INDEX */
-@media (max-width: 700px) {
-  .introduction {
-    font-size: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-weight: normal;
+
+/* mq for life at campus */
+@media screen and (max-width:1200px) {
+  .life-container {
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(4, 5fr);
+    grid-gap: 2%;
+    overflow-x: hidden;
+  }
+  .life-column {
+    width: fit-content;
+    margin: 1rem;
+    padding-block-end: 5rem;
   }
 }
-@media screen and (max-width: 700px) {
+
+/* mq for - */
+@media screen and (max-width: 840px) {
   .upcoming-events {
     background-color: #f6f6f3;
     width: 100%;
@@ -1004,7 +1080,7 @@ nav a {
     grid-gap: 2%;
   }
 
-  .research > .button-homepage {
+  .research > .buttons {
     margin-top: 20%;
   }
 
@@ -1022,15 +1098,18 @@ nav a {
   }
 }
 
+/* mq for buttons on index */
 @media (max-width: 700px) {
-  .button-homepage {
+  .buttons {
     font-size: 1rem;
     width: 13rem;
     text-align: center;
   }
 }
 
+
 /* MEDIA QUERIES FOR P35 */
+
 
 /* MEDIA QUERIES FOR TOPICAL */
 
@@ -1049,8 +1128,31 @@ nav a {
     width: 100%;
     flex-wrap: wrap;
     margin: auto;
+    margin-bottom: 6rem;
   }
 }
+/* 
+MEDIA QUERIES FOR ACCESSIBILITY */
+
+@media  screen and (max-width: 900px) {
+  
+.att3{
+  width:95%;
+}
+
+.accessibility-img{
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.att2{
+  width: 95%;
+}
+
+}
+
+
 
 /* MEDIA QUERIES SHARED BY INDEX AND P35 */
 @media (max-width:1200px) {
@@ -1064,14 +1166,25 @@ nav a {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .body-info-cards {
     flex-direction: column;
-    width: 90%;
+    width: 60%;
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
+
+  }
+}
+
+/* mq for introduction on index- and P35-page */
+@media (max-width: 840px) {
+  .introduction {
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: normal;
   }
 }
 
@@ -1094,5 +1207,13 @@ nav a {
     padding: 0;
     padding: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+/* SHARED BY ALL PAGES EXCEPT INDEX */
+
+@media screen and (max-width:840px){
+  .other-pages-titles{
+    margin-top: 10rem;
   }
 }
