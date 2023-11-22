@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
+  <!-- Sets the characters in the html to latin characters including æ, ø and å -->
   <meta charset="UTF-8" />
+  <!-- Sets the width of the viewport to the device's screen and scales at original size when the page is opened -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link to our css-sheet -->
   <link rel="stylesheet" type="text/css" href="./css/main.css" />
   <!-- Link to Font Awesome class for styling icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -34,7 +37,7 @@
     </nav>
   </header>
 
-  <!-- kommentar her  -->
+  <!-- Empty div, the CSS contains an image to create a parallax-effect.-->
   <div class="parallax"></div>
     <!-- Button that scrolls down to the beginning of the main part of the page, linked to id showed under -->
     <p class="explore-oslomet-btn">
@@ -88,7 +91,7 @@
           <li class="events-calendar-second">
             <div class="events-date">24 NOV</div>
             <div class="events-info">
-              "Younglings should go out more"- Leonardo DaVinci 2023
+              "Younglings should go out more" - Leonardo DaVinci 2023
             </div>
             <div class="events-details">
               Hybrid arrangement | Conferences and seminars | Pilestredet 32, N002.107
@@ -98,7 +101,7 @@
           <li class="events-calendar-third">
             <div class="events-date">30 NOV</div>
             <div class="events-info">
-              NordSec 2023-conference – Artificial intelligence, cybersecurity.
+              NordSec 2023-conference - Artificial intelligence, cybersecurity.
             </div>
             <div class="events-details">
               Pilestredet, Oslo | Faculty for technology | Art and design
@@ -134,7 +137,7 @@
                 </p>
                 <p>
                   After he-who-must-not-be-named's scandal on live television, Joe Biden was the most promising
-                  candidate...
+                  candidate.
                 </p>
               </figcaption>
             </a>
@@ -180,23 +183,28 @@
       </section>
       <!-- Button leading to an external site on a new tab -->
 
-
-      <!-- TIL HER  -->
-
+<!-- New section to group research -->
       <section class="research">
         <h2>Research</h2>
+        <!-- A container set to grid to organize all articles -->
         <div class="research-container">
+          <!-- Figure used to create rows and columns of articles -->
           <figure class="research-article">
+            <!-- Links to an external site,Oslomet's own, where one can read about the subject -->
             <a href="https://www.oslomet.no/forskning/forskningsnyheter/hvordan-ungdom-delta-demokratiet"
               target="_blank">
               <!-- Source: https://www.oslomet.no/forskning/forskningsnyheter/hvordan-ungdom-delta-demokratiet  -->
+              <!-- Figcaption used to group together all writing in the article -->
               <figcaption>
+                <!-- p-element with a class to style the title differently -->
                 <p class="research-title">
                   How to encourage the youth to participate in the democracy?
                 </p>
+                <!-- Arrow from FontAwesome wrapped in a p-element to be able to position the icon in our own CSS -->
                 <p class="research-arrow">
-                  <i class="arrow-events right" class="research-arrow"></i>
+                  <i class="arrow-events right"></i>
                 </p>
+                <!-- p-element with a class to style the caption differently -->
                 <p class="research-caption">
                   New studies conducted by Oslomet shows that the solution is in the classroom.
                 </p>
@@ -204,15 +212,17 @@
             </a>
           </figure>
 
+          <!-- Figure with the same structure as the last one -->
           <figure class="research-article">
             <a href="https://www.oslomet.no/forskning/forskningsnyheter/trangboddhet-barn-unge" target="_blank">
               <!-- Source: https://www.oslomet.no/forskning/forskningsnyheter/trangboddhet-barn-unge  -->
+
               <figcaption>
                 <p class="research-title">
                   The impact living in a cramped space has on children
                 </p>
                 <p class="research-arrow">
-                  <i class="arrow-events right" class="research-arrow"></i>
+                  <i class="arrow-events right"></i>
                 </p>
 
                 <p class="research-caption">
@@ -222,6 +232,7 @@
             </a>
           </figure>
 
+          <!-- Figure with the same structure as the last one -->
           <figure class="research-article">
             <a href="https://www.oslomet.no/en/research/featured-research/make-digitalisation-work-for-all-citizens"
               target="_blank">
@@ -229,15 +240,16 @@
               <figcaption>
                 <p class="research-title"> Digitalization and accessibility</p>
                 <p class="research-arrow">
-                  <i class="arrow-events right" class="research-arrow"></i>
+                  <i class="arrow-events right"></i>
                 </p>
                 <p class="research-caption">
-                  Digital resources need to be accessible for everyone, which is why Oslomet is lifeing how to do that.
+                  Digital resources need to be accessible for everyone, which is why Oslomet is researching how to do that.
                 </p>
               </figcaption>
             </a>
           </figure>
 
+          <!-- Figure with the same structure as the last one -->
           <figure class="research-article">
             <a href="https://www.oslomet.no/forskning/forskningsnyheter/bilderboker-de-minste" target="_blank">
               <figcaption>
@@ -246,7 +258,7 @@
                   Picture books for adults
                 </p>
                 <p class="research-arrow">
-                  <i class="arrow-events right" class="research-arrow"></i>
+                  <i class="arrow-events right"></i>
                 </p>
 
                 <p class="research-caption">
@@ -257,6 +269,7 @@
             </a>
           </figure>
         </div>
+
         <!--Button leading to an external site on a new tab -->
         <a href="https://www.oslomet.no/en/research" target="_blank" class="button-homepage">
           <p>
@@ -265,27 +278,36 @@
         </a>
       </section>
 
-      <h2>Life at Campus</h2>
-      <section class="life-container">
+      <!-- Section to group together life at campus -->
+      <section class="life">
+        <h2>Life at Campus</h2>
+        <!-- Container to hold all the articles and have a scrollbar -->
+        <div class="life-container">
+          <!-- Notat: hele den kan jo være figure og ikke div? -->
+          <!-- div to contain all elements related to one article -->
         <div class="life-column">
+          <!-- Link that leads to an external site, OsloMet, with an article related to the subject -->
           <a href="https://www.oslomet.no/forskning/forskningsnyheter/trenger-ledere-som-skjonner-digitalisering" target="_blank">
             <picture>
               <!-- Photo: Private, Screenshot from Microsoft Word  -->
-              <img src="./images/petition.jpg" alt="A petition to fire Joe Biden." class="life-img">
+              <img src="./images/petition.png" alt="A petition to fire Joe Biden." class="life-img">
             </picture>
+            <!-- Groups together all text underneath the image -->
             <figure class="life-cards">
+              <!-- Different p-classes to style them differently with ease -->
               <p class="life-title">
                 Sign the petition fire Joe Biden
               </p>
               <p class="life-faculty">Petition, Education</p>
               <p class="life-explanation">
-                Most students are not satisfied with the new director of TKD. Join us to sign the petition to fire Joe
+                Most students are not satisfied with the new director of TKD. Join us and sign the petition to fire Joe
                 Biden!
               </p>
             </figure>
           </a>
         </div>
 
+          <!-- div with the same structure as the last one -->
         <div class="life-column">
           <a href="https://student.oslomet.no/treningstilbud" target="_blank">
             <picture>
@@ -303,6 +325,7 @@
           </a>
         </div>
 
+        <!-- div with the same structure as the last one -->
         <div class="life-column">
           <a href="https://www.oslomet.no/studier/studenthistorier/endelig-studiestart" target="_blank">
             <picture>
@@ -321,6 +344,7 @@
           </a>
         </div>
 
+        <!-- div with the same structure as the last one -->
         <div class="life-column">
           <a href="https://www.oslomet.no/en/study/student-stories/kjeller-student-know-your-local-area"
             target="_blank">
@@ -339,6 +363,7 @@
           </a>
         </div>
 
+        <!-- div with the same structure as the last one -->
         <div class="life-column">
           <a href="https://www.lifeinnorway.net/camping-in-norway/" target="_blank">
             <picture>
@@ -359,6 +384,7 @@
           </a>
         </div>
 
+        <!-- div with the same structure as the last one -->
         <div class="life-column">
           <a href="https://www.oslomet.no/forskning/forskningsnyheter/varm-teknologi" target="_blank">
             <picture>
@@ -378,6 +404,7 @@
           </a>
         </div>
 
+        <!-- div with the same structure as the last one -->
         <div class="life-column">
           <a href="https://www.utefilm.no/" target="_blank">
             <picture>
@@ -395,6 +422,7 @@
               </p>
             </figure>
           </a>
+        </div>
         </div>
       </section>
 
